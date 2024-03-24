@@ -1,0 +1,343 @@
+<!doctype html public "-//w3c//dtd html 4.0 Transitional//en">
+<html>
+<head>
+  <title>Samples</title>
+
+<style>
+body {
+  overflow: hidden;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background: #ffffff;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 70%;
+  width: 100%;
+  }
+p
+	{
+	margin: .5em 0em .5em 0em;
+	}
+ol, ul
+	{
+	margin-top: .5em;
+	}
+li
+	{
+	margin-bottom: .5em;
+	}
+ul p, ol p, dl p
+	{
+	margin-left: 0em;
+	}
+blockquote.dxOverload
+	{
+	margin: .5em 1.5em .5em 1.5em;
+	}
+h1, h2, h3, h4
+	{
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	margin-bottom: .4em;
+	margin-top: 1em;
+	font-weight: bold;
+	}
+h1
+	{
+	font-size: 120%;
+	margin-top: 0em;
+	}
+h2
+	{
+	font-size: 130%;
+	}
+h3
+	{
+	font-size: 115%;
+	}
+h4
+	{
+	font-size: 100%;
+	}
+.dxH1, .dxH2, .dxH3, .dxH4
+	{
+	margin-left: -18px;
+	}
+A
+  {
+  color: #0000FF;
+  }
+A:link
+  {
+  color: #0000FF;
+  }
+A:active
+  {
+  color: #000080;
+  }
+A:visited
+  {
+  color: #800080;
+  }
+A:hover
+  {
+  color: #FF0000;
+  }
+pre
+  {
+  font-family: Courier New;
+  font-size: 9pt;
+  color: #000060;
+  margin-top: 0px;
+  }
+code, p.example, p.sourcecode, table.sourcecode, tr.sourcecode, td.sourcecode
+  {
+  font-family: Courier New;
+  font-size: 9pt;
+  color: #000060;
+  }
+div#pagetop {
+  margin: 0px;
+  padding: 0px;
+  background-color: #99ccff;
+  height: 44;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  }
+div#pagebody {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 10px 0px 22px;
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+  background-color: #FFFFFF;
+  vertical-align: top;
+  }
+table#BannerTable
+  {
+  width: 100%;
+  height: 100%;
+  border-collapse:collapse;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+table#BannerTable td
+  {
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+tr#BannerTopRow
+  {
+  font-style: italic;
+  font-size: 70%;
+  }
+tr#Banner2ndRow
+  {
+  font-weight: bold;
+  font-size: 80%;
+  }
+table.filtereditemlisttable, table.xmldoctable
+	{
+	width: 95%;
+	margin-top: .6em;
+	margin-bottom: .3em;
+	border-width: 1px 1px 0px 0px;
+	border-style: solid;
+	border-color: #999999;
+	background-color: #999999;
+	font-size: 100%;
+  border-collapse:collapse;
+	}
+table.filtereditemlisttable th, table.filtereditemlisttable td, table.xmldoctable th, table.xmldoctable td
+	{
+	border-width: 0px 0px 1px 1px;
+	border-style: solid;
+	border-color: #999999;
+	padding: 4px 6px;
+	text-align: left;
+	vertical-align: top;
+	}
+table.filtereditemlisttable th, table.xmldoctable th
+	{
+	background: #cccccc;
+	vertical-align: bottom;
+	}
+table.filtereditemlisttable td, table.xmldoctable td
+	{
+	background-color: #ffffff;
+	vertical-align: top;
+	}
+</style>
+
+<script>
+
+var Engine;
+var enOpera = 'Opera';
+var enIE = 'IE';
+var enGecko = 'Gecko';
+
+function TestEngine()
+{
+  if (document.all) {
+    if (window.opera) {
+      Engine = enOpera;
+    }
+    else {
+      Engine = enIE;
+    }
+  }
+  else {
+    Engine = enGecko;
+  }
+}
+
+function RunningInCHM()
+{
+  var wstr = document.location.href.substr(0,14);
+  return (wstr == 'mk:@MSITStore:');
+}
+
+
+function RunningInHxS()
+{
+  var wstr = document.location.href.substr(0,10);
+  return (wstr == 'ms-help://');
+}
+
+
+function RunningInHost()
+{
+  return RunningInCHM() || RunningInHxS();
+}
+
+function HostOrNot(ifhost, ifnothost)
+{
+  if (RunningInHost()) {
+    document.write(ifhost);
+  } else {
+    document.write(ifnothost);
+  }
+}//HostOrNot
+
+function AdjustContentSize()
+{
+  var cDiv = document.getElementById("pagebody");
+  if ((Engine == enGecko)||(Engine == enOpera))//amend padding
+    {
+      var w = document.body.clientWidth;
+      cDiv.style.width = w - 32;
+    }
+    
+    var h = document.body.clientHeight;
+    
+    if (h > 0)
+    {
+        var diff = 44;
+        
+        if ((Engine == enGecko)||(Engine == enOpera)) 
+        {
+           diff = diff + 6;
+        }        
+           
+        cDiv.style.height = h - diff + 'px';        
+    }
+}
+
+
+function Startup()
+{
+  //add startup code here
+}
+</script>
+
+</head>
+
+
+<body onresize="AdjustContentSize()" onload="Startup()">
+
+<div id="pagetop">
+  <table id="BannerTable">
+    <tr id="BannerTopRow">
+      <td>Devart LinqConnect</td>
+      <td align="right">support@devart.com</td>
+
+</tr>
+    <tr id="Banner2ndRow">
+      <td>Samples</td>
+      <td>&nbsp;</td>
+
+</tr>
+  </table>
+</div>
+
+<div id="pagebody">
+<!-- begin content -->
+
+<p>
+These samples are an application that provides simple examples of the product using.
+</p>
+<p>
+They demonstrate how applications built by help of the LINQ technology work and show good design 
+and implementation practices that you can employ with our product. 
+By examining the source code of these samples you can see how our advanced features
+help you to build a centralized data access and storage solution. Particularly, it illustrates 
+common issues like LINQ-queries execution, Master/Detail relationships, SubmitChanges, and so on. 
+Each of issues is presented on the single tab.
+</p>
+
+<p>
+LinqConnect demos are based on the CRM_Demo database. Before launching demos first time, 
+execute the crm_demo_&lt;your_database_name&gt;.sql file, supplied with the demos, to create a database.
+To see how demo works, launch a demo solution from the Start menu, build it, and start it. 
+</p>
+
+<table class="xmldoctable" cellspacing="0">
+
+<tr>
+  <th width=15%>Sample</th>
+  <th>Description</th>
+</tr>
+
+<tr>
+  <td><b>Queries</b></td>
+  <td>
+    This sample shows you how to execute LINQ-queries and bind grid by this data. The source 
+    code displays simple LINQ-queries and method of data binding. The LINQ statement can be viewed 
+    at the bottom of page.
+  </td>
+</tr>
+
+<tr>
+  <td><b>Master-Detail relationship</b></td>
+  <td>
+    Master-Detail is a model which provides data from two or more related tables. 
+    First table contains general information, other tables contain information related to the main table. 
+    So, if we change selection in main table, related datasets changed too. 
+  </td>
+</tr>
+
+<tr>
+  <td><b>Submit changes</b></td>
+  <td>
+    The SubmitChanges computes the set of modified objects to be inserted, updated, 
+    or deleted, and executes the appropriate commands to implement the changes to the database. 
+    You can change information about company on this page. Change value of the grid cell and confirm your 
+    changes by pressing the ENTER key. To save your changes click the Update button on the top toolbar. 
+    The event handler of this button contains the SubmitChanges method call.
+  </td>
+</tr>
+
+
+</table>
+
+<!-- end content -->
+
+<p>&nbsp;</p><p>&nbsp;</p><hr size=1>
+<p>&copy; 2010-2021 Devart. All rights reserved.</p>
+
+</div>
+
+<script>
+TestEngine();
+AdjustContentSize();
+</script>
+</body>
+</html>

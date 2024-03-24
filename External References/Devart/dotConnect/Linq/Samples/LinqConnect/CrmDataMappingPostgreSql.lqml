@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Database Name="postgres" EntityNamespace="CrmDataContext" ContextNamespace="CrmDataContext" Class="CrmDataContext" Provider="Devart.Data.PostgreSql.Linq.Provider.PgSqlDataProvider, Devart.Data.PostgreSql.Linq" Extended="true" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="ConnectionString" ConnectionString="User Id=postgres;Host=localhost;Port=5432" Provider="Devart.Data.PostgreSql" />
+  <Table Name="&quot;Company&quot;" Member="Companies">
+    <Type Name="Company">
+      <Column Name="&quot;CompanyID&quot;" Member="CompanyID" Type="System.Int32" DbType="int4 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="&quot;CompanyName&quot;" Member="CompanyName" Type="System.String" DbType="varchar NOT NULL" CanBeNull="false" />
+      <Column Name="&quot;PrimaryContact&quot;" Member="PrimaryContact" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Column Name="&quot;Web&quot;" Member="Web" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Email&quot;" Member="Email" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;AddressTitle&quot;" Member="AddressTitle" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Address&quot;" Member="Address" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;City&quot;" Member="City" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Region&quot;" Member="Region" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;PostalCode&quot;" Member="PostalCode" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Country&quot;" Member="Country" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Phone&quot;" Member="Phone" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Fax&quot;" Member="Fax" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Association Name="Company_Order" Member="Company_Orders" Storage="_Company_Orders" ThisKey="CompanyID" OtherKey="CompanyID" Type="Order" />
+      <Association Name="Company_Order1" Member="ShippingCompany_Orders" Storage="_ShippingCompany_Orders" ThisKey="CompanyID" OtherKey="ShipCompanyID" Type="Order" />
+      <Association Name="Person_Contact_Company" Member="Primary_Contact" Storage="_Primary_Contact" ThisKey="PrimaryContact" OtherKey="ContactID" Type="Person_Contact" IsForeignKey="true" />
+      <Association Name="Company_Person_Contact" Member="Company_Contacts" Storage="_Company_Contacts" ThisKey="CompanyID" OtherKey="CompanyID" Type="Person_Contact" />
+    </Type>
+  </Table>
+  <Table Name="&quot;Order Details&quot;" Member="Order_Details">
+    <Type Name="Order_Detail">
+      <Column Name="&quot;OrderID&quot;" Member="OrderID" Type="System.Int32" DbType="int4 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="&quot;ProductID&quot;" Member="ProductID" Type="System.Int32" DbType="int4 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="&quot;Price&quot;" Member="Price" Type="System.Decimal" DbType="numeric(655362)" CanBeNull="true" />
+      <Column Name="&quot;Quantity&quot;" Member="Quantity" Type="System.Decimal" DbType="numeric(655364)" CanBeNull="true" />
+      <Association Name="Order_Order_Detail" Member="Order" ThisKey="OrderID" OtherKey="OrderID" Type="Order" IsForeignKey="true" />
+      <Association Name="Product_Order_Detail" Member="Product" ThisKey="ProductID" OtherKey="ProductID" Type="Product" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="&quot;Orders&quot;" Member="Orders">
+    <Type Name="Order">
+      <Column Name="&quot;OrderID&quot;" Member="OrderID" Type="System.Int32" DbType="int4 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="&quot;CompanyID&quot;" Member="CompanyID" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Column Name="&quot;ContactID&quot;" Member="ContactID" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Column Name="&quot;OrderDate&quot;" Member="OrderDate" Type="System.DateTime" DbType="date NOT NULL" CanBeNull="false" />
+      <Column Name="&quot;Freight&quot;" Member="Freight" Type="System.Decimal" DbType="numeric(655362)" CanBeNull="true" />
+      <Column Name="&quot;ShipDate&quot;" Member="ShipDate" Type="System.DateTime" DbType="date" CanBeNull="true" />
+      <Column Name="&quot;ShipCompanyID&quot;" Member="ShipCompanyID" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Column Name="&quot;Discount&quot;" Member="Discount" Type="System.Decimal" DbType="numeric(655362)" CanBeNull="true" />
+      <Association Name="Company_Order" Member="Company" ThisKey="CompanyID" OtherKey="CompanyID" Type="Company" IsForeignKey="true" />
+      <Association Name="Company_Order1" Member="ShippingCompany" Storage="_ShippingCompany" ThisKey="ShipCompanyID" OtherKey="CompanyID" Type="Company" IsForeignKey="true" />
+      <Association Name="Order_Order_Detail" Member="Order_Details" ThisKey="OrderID" OtherKey="OrderID" Type="Order_Detail" />
+      <Association Name="Person_Contact_Order" Member="Person_Contact" ThisKey="ContactID" OtherKey="ContactID" Type="Person_Contact" IsForeignKey="true" />
+    </Type>
+  </Table>
+  <Table Name="&quot;Person Contact&quot;" Member="Person_Contacts">
+    <Type Name="Person_Contact">
+      <Column Name="&quot;ContactID&quot;" Member="ContactID" Type="System.Int32" DbType="int4 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="&quot;Title&quot;" Member="Title" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;FirstName&quot;" Member="FirstName" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;MiddleName&quot;" Member="MiddleName" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;LastName&quot;" Member="LastName" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;CompanyID&quot;" Member="CompanyID" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Column Name="&quot;HomePhone&quot;" Member="HomePhone" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;MobilePhone&quot;" Member="MobilePhone" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;AddressTitle&quot;" Member="AddressTitle" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Address&quot;" Member="Address" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;City&quot;" Member="City" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Region&quot;" Member="Region" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;PostalCode&quot;" Member="PostalCode" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Country&quot;" Member="Country" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Phone&quot;" Member="Phone" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;Fax&quot;" Member="Fax" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Association Name="Person_Contact_Company" Member="PrimaryContact_Companies" Storage="_PrimaryContact_Companies" ThisKey="ContactID" OtherKey="PrimaryContact" Type="Company" />
+      <Association Name="Company_Person_Contact" Member="Company" ThisKey="CompanyID" OtherKey="CompanyID" Type="Company" IsForeignKey="true" />
+      <Association Name="Person_Contact_Order" Member="Orders" ThisKey="ContactID" OtherKey="ContactID" Type="Order" />
+    </Type>
+  </Table>
+  <Table Name="&quot;Product Categories&quot;" Member="Product_Categories">
+    <Type Name="Product_Category">
+      <Column Name="&quot;CategoryID&quot;" Member="CategoryID" Type="System.Int32" DbType="int4 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="&quot;CategoryName&quot;" Member="CategoryName" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;ParentCategory&quot;" Member="ParentCategory" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Association Name="Product_Category_Product_Category" Member="Child_Categories" Storage="_Child_Categories" ThisKey="CategoryID" OtherKey="ParentCategory" Type="Product_Category" />
+      <Association Name="Product_Category_Product_Category" Member="Parent_Category" Storage="_Parent_Category" ThisKey="ParentCategory" OtherKey="CategoryID" Type="Product_Category" IsForeignKey="true" />
+      <Association Name="Product_Category_Product" Member="Products" ThisKey="CategoryID" OtherKey="CategoryID" Type="Product" />
+    </Type>
+  </Table>
+  <Table Name="&quot;Products&quot;" Member="Products">
+    <Type Name="Product">
+      <Column Name="&quot;ProductID&quot;" Member="ProductID" Type="System.Int32" DbType="int4 NOT NULL" IsPrimaryKey="true" CanBeNull="false" />
+      <Column Name="&quot;ProductName&quot;" Member="ProductName" Type="System.String" DbType="varchar NOT NULL" CanBeNull="false" />
+      <Column Name="&quot;CategoryID&quot;" Member="CategoryID" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Column Name="&quot;UnitName&quot;" Member="UnitName" Type="System.String" DbType="varchar" CanBeNull="true" />
+      <Column Name="&quot;UnitScale&quot;" Member="UnitScale" Type="System.Int16" DbType="int2" CanBeNull="true" />
+      <Column Name="&quot;InStock&quot;" Member="InStock" Type="System.Int32" DbType="int4" CanBeNull="true" />
+      <Column Name="&quot;Price&quot;" Member="Price" Type="System.Decimal" DbType="numeric(655362)" CanBeNull="true" />
+      <Column Name="&quot;DiscontinuedPrice&quot;" Member="DiscontinuedPrice" Type="System.Decimal" DbType="numeric(655362)" CanBeNull="true" />
+      <Column Name="&quot;Discontinued&quot;" Member="Discontinued" Type="System.Boolean" DbType="bool" CanBeNull="true" />
+      <Association Name="Product_Order_Detail" Member="Order_Details" ThisKey="ProductID" OtherKey="ProductID" Type="Order_Detail" />
+      <Association Name="Product_Category_Product" Member="Product_Category" ThisKey="CategoryID" OtherKey="CategoryID" Type="Product_Category" IsForeignKey="true" />
+    </Type>
+  </Table>
+</Database>

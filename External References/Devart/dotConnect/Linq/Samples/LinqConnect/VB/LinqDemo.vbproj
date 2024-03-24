@@ -1,0 +1,170 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="3.5" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{77A76157-5101-4871-956C-CD7324B587F6}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>LinqDemo.MainForm</StartupObject>
+    <RootNamespace>LinqDemo</RootNamespace>
+    <AssemblyName>LinqDemo</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <OptionExplicit>On</OptionExplicit>
+    <OptionCompare>Binary</OptionCompare>
+    <OptionStrict>Off</OptionStrict>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>LinqDemo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>LinqDemo.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Devart.Data.Linq" />
+    <Reference Include="Devart.Data.MySql.Linq, Version=4.9.2242.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.Oracle.Linq, Version=4.9.2242.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.PostgreSql.Linq, Version=4.9.2242.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.SQLite.Linq, Version=4.9.2242.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="Devart.Data.SqlServer.Linq, Version=4.9.2242.0, Culture=neutral, PublicKeyToken=09af7300eec23701, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BaseControl.Designer.vb">
+      <DependentUpon>BaseControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="BaseControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConnectionDialog.Designer.vb">
+      <DependentUpon>ConnectionDialog.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConnectionDialog.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CrmDataContext.vb" />
+    <Compile Include="MainForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.vb">
+      <DependentUpon>MainForm.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.vb" />
+    <Compile Include="MasterDetail\MasterDetailControl.Designer.vb">
+      <DependentUpon>MasterDetailControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MasterDetail\MasterDetailControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Queries\QueriesControl.Designer.vb">
+      <DependentUpon>QueriesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Queries\QueriesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SubmitChanges\SubmitChangesControl.Designer.vb">
+      <DependentUpon>SubmitChangesControl.vb</DependentUpon>
+    </Compile>
+    <Compile Include="SubmitChanges\SubmitChangesControl.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ConnectionDialog.resx">
+      <DependentUpon>ConnectionDialog.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasterDetail\MasterDetailControl.resx">
+      <DependentUpon>MasterDetailControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Queries\QueriesControl.resx">
+      <DependentUpon>QueriesControl.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SubmitChanges\SubmitChangesControl.resx">
+      <DependentUpon>SubmitChangesControl.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\App.Config">
+      <Link>App.Config</Link>
+    </None>
+    <EmbeddedResource Include="..\CrmDataMappingSqlClient.lqml">
+      <Link>CrmDataMappingSqlClient.lqml</Link>
+      <Generator>DevartLinqToSqlGenerator</Generator>
+      <LastGenOutput>CrmDataMappingSqlClient.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\CrmDataMappingMySql.lqml">
+      <Link>CrmDataMappingMySql.lqml</Link>
+      <Generator>DevartLinqToSqlGenerator</Generator>
+      <LastGenOutput>CrmDataMappingMySql.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\CrmDataMappingOracle.lqml">
+      <Link>CrmDataMappingOracle.lqml</Link>
+      <Generator>DevartLinqToSqlGenerator</Generator>
+      <LastGenOutput>CrmDataMappingOracle.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\CrmDataMappingPostgreSql.lqml">
+      <Link>CrmDataMappingPostgreSql.lqml</Link>
+      <Generator>DevartLinqToSqlGenerator</Generator>
+      <LastGenOutput>CrmDataMappingPostgreSql.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="..\CrmDataMappingSQLite.lqml">
+      <Link>CrmDataMappingSQLite.lqml</Link>
+      <Generator>DevartLinqToSqlGenerator</Generator>
+      <LastGenOutput>CrmDataMappingSQLite.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="My Project\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

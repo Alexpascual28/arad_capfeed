@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?> 
+<!DOCTYPE HelpIndex>
+<HelpIndex
+  DTDVersion = "1.0"
+  Name="NamedUrlIndex"
+  AutoInclude = "Yes"
+  Merge="Yes"
+  Sort="Yes"
+  Title="NIndex"
+  Visible="No"
+  LangId="1033">
+
+  <Keyword Term="HomePage">
+    <Jump Url = "GettingStarted.html"/>
+  </Keyword>
+
+  <Keyword Term="DefaultPage" Ref="HomePage"/>
+
+  <Keyword Term="AboutPageInfo">
+    <Jump Url = "AboutInfo.html"/>
+  </Keyword>
+
+  <Keyword Term="AboutPageIcon">
+    <Jump Url = "AboutIcon.html"/>
+  </Keyword>
+
+</HelpIndex>

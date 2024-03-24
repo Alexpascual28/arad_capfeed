@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE HelpCollection>
+<HelpCollection
+  DTDVersion="1.0"
+  FileVersion="2.00.0.0"
+  LangId="1033"
+  Title="Devart LinqConnect"
+  Copyright="Devart">
+
+  <AttributeDef File="LinqConnect.HxA" />
+  <TOCDef File="LinqConnect.HxT" />
+  <KeywordIndexDef File="LinqConnectK.HxK" />
+  <KeywordIndexDef File="LinqConnectF.HxK" />
+  <KeywordIndexDef File="LinqConnectN.HxK" />
+
+  <ItemMoniker Name="!DefaultToc" 
+	ProgId="HxDs.HxHierarchy" 
+	InitData="" />
+  <ItemMoniker Name="!DefaultFullTextSearch" 
+	ProgId="HxDs.HxFullTextSearch" 
+	InitData="" />
+  <ItemMoniker Name="!DefaultKeywordIndex" 
+	ProgId="HxDs.HxIndex" 
+	InitData="K" />
+  <ItemMoniker Name="!DefaultAssociativeIndex" 
+	ProgId="HxDs.HxIndex" 
+	InitData="A" />
+  <ItemMoniker Name="!DefaultContextWindowIndex" 
+	ProgId="HxDs.HxIndex" 
+	InitData="F" />
+  <ItemMoniker Name="!DefaultNamedUrlIndex" 
+	ProgId="HxDs.HxIndex" 
+	InitData="NamedUrlIndex"/>
+</HelpCollection>

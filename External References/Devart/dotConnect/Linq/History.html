@@ -1,0 +1,2616 @@
+<!-- saved from url=(0013)about:internet --> <!-- Disable WinXP SP2 and Vista warning when opened locally -->
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <title>Devart LinqConnect History</title>
+  <meta content="text/html; charset=utf-8" http-equiv="content-type">
+  <meta name="description" content="The detailed history of all changes and bugfixes made in LinqConnect" />
+
+<style type="text/css">
+body {
+  overflow: hidden;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 0px 0px 0px;
+  background: #ffffff;
+  color: #000000;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  font-size: 70%;
+  width: 100%;
+  }
+p
+  {
+  margin: .5em 0em .5em 0em;
+  }
+ol, ul
+  {
+  margin-top: .5em;
+  }
+li
+  {
+  margin-bottom: .5em;
+  }
+ul p, ol p, dl p
+  {
+  margin-left: 0em;
+  }
+blockquote.dxOverload
+  {
+  margin: .5em 1.5em .5em 1.5em;
+  }
+h1, h2, h3, h4
+  {
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  margin-bottom: .4em;
+  margin-top: 1em;
+  font-weight: bold;
+  }
+h1
+  {
+  font-size: 120%;
+  margin-top: 0em;
+  }
+h2
+  {
+  font-size: 130%;
+  }
+h3
+  {
+  font-size: 115%;
+  }
+h4
+  {
+  font-size: 100%;
+  }
+.dxH1, .dxH2, .dxH3, .dxH4
+  {
+  margin-left: -18px;
+  }
+A
+  {
+  color: #0000FF;
+  }
+A:link
+  {
+  color: #0000FF;
+  }
+A:active
+  {
+  color: #000080;
+  }
+A:visited
+  {
+  color: #800080;
+  }
+A:hover
+  {
+  color: #FF0000;
+  }
+pre
+  {
+  font-family: Courier New;
+  font-size: 9pt;
+  color: #000060;
+  margin-top: 0px;
+  }
+code, p.example, p.sourcecode, table.sourcecode, tr.sourcecode, td.sourcecode
+  {
+  font-family: Courier New;
+  font-size: 9pt;
+  color: #000060;
+  }
+div#pagetop {
+  margin: 0px;
+  padding: 0px;
+  background-color: #99ccff;
+  height: 44;
+  width: 100%;
+  border-bottom: 1px solid #999999;
+  }
+div#pagebody {
+  margin: 0px 0px 0px 0px;
+  padding: 5px 10px 0px 22px;
+  height: 90%;
+  width: 100%;
+  overflow: auto;
+  background-color: #FFFFFF;
+  vertical-align: top;
+  }
+table#BannerTable
+  {
+  width: 100%;
+  height: 100%;
+  border-collapse:collapse;
+  font-family: Verdana, Arial, Helvetica, sans-serif;
+  }
+table#BannerTable td
+  {
+  padding-left: 8px;
+  padding-right: 8px;
+  }
+tr#BannerTopRow
+  {
+  font-style: italic;
+  font-size: 70%;
+  }
+tr#Banner2ndRow
+  {
+  font-weight: bold;
+  font-size: 80%;
+  }
+table.filtereditemlisttable, table.xmldoctable
+  {
+  width: 95%;
+  margin-top: .6em;
+  margin-bottom: .3em;
+  border-width: 1px 1px 0px 0px;
+  border-style: solid;
+  border-color: #999999;
+  background-color: #999999;
+  font-size: 100%;
+  border-collapse:collapse;
+  }
+table.filtereditemlisttable th, table.filtereditemlisttable td, table.xmldoctable th, table.xmldoctable td
+  {
+  border-style: solid;
+  border-width: 0px 0px 1px 1px;
+  border-style: solid;
+  border-color: #999999;
+  padding: 4px 6px;
+  text-align: left;
+  vertical-align: top;
+  }
+table.filtereditemlisttable th, table.xmldoctable th
+  {
+  background: #cccccc;
+  vertical-align: bottom;
+  }
+table.filtereditemlisttable td, table.xmldoctable td
+  {
+  background-color: #ffffff;
+  vertical-align: top;
+  }
+</style>
+
+<script type="text/javascript">
+
+var Engine;
+var enOpera = 'Opera';
+var enIE = 'IE';
+var enGecko = 'Gecko';
+
+function TestEngine()
+{
+  if (document.all) {
+    if (window.opera) {
+      Engine = enOpera;
+    }
+    else {
+      Engine = enIE;
+    }
+  }
+  else {
+    Engine = enGecko;
+  }
+}
+
+
+function AdjustContentSize()
+{
+  var cDiv = document.getElementById("pagebody");
+  if ((Engine == enGecko)||(Engine == enOpera))//amend padding
+    {
+      var w = document.body.clientWidth;
+      cDiv.style.width = w - 32;
+    }
+  
+    var h = document.body.clientHeight;
+    
+    if (h > 0)
+    {
+        var diff = 44;
+        
+        if ((Engine == enGecko)||(Engine == enOpera)) 
+        {
+           diff = diff + 6;
+        }        
+           
+        cDiv.style.height = h - diff + 'px';        
+    }
+}
+
+
+function Startup()
+{
+  //add startup code here
+}
+</script>
+
+</head>
+
+
+<body onresize="AdjustContentSize()" onload="Startup()">
+
+<div id="pagetop">
+  <table id="BannerTable">
+    <tr id="BannerTopRow">
+      <td>Devart LinqConnect History</td>
+      <td align="right">support@devart.com</td>
+    </tr>
+    <tr id="Banner2ndRow">
+      <td>History</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+
+<div id="pagebody">
+<!-- begin content -->
+
+<p><b>4.9.2242 03-Jun-21</b></p>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Schemas of type E (External Login from Azure Active Directory) are supported in Create Model Wizard / Update From Database / Update To Database (SQL Server)</li>
+  <li>Detection of GENERATED ALWAYS AS ROW START and GENERATED ALWAYS AS ROW END columns in SQL Server 2016 and higher by Create Model Wizard / Update From Database Wizard is implemented</li>
+  <li>The bug with an invalid attempt to add a reference to Devart.Data.dll by Create Model Wizard is fixed (SQL Server)</li>
+  <li>The bug with creating app.config in Visual Studio .NET Framework projects, when the "Rewrite connection string during regeneration" option is turned off in Model Settings, is fixed</li>
+   <li>The bug with ignoring template's Validation Error Messages values in the generated code, when class property's Validate Expression is initialized and Validate Format is set to a non-default value, is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.2203 09-Apr-21</b></p>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with throwing "bufferAdapter is not a VsTextDocData" when saving a model in .NET Core, .NET Standard, .NET 5, .NET 6 projects of Visual Studio 2019 is fixed</li>
+  <li>The bug with adding tables to a model by Create Model Wizard, when the Database connection string parameter is not set, is fixed (MySQL)</li>
+</ul>
+<br>
+
+
+<p><b>4.9.2197 01-Apr-21</b></p>
+<ul>
+  <li>Visual Studio 2019 version 16.10 Preview is supported</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>.NET 6.0 is added to the list of available Target Framework versions in Create Model Wizard and Model Settings</li>
+  <li>The new options "Don't show this message again" in the prompt window and "Prompt before generating code when there are model validation warnings" in the menu Options are implemented in a standalone Entity Developer to provide the ability not to stop code generation by warnings</li>
+   <li>The Data Transfer Object template is improved:</li>
+  <ul>
+	<li>The new template property Serialization Library is added for specifying library used for serialization, possible values are Data Contract, JSON (Newtonsoft.Json), JSON (Microsoft.Text.Json), YamlDotNet</li>
+	<li>The new extended property Do Not Serialize is added for properties and navigation properties to exclude them from serialization</li>
+	<li>The new extended property Serialization Name is added for properties and navigation properties to set custom names in serialization</li>
+	<li>The behavior is changed: WCF Data Contract Attributes is set to False by default now</li>
+  </ul>
+   <li>The following properties are marked as obsolete:</li>
+  <ul>	
+	<li>the WCF Data Contract Attributes property of the Data Transfer Object template</li>
+	<li>the WCF DataMember Attribute on Navigation Properties property of the Data Transfer Object template</li>
+  </ul>
+  <li>The bug with creating app.config in Visual Studio .NET Core projects is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.2173 18-Feb-21</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br>
+
+<p><b>4.9.2149 14-Jan-21</b></p>
+<ul>
+  <li>The new property Local is added to the Table and Table&ltT&gt classes to return a collection of the entities attached to the context</li>
+  <li>The new method GetEntityState(object entity) is added to Table class and ITable interface to return one of the EntityState values</li>
+  <li>The bug with throwing "Bad key member '...' in association '...' of type '...'." in runtime by .NET Standard compliant assemblies is fixed</li>
+  <li>The bug with throwing "dbMonitor is not active" by the DataContext.DatabaseExists() functionality, when LinqMonitor is not used, is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The new attribute DisplayName is implemented for model objects' extended properties which are available via template properties</li>
+  <li>The new options --ContextNamespace and --DefaultNamespace are added to the Create-Model command of Console Entity Developer</li>
+  <li>The bug with setting additional keyboard mapping scheme via menu Options on Windows with German display language is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.2129 17-Dec-20</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br>
+
+<p><b>4.9.2119 03-Dec-20</b></p>
+<ul>
+   <li>Visual Studio 2019 version 16.9 Preview is supported</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with adding new arguments at the end of argument list instead of actual position in method signature by Update From Database Wizard is fixed</li>
+  <li>The bug with placing procedure with no parameters in the Procedures node instead of being enlisted in its package's node of Update From Database Wizard tree in the case of Oracle 18c and higher is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.2096 29-Oct-20</b></p>
+<ul>
+  <li>PostgreSQL 13 is supported</li>
+  <li>The bug with Visual Studio 2019 integration, when both v16.7 RTM and v16.8 Preview are installed on the same computer, is fixed </li>
+  <li>The bug with using nullable numeric types within subqueries is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Schemas of type A (Application role) are supported in Create Model Wizard / Update From Database / Update To Database (SQL Server)</li>
+  <li>The bug with reading templates from *.edps by console Entity Developer is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.2076 01-Oct-20</b></p>
+<ul>
+  <li>Visual Studio 2019 version 16.8 Preview is supported</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with reading settings from *.edps by console Entity Developer is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.2067 17-Sep-20</b></p>
+<ul>
+  <li>The bug with SQL generation of the explicit cast to FLOAT is fixed (SQL Server)</li>
+  <li>The bug with subtracting a TimeSpan value from the DATETIME column is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The error message in console Entity Developer is improved: now the text includes the list of all available templates if the specified name of template was incorrect</li>
+  <li>The bug with saving a new model, which has never been saved before, after some time of work in a standalone Entity Developer is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.2033 30-Jul-20</b></p>
+<ul>
+  <li>The bug with the overload of IndexOf() method, that accepts CurrentCultureIgnoreCase as an argument, is fixed (SQL Server)</li>
+</ul>
+<br>
+
+<p><b>4.9.2023 16-Jul-20</b></p>
+<ul>
+  <li>The overloads of Contains(), StartsWith(), EndsWith(), IndexOf(), Equals(), Compare() methods, that accept StringComparison as an argument, are supported (SQL Server)</li>
+  <li>The overload of Compare() method, that accepts StringComparison as an argument, is supported (PostgreSQL)</li>
+  <li>The "Could not find element type in model" bug when loading XML mapping in .NET Standard LinqConnect assemblies is fixed</li>
+   <li>The bug with using enums via .NET Standard compliant assemblies is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with detecting FK relationships to tables in other schemas by Create Model Wizard and Update From Database Wizard is fixed</li>
+ </ul>
+<br>
+
+<p><b>4.9.2003 17-Jun-20</b></p>
+<ul>
+  <li>Visual Studio 2019 version 16.7 Preview is supported</li>
+  <li>The overloads of Contains(), StartsWith(), EndsWith(), IndexOf(), Equals() methods, that accept StringComparison as an argument, are supported (PostgreSQL)</li>
+  <li>The bug with materializing elements, the types of which are explicitly converted from non-nullable to nullable on the client side, is fixed</li>
+  <li>The bug with incorrect detection of altered column comment in a many-to-many association join table by Update From Database Wizard is fixed</li>
+  <li>The bug with mapping INT without explicitly specified display width is fixed (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>.NET 5 is added to the list of available Target Framework versions in Create Model Wizard and Model Settings in LinqConnect models</li>
+  <li>Console Entity Developer improvements:</li>
+  <ul>
+	  <li>Import of stored procedures and functions via Create-Model command is supported</li>
+	  <li>The new options --Procedures and --Functions are added to Create-Model command for filtering stored procedures and functions; by default all procedures/functions are imported</li>
+	  <li>The new option --Execute is added to Create-Model command for executing procedures/functions to get metadata from result set</li>
+	  <li>The asterisk symbol (*) is supported in --Tables and --Views parameters of Create-Model to include all objects</li>
+	  <li>The bug with opening connection via some supported providers is fixed</li>
+	  <li>The bug with enumerating values separated with comma and without whitespace in --Templates, --Schemas, --Tables parameters is fixed</li>
+  </ul>
+ <li>The list of keywords and reserved words of Oracle, MySQL, PostgreSQL being quoted by Entity Developer is updated</li>
+ <li>Retrieving SQL Server metadata of cross-schema foreign keys by Create Model Wizard and Update From Database Wizard is optimized (SQL Server)</li>
+  <li>The compatibility issue with JetBrains ReSharper is fixed</li> 
+  <li>The behavior of Create Model Wizard and Update From Database Wizard is changed: timeout used for reading SQL Server metadata is greatly increased (SQL Server)</li>
+  <li>The behavior is changed: only one confirmation for executing stored procedure is requested by Entity Developer when drag&drop-ing procedure from Database Explorer to Model Explorer or diagram surface</li>
+  <li>The bug with retrieving metadata of string columns' default values in MySQL 8 is fixed</li>
+  <li>The bug with droping and recreating indexes by Update From Database Wizard, when there are unique indexes with the same name in different tables, is fixed (SQL Server)</li>
+  <li>The bug with throwing "Index was outside the bounds of the array" by Create Model Wizard and Update From Database Wizard, when getting metadata from result set with datetime2 or/and time columns returned by Table Valued Function, is fixed (SQL Server)</li>
+ </ul>
+<br>
+
+<p><b>4.9.1949 02-Apr-20</b></p>
+<ul>
+   <li>The insert of the object, the type of which is an unmapped class inherited from a mapped class, is supported </li>
+   <li>The bug with throwing System.NullReferenceException, when constructing the error saying that unmapped class is not supported, is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Model file tree in .NET Core / .NET Standard projects is improved: all generated code files and model files are nested under the same node in Solution Explorer</li>
+</ul>
+<br>
+
+<p><b>4.9.1920 20-Feb-20</b></p>
+<ul>
+  <li>The bug with case insensitive comparison via string.Compare() is fixed (Oracle)</li>
+  <li>The bug with returning the generated value for the property with Auto-Sync=OnInsert, which corresponds to non-Identity column, is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Graph tables in SQL Server 2019 are supported (SQL Server)</li>
+  <li>The behavior is changed: columns with IsHidden=1 in SQL Server 2019 are ignored by Create Model Wizard (SQL Server)</li>
+  <li>The bug with loosing non-default precision of DATETIME2 and TIME data types by Update To Database / Generate Database Script wizards is fixed (SQL Server)</li>
+  <li>The bug with detecting MySQL computed columns is fixed (MySQL)</li>
+</ul>
+<br>
+
+<p><b>4.9.1878 23-Dec-19</b></p>
+<ul>
+  <li>Visual Studio 2019 version 16.5 Preview is supported</li>
+  <li>The bug with using Toolbox component DbLinqDataSource in web projects of Visual Studio 2013, 2015, 2017, 2019 is fixed </li>
+  <li>The bug with quoting SQL Server reserved keywords used as identifiers in Code-First mapping is fixed (SQL Server) </li>
+  <li>The bug with creating a Date parameter for the property mapped to DbType="DATE" and used in .WHERE() clause of LINQ query is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The 12cR2 option is added to the list of available Oracle versions in Model Synchronization Settings</li>
+</ul>
+<br>
+
+<p><b>4.9.1856 21-Nov-19</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br>
+
+<p><b>4.9.1841 31-Oct-19</b></p>
+<ul>
+  <li>Visual Studio 2019 version 16.4 Preview is supported</li>
+</ul>
+<br>
+
+<p><b>4.9.1836 24-Oct-19</b></p>
+<ul>
+  <li>PostgreSQL 12 is supported</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The "Optimize rendering for screens with different pixel densities" feature of Visual Studio 2019 is supported</li>
+   <li>The compatibility issue with JetBrains ReSharper is fixed</li> 
+</ul>
+<br>
+
+<p><b>4.9.1807 12-Sep-19</b></p>
+<ul>
+  <li>The integration with Visual Studio 2019 is improved: now the installation detects both 2019 Release and 2019 Preview versions</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The behaviour is changed: a plural form of names ending with "s" now has a longer version (for example, status -> statuses)</li>
+   <li>The bug with detecting FK relation based on unique index without unique constraint is fixed</li>
+   <li>The bug with invalid attempt to cast unsupported Visual Studio project to type 'VSLangProj.VSProject' is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.1774 25-July-19</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br>
+
+<p><b>4.9.1759 04-July-19</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The ability to disable generation of the byte order mark (BOM) in the beginning of code files in a standalone Entity Developer is implemented</li>
+  <li>The time to wait while trying to retrieve metadata before terminating the attempt and generating an error by Create Model Wizard / Update From Database Wizard / Update To Database Wizard is increased to 180 seconds for SQL Server</li>
+  <li>The bug with design time copy/cut/paste functionality for entities is fixed</li>
+</ul>
+<br>
+
+<p><b>4.9.1739 06-Jun-19</b></p>
+<ul>
+  <li>Deprecated design-time Synchronous API calls are no longer used with Visual Studio 2019 and Visual Studio 2017</li>
+  <li>The bug with executing incorrect SQL request (cached during one of the previous calls), when a variable initialized with an empty collection participates in LINQ query, is fixed</li>
+  <li>The bug with throwing the exception "Cannot open database "newDB" requested by the login. The login failed." while performing the CreateDatabase(true, true) method is fixed (SQL Server)</li>
+  <li>The bug with throwing System.ArgumentNullException on DeleteOnSubmit(entity) called after Attach(entity) is fixed (SQL Server)</li>
+  <li>The bug with running stored procedure in PostgreSQL Server 11 or higher is fixed (PostgreSQL)</li>
+</ul>
+<br>
+
+<p><b>4.9.1703 11-Apr-19</b></p>
+<ul>
+  <li>Visual Studio 2019 is supported</li>
+  <li>The bug with the materialization of UInt32 values greater than Int32.MaxValue is fixed (SQL Server)</li>
+</ul>
+<br>
+
+<p><b>4.8.1694 28-Mar-19</b></p>
+<ul>
+  <li>Visual Studio 2019 Release Candidate 4 is supported</li>
+  <li>The bug with using the System.Char argument as literal or variable in LINQ query is fixed (SQLite)</li>
+</ul>
+<br/>
+
+<p><b>4.8.1665 14-Feb-19</b></p>
+<ul>
+   <li>The bug with executing incorrect SQL request (cached during one of the previous calls), when .Contains() is invoked in the multithreaded application, is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with quoting keywords and reserved words of MySQL 8.0 is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.8.1644 10-Jan-19</b></p>
+<ul>
+   <li>PostgreSQL 11 is supported</li>
+   <li>The new overload DataContext.Refresh(bool ignoreErrors, RefreshMode mode, object entity) is added for ignoring errors during refresh</li>
+   <li>The existing overload DataContext.Refresh(RefreshMode mode, object entity) is improved: its check avoids the try to refresh the entity that is added to the context but not submitted to the database</li>
+   <li>The type and text of the error generated by the DataContext.Refresh(RefreshMode mode, object entity) method, when the passed entity doesn't exist in database, is fixed</li>
+   <li>The bug with generating the COALESCE expression is fixed (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with using ASP.NET Core Web Application (.NET Framework) and Azure Functions v1 (.NET Framework) projects in Visual Studio 2017 is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.8.1615 29-Nov-18</b></p>
+<ul>
+  <li>The bug with throwing "Operation could destabilize the runtime." during materialization of result set, when query includes a cast to the base unmapped class, is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.8.1590 25-Oct-18</b></p>
+<ul>
+  <li>The bug with updating the existing entities that participate in FK associations is fixed in .NET Standard 2 compliant assemblies</li>
+  <li>The bug with filtering by the DateTimeOffset property is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with throwing "Custom tool error: bufferAdapter is not a VsTextDocData" in .NET Standard projects is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.8.1566 20-Sep-18</b></p>
+<ul>
+  <li>The bug with applying LEFT JOIN LATERAL in the generated SQL is fixed (PostgreSQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>Using an extended property of type OutputInfo is supported</li>
+    <li>Code generated for nullable properties is simplified: now T? is generated instead of System.Nullable&ltT&gt</li>
+</ul>
+<br/>
+
+<p><b>4.8.1553 30-Aug-18</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with creating and opening the model in .NET Core project after VS 2017 upgrade to v15.8 is fixed</li>
+  <li>The bug with setting password as clear text in connection string when "Persist Security Info=False;" is fixed (Oracle, MySQL, PostgreSQL, SQL Server)</li>
+  <li>The bug with applying a custom mapping for uniqueidentifier and decimal types specified via Servers Options is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.8.1539 09-Aug-18</b></p>
+<ul>
+  <li>The bug with using string.IsNullOrEmpty(propertyName) in LINQ query is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.8.1527 19-Jul-18</b></p>
+<ul>
+  <li>The bug with throwing the "Socket.IOControl handles Windows-specific control codes and is not supported on this platform." error by .NET Standard compliant assemblies on Linux and MacOS is fixed (MySQL, PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.8.1509 21-Jun-18</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with generating ParameterDirection.InputOutput for SQL Server OUTPUT parameters is fixed </li>
+</ul>
+<br/>
+
+<p><b>4.8.1489 24-May-18</b></p>
+<ul>
+  <li>A destructor for DataContext is added</li>
+</ul>
+<br/>
+
+<p><b>4.8.1471 27-Apr-18</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+
+<p><b>4.8.1452 29-Mar-18</b></p>
+<ul>
+  <li>The XmlMappingSource.FromResource method is supported in .NET Standard provider assemblies</li>
+  <li>The behavior is changed: all existing overloads of the method DataContext.Query() are replaced with DataContext.Query<TResult>(String,params Object[])</li>
+  <li>The behavior is changed: the License Key connection string parameter value is not sent to the LinqMonitor instance when "Persist Security Info=false;"</li>
+  <li>The bug with mapping a function that returns REFCURSOR is fixed (PostgreSQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>The new Retrieve Cross Database Relations option is implemented in Model Settings for detecting FK relations between tables in different databases (MySQL)</li>
+  <li>The bug with the Retrieve Data functionality on the base class of TPH inheritance is fixed</li>
+  <li>The bug with the Find Next functionality of T4 Editor embedded into Visual Studio is fixed</li>
+  <li>The bug with throwing the "IDE not supported" exception by Entity Developer in Visual Studio 2017 of versions 15.6.* is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.8.1423 15-Feb-18</b></p>
+<ul>
+  <li>The generation of CROSS JOIN LATERAL and LEFT JOIN LATERAL when connecting to PostgreSQL Server 9.3 or higher is supported (PostgreSQL)</li>
+  <li>The bug with throwing MethodAccessException by .NET Standard provider assemblies when referencing them to a project, targeting Full .NET Framework, is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>Identity columns in PostgreSQL 10 are supported</li>
+</ul>
+<br/>
+
+<p><b>4.8.1398 11-Jan-18</b></p>
+<ul>
+  <li>The bug with initializing DataContext with non-existing database name in its connection string is fixed (SQL Server)</li>
+  <li>The bug with ignoring the DateTime precision by CreateDatabase() is fixed (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The ModelNameAsFilesPrefix property is implemented in the RepositoryAndUnitOfWork template</li>
+  <li>The behaviour is changed: a base class in TPT Inheritance is allowed to be abstract now</li>
+</ul>
+<br/>
+
+<p><b>4.8.1368 23-Nov-17</b></p>
+<ul>
+  <li>The performance of generating complex queries is improved</li>
+  <li>The bug with exceeding a length of duplicated column aliases in the generated SQL is fixed (MySQL, Oracle, PostgreSQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The usage of long identifiers (up to 140 symbols) for naming model objects is supported</li>
+</ul>
+<br/>
+
+<p><b>4.8.1350 30-Oct-17</b></p>
+<ul>
+   <li>.NET Standard 2.0 is supported</li>
+   <li>.NET Core 2.0 is supported</li>
+   <li>The macaddr8 data type introduced in PostgreSQL 10 is supported</li>
+  <li>The bug with .Union().Any() is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The .NET Standard 2.0 projects in Visual Studio 2017 are supported</li>
+   <li>The .NET Core 2.0 projects in Visual Studio 2017 are supported</li>
+  <li>The macaddr8 data type introduced in PostgreSQL 10 is supported</li>
+  <li>The bug with escaping invalid XML characters in the comments generated by templates is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>4.7.1317 06-Sep-17</b></p>
+<ul>
+  <li>The integration with Visual Studio 2017 is improved: the installation is now silent, without VSIX Installer prompt window</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The Devart Visual Studio packages registration into Visual Studio 2017 is improved: the packages are now available for all Windows accounts</li>
+  <li>The bug with losing Toolbar and docking customizations of a standalone designer during reinstall is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.7.1295 03-Aug-17</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.7.1283 13-Jul-17</b></p>
+<ul>
+   <li>The bug with SubmitChanges() when there are associations to classes belonging to a TPT hierarchy in a model is fixed (MySQL)</li>
+</ul>
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with running 'install-package Devart.Data.SqlServer.Linq' on the last step of Create Model Wizard is fixed (SQL Server)</li>
+</ul>
+
+<br/>
+
+<p><b>4.7.1268 22-Jun-17</b></p>
+<ul>
+   <li>The bug with applying the License Key connection string parameter (concerns .NET Standard 1.3 compliant assemblies only) on Linux is fixed</li>
+   <li>The bug with using unsigned integer parameters is fixed (MySQL)</li>
+</ul>
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with generating .NET Core code by LinqConnect template for the "Use the following connection string from App.config" option in Model Settings is fixed</li>
+   <li>The bug related to the conflict of Entity Developer with dbForge SQL Complete is fixed</li>
+</ul>
+
+<br/>
+
+<p><b>4.7.1249 25-May-17</b></p>
+<ul>
+   <li>.NET Core is supported</li>
+   <li>The NuGet packages with .NET Standard 1.3 (.NET Core) compliant assemblies are uploaded to www.nuget.org</li>
+   <li>The bug with running LINQ queries, which invoke .NET methods on client side during materialization of result set, is fixed</li>
+   <li>The bug with materializing scalar value collection when converting values on the client side is fixed</li>
+   <li>The bug with returning incorrect data by the 'BooleanProperty ?? false' LINQ query is fixed (MySQL)</li>
+</ul>
+<i>Entity Developer</i>
+<ul>
+   <li>Visual Studio 2017 is supported</li> 
+   <li>The .NET Core projects in Visual Studio 2017 are supported</li>
+   <li>The Snake case in both Model and Database naming rules is supported via the new "Add underscore" option</li>
+</ul>
+
+<br/>
+
+<p><b>4.6.1199 16-Mar-17</b></p>
+<ul>
+   <li>Visual Studio 2017 is supported</li>
+   <li>The HSTORE data type is supported (PostgreSQL)</li>
+   <li>The CITEXT data type is supported (PostgreSQL)</li>
+   <li>The JSON data type is supported (MySQL)</li>
+   <li>The bug with loosing decimal precision by the CreateDatabase() functionality is fixed (MySQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.1189 02-Mar-17</b></p>
+<ul>
+   <li>Visual Studio 2017 Release Candidate 4 is supported</li> 
+</ul>
+<br/>
+
+<p><b>4.5.1174 09-Feb-17</b></p>
+<ul>
+   <li>Visual Studio 2017 Release Candidate 3 is supported</li> 
+   <li>The bug with using DataLoadOptions.LoadWith is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.5.1169 02-Feb-17</b></p>
+<ul>
+  <li>The bug with the utf8mb4 character set with MariaDB is fixed (MySQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.1156 16-Jan-17</b></p>
+<ul>
+  <li>Visual Studio 2017 Release Candidate is supported</li>
+  <li>The behavior is changed: DataContext.CreateDatabase() uses now the same datatype names like the ones used in model mapping (SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with detecting auto generated columns by Create Model Wizard and Update Model From Database Wizard is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.1141 22-Dec-16</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.1131 08-Dec-16</b></p>
+<ul>
+  <li>The 'Do not install assemblies in the GAC' check box that allows disabling placing the provider assemblies to the GAC is added to the Install Wizard</li>
+  <li>The exception message for invoking CreateDatabase() for the model which includes an association with missing end is improved</li>
+  <li>The bug with submitting records to the database via a TPT inheritance is fixed (MySQL)</li>
+  <li>The bug with throwing System.InvalidCastException when inserting / updating the System.Object properties is fixed (MySQL, SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The possibility to choose whether to add new entities to a diagram or not in Update From Database Wizard is implemented</li>
+ </ul>
+<br/>
+
+
+<p><b>4.5.1100 20-Oct-16</b></p>
+<ul>
+  <li>The bug with returning incorrect data by the 'BooleanProperty ?? false' LINQ query is fixed (MySQL)</li>
+</ul>
+<br/>
+
+
+<p><b>4.5.1090 06-Oct-16</b></p>
+<ul>
+  <li>The bug with reading columns of the base type in TPT inheritance via .OfType() of LINQ query is fixed</li>
+  <li>The bug with loading objects via association which targets to the base class of an inheritance with the materialized child class is fixed</li>
+  <li>The bug with throwing "Sequence contains more than one element" when reading objects of TPT hierarchy is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with retrieving metadata from PostgreSQL server with the intarray extension installed is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.1080 22-Sep-16</b></p>
+<ul>
+  <li>The bug with materialization in the multithreaded application is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.5.1066 01-Sep-16</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.1051 11-Aug-16</b></p>
+<ul>
+  <li>The bug with mapping DateTime2 database columns via DbType.DateTime2 parameter is fixed (SQL Server)</li>
+ </ul>
+<br/>
+
+<p><b>4.5.1036 21-Jul-16</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+ </ul>
+<br/>
+
+<p><b>4.5.1024 07-Jul-16</b></p>
+<i>Entity Developer</i>
+<ul>
+    <li>The possibility to set values of stored procedure parameters for getting metadata to generate automatically the corresponding complex type is implemented</li>
+ </ul>
+<br/>
+
+<p><b>4.5.1014 23-Jun-16</b></p>
+<i>Entity Developer</i>
+ <ul>
+  <li>The bug with applying the ON DELETE CASCADE option by Create Model Wizard and Update Model From Database Wizard is fixed (Oracle)</li>
+ </ul>
+<br/>
+
+<p><b>4.5.1004 09-Jun-16</b></p>
+<ul>
+ <li>The bug with setting string parameter data types in SQL statements generated basing on the Contains LINQ operator is fixed</li>
+ <li>The bug with quoting a database name by the DataContext.DeleteDatabase method is fixed (MySQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.995 26-May-16</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The DbProviderFactory provider registration in application's *.config is supported by the Entity Developer version integrated into Visual Studio</li>
+  <li>The default behaviour is changed: bit(2..8), bit(9..16), bit(17..32) are mapped to Byte, Int16, Int32 correspondingly by Create Model Wizard and Update Model From Database Wizard (MySQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.986 12-May-16</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.981 05-May-16</b></p>
+<ul>
+  <li>Bitwise And, Or, Xor, and Not operators are supported in LINQ queries for integer operands (SQL Server)</li>
+  <li>Bitwise And, Or, and Xor operators are supported in LINQ queries for integer operands (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>4.5.976 21-Apr-16</b></p>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with quotation of default values for the timestamp columns in the Generate Database Script / Update Database From Model functionality is fixed (PostgreSQL)</li>
+   <li>The bug with generating the "timestamp with time zone" columns in the Generate Database Script / Update Database From Model functionality is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.5.954 17-Mar-16</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.940 25-Feb-16</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.930 11-Feb-16</b></p>
+<ul>
+  <li>The bug with the Devart.Data.Oracle.Linq.Provider.OracleDataProvider initialization when working with a custom data provider is fixed (Oracle)</li>
+  <li>The bug with the DatabaseExists(), CreateDatabase(), DeleteDatabase() methods when working with a custom data provider is fixed (Oracle)</li>
+  <li>The bug with executing queries with parameters when working with a custom data provider is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with determination of NULL values as strings while reading metadata for columns with "DEFAULT NULL" via the Database-First approach is fixed (SQLite)</li>
+</ul>
+<br/>
+
+<p><b>4.5.921 21-Jan-16</b></p>
+<i>Entity Developer</i>
+<ul>
+   <li>The bug related to the incorrect change detection when updating database from model (the comments) is fixed (SQLite)</li>
+</ul>
+<br/>
+
+<p><b>4.5.901 24-Dec-15</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.896 17-Dec-15</b></p>
+<ul>
+   <li>The bug related to the "Unable to cast object of type 'Devart.Data.Linq.Engine.SqlColumnRef'" error when using a TPT inheritance is fixed</li>
+   <li>The bug related to the "No data exists for the row/column." error when using the LoadWith method is fixed (MySQL)</li>
+</ul>
+<br/>
+
+
+<p><b>4.5.881 26-Nov-15</b></p>
+<ul>
+   <li>The bug related to the "Index was out of range. Must be non-negative and less than the size of the collection." error when enumerating an IQueryable collection is fixed</li>
+   <li>The bug with materializing objects having EntitySet&ltT&gt fields via non-anonymous class that is not included in the model is fixed</li>
+   <li>The bug related to the "The argument 'value' was the wrong type. Expected 'System.Double'. Actual 'System.Single'." error when using GetValueOrDefault() method is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+
+<p><b>4.5.873 12-Nov-15</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.859 22-Oct-15</b></p>
+<ul>
+  <li>The bug related to the "Collection is read-only" error when loading mapping of a stored procedure/function that returns a class, mapped as Table, but not related to the DataContext class, is fixed</li>
+  <li>The bug related to using IQueryable&ltT&gt.Count() is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with applying naming rules for model properties is fixed</li>
+  <li>The bug related to the "Sequence contains no matching element" error in Update Wizards when working with TPH inheritances and many-to-many associations is fixed</li>
+  <li>The bug related to the StackOverflowException when deleting method from model in Model Explorer is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.5.844 01-Oct-15</b></p>
+<ul>
+  <li>The bug related to the "Parameterized query expects a parameter value which was not supplied" error when working with SQL Server Compact is fixed (SQL Server)</li>
+  <li>The bug related to the "cannot insert multiple commands into a prepared statement" error when deleting a record from a table, that has several many-to-many associations with several tables, is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.835 17-Sep-15</b></p>
+<ul>
+  <li>The Parent property is added to the IInheritanceConfiguration interface</li>
+  <li>The bug related to working with TPH inheritances and fluent mapping approach is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>The bug with wrong diagram layout is fixed</li>
+    <li>The bug with checking the evaluation period in the trial version is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.5.830 10-Sep-15</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.5.816 20-Aug-15</b></p>
+<ul>
+  <li>The possibility to use .IsRowVersion() method for properties with non-binary data types when using the fluent mapping approach is added</li>
+  <li>The bug with the materialization of anonymous types is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The behaviour is changed: now the 1:1 and 1:0..1 associations are displayed differently on the diagram</li>
+  <li>The bug with adding LinqConnect template for C# after adding the WCF RIA Domain Service template (Visual Basic) in Visual Basic projects is fixed</li>
+  <li>The bug with non-generated .IsRowVersion() method for entity properties with IsVersion = True when using the fluent mapping approach is fixed</li>
+  <li>The bug with adding tables with columns of array data types to the model is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.5.802 30-Jul-15</b></p>
+<ul>
+  <li>Visual Studio 2015 is supported</li>
+  <li>The bug with CreateAssociationConvention when working with the fluent mapping approach is fixed</li>
+  <li>The bug with ManyToManyNamesConvention when working with the fluent mapping approach is fixed</li>
+  <li>The bug related to the "The type initializer for 'Devart.Data.PostgreSql.PgSqlConnectionStringBuilder' threw an exception" error is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The support for materialized views is implemented (Oracle)</li>
+  <li>The bug with generating namespace for the IsExternal enum is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.795 16-Jul-15</b></p>
+<ul>
+  <li>The bug related to the "Object reference not set to an instance of an object" error on SubmitChanges() is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The possibility of setting default values for enum properties is implemented</li>
+  <li>The bug with freezing Visual Studio when using the Find dialog in large models is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.785 02-Jul-15</b></p>
+<ul>
+  <li>The support for columns with the 'uniqueidentifier DEFAULT NEWSEQUENTIALID()' data type is added (SQL Server)</li>
+  <li>The bug related to wrong SQL generation when using Count(condition)/ LongCount(condition) methods in the LINQ query is fixed (SQL Server)</li>
+  <li>The bug with materialization of classes with the same names, which are located in the different namespaces or which are the nested classes of the different classes, is fixed</li>
+  <li>The bug related to wrong SQL generation when using Count(condition)/ LongCount()/ LongCount(condition) methods in the LINQ query is fixed (MySQL, Oracle, PostgreSQL, SQLite)</li>
+</ul>
+<br/>
+
+<p><b>4.4.775 18-Jun-15</b></p>
+<ul>
+   <li>The OpenConnection() method is added to the DataContext class</li>
+   <li>The bug with not calling the InitializeConnection() method for a newly created connections while performing query or stored procedure is fixed</li>
+   <li>The bug with throwing an incorrect exception with the "Connection must be opened" message, while performing the CreateDatabase() method is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.4.760 28-May-15</b></p>
+<ul>
+  <li>Visual Studio 2015 Release Candidate is supported</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with detecting the default values of attributes added via the Attributes menu is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.745 07-May-15</b></p>
+<ul>
+  <li>The JSONB data type is supported (PostgreSQL)</li>
+  <li>The bug related to not submitting new records, when EntityRef of the corresponding entity class is set to null, is fixed</li>
+  <li>The bug related to re-materialization of objects of the same type when performing methods that are mapped to different stored procedures is fixed</li>
+   <li>The bug with loading metadata and query performing when ITable&lt;TEntity&gt is used instead of Table&lt;TEntity&gt is fixed</li>
+  <li>The bug with the materialization of UInt32 values greater than Int32.MaxValue is fixed</li>
+  <li>The bug related to the "Operand data type bit is invalid for minus operator" error is fixed (SQL Server)</li>
+</ul>
+
+<br/>
+
+<p><b>4.4.735 23-Apr-15</b></p>
+<ul>
+  <li>The bug related to the odd ESCAPE character in a generated SQL query after LIKE condition is fixed </li>
+  <li>The bug related to re-materialization of objects of the same type when performing various SQL-queries via ExecuteQuery() method in multi-threading applications is fixed</li>
+  <li>The bug with rounding decimal return values when performing stored functions is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The support of ID generators for primary keys in the Fluent Mapping template is added</li>
+</ul>
+<br/>
+
+<p><b>4.4.727 09-Apr-15</b></p>
+<ul>
+    <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.4.717 26-Mar-15</b></p>
+<ul>
+    <li>The dependency on the System.Windows.Forms.dll assembly is removed</li>
+    <li>The bug related to the wrong SQL generation (setting value for primary key column in UPDATE statement) when using the Attach(TEntity, asModified) method is fixed</li>
+    <li>The bug related the CompiledQueryCache locking issue is fixed</li>
+    <li>The bug related to working with the columns of the BINARY_FLOAT/BINARY_DOUBLE data type is fixed (Oracle)</li>
+    <li>The bug related to long default names of identifiers (for example, indexes, primary keys, foreign keys) when using CreateDatabase() method is fixed (MySQL, PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.4.697 26-Feb-15</b></p>
+<ul>
+    <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.4.690 12-Feb-15</b></p>
+<ul>
+  <li>The bug related to the "License not found" error (Oracle) in Metro style applications is fixed</li>
+  <li>The bug with referencing LinqConnect assemblies as Extension SDKs in Metro style applications (Windows 8.1) is fixed</li>
+  <li>The bug related to the "Cannot convert the value to GUID: System.Byte[]" error when working with eager loading and GUIDs is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.682 02-Feb-15</b></p>
+<i>Entity Developer</i>
+<ul>
+    <li>The bug with "Trial period expired" is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.680 29-Jan-15</b></p>
+<ul>
+    <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.4.671 15-Jan-15</b></p>
+<ul>
+    <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.4.651 18-Dec-14</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with opening nodes of views in Update Model Wizard is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>4.4.641 04-Dec-14</b></p>
+<ul>
+  <li>The bug related to memory leak errors when working with the disabled compiled query cache is fixed </li>
+</ul>
+<br/>
+
+<p><b>4.4.631 20-Nov-14</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The bug related to script generation by the "Generate Database Script" wizard with the "Include Drop" option is fixed</li>
+  <li>The bug related to resetting enum arguments of custom attributes in the standalone version is fixed</li>
+  <li>The bug with displaying the "Describe Stored Procedure" connection string parameter in the Connection Editor is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>4.4.621 06-Nov-14</b></p>
+<ul>
+    <li>The bug related to the InvalidOperationException when working with IMultipleResults is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with reading all constructor parameters for attributes when opening model is fixed</li>
+   <li>The bug with reading Default Value of database fields with explicit cast is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.4.612 23-Oct-14</b></p>
+<ul>
+    <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.4.602 09-Oct-14</b></p>
+<i>Entity Developer</i>
+<ul>
+    <li>The default behaviour is changed: the INTEGER database type is mapped now to System.Int64 .NET type when using Database-First approach; the new mapping will be applied after pressing Reset in Server Options settings of Entity Developer (SQLite)</li>
+</ul>
+<br/>
+
+<p><b>4.4.592 25-Sep-14</b></p>
+<i>Entity Developer</i>
+<ul>
+    <li>The behaviour is changed: Generate Database Script From Model saves the output in ASCII format if there are no unicode symbols in the script; UTF-8 is used otherwise</li>
+    <li>The bug with model creation when using multiple naming rules (suffixes, prefixes) is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.582 11-Sep-14</b></p>
+<ul>
+  <li>The bug related to the "The type initializer for 'Devart.Data.PostgreSql.PgSqlConnectionStringBuilder' threw an exception" error is fixed </li>
+</ul>
+<br/>
+
+<p><b>4.4.577 04-Sep-14</b></p>
+<ul>
+  <li>The bug related to the NullReferenceException on SubmitChanges, when working with association between classes involved in complex TPT hierarchy, is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The Remove Invalid Characters option (by default, True) is added to the Model Naming rules; if it is set to False, all invalid characters will be replaced with underscores</li>
+  <li>The bug related to the "An error occurred during an attempt to compile the template 'LinqConnect'." error in Windows Store applications is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.563 14-Aug-14</b></p>
+<ul>
+  <li>The bug with generation AUTO_INCREMENT for columns with INT/BIGINT data types, which have the corresponding entity properties with System.Decimal type and IsDbGenerated=true, via the CreateDatabase() method is fixed (MySQL)</li>
+  <li>The bug with generation UNSIGNED for columns with unsigned integer data types via the CreateDatabase() method is fixed (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The possibility to use relative paths to assemblies in code generation templates is implemented</li>
+</ul>
+<br/>
+
+<p><b>4.4.553 31-Jul-14</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with a format of generated DataAnnotations.RegularExpression for Numeric validate format is fixed</li>
+  <li>The bug related to incorrect detection of the default values with the cast operators is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.4.539 10-Jul-14</b></p>
+<ul>
+  <li>The bug with the missing "ASP.NET Dynamic Data LinqConnect Web Application" project template in Visual Studio 2013 is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.529 26-Jun-14</b></p>
+<ul>
+  <li>The bug related to the memory leak issue when working with EntityCachingMode = StrongReference is fixed</li>
+  <li>The bug related to the NullReferenceException when performing queries and working with EntityCachingMode = StrongReference is fixed</li>
+  <li>The bug related to the "There is no tables to process" error when using the CreateDatabase() method with the DataContext object, that is based on the empty model, is fixed</li>
+  <li>The bug related to the error when creating XmlMappingSource via the FromReader() method is fixed</li>
+  <li>The bug related to the "Cannot use "DateTime" type value in the "TimeSpan" type argument" error when comparing time values is fixed (SQL Server)</li>
+  <li>The bug related to the NullReferenceException on DataContext creation, when the fluent mapping is used and ServerDataType is not specified for the entity properties, is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.4.519 12-Jun-14</b></p>
+<ul>
+  <li>The possibility to add LinqConnect assemblies as Extension SDKs for SQLite, Oracle, MySQL and PostgreSQL databases in Metro style and Windows Phone applications (Windows 8.1) is added</li>
+  <li>The bug with adding new LinqConnect model in Silverlight applications (Visual Basic) is fixed</li>
+  <li>The bug related to using properties of the enum data type (Byte, SByte), that are used in the complex entity key, is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with resetting value of the extended properties for associations after reopening the model is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>4.4.509 29-May-14</b></p>
+<ul>
+  <li>The bug related to using properties of the enum data type, that are used in the complex entity key, is fixed</li>
+  <li>The bug related to the missing "Migrate to LinqConnect" item in the context menu of the LINQ to SQL models (*.dbml) in the Solution Explorer is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.4.499 15-May-14</b></p>
+<ul>
+  <li>The bug related to reading values of the string properties, that are database generated, when performing SubmitChanges() is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The behaviour is changed: now by default VARCHAR(8000) / NVARCHAR(4000) columns, instead of VARCHAR(MAX) / NVARCHAR(MAX), correspond to the string properties in the model (SQL Server)</li>
+  <li>The bug related to the storage and mapping regeneration via the "Update Database from Model" wizard, or via the "Regenerate Storage and Mapping" option of the diagram shortcut menu, when changing one DBMS to another, is fixed</li>
+  <li>The bug related to performing queries via Query Editor/Retrieve Data when working with the 'Enterprise Library' validation framework is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.484 24-Apr-14</b></p>
+<ul>
+  <li>The rowversion data type is supported (SQL Server)</li>
+  <li>The support for the comparison operators (==,! =,>,> =, <, <=) in LINQ queries for two objects of the Devart.Data.Linq.Binary type, that correspond to the rowversion/timestamp columns, is added (SQL Server)</li>
+  <li>The behaviour is changed: the new "OUTER APPLY is not supported by Oracle Database 11g and lower. Oracle 12c or higher is required to run this LINQ statement correctly. If you need to run this statement with Oracle Database 11g or lower, rewrite it so that it can be converted to SQL, supported by the version of Oracle you use." exception is added (Oracle)</li>
+  <li>The bug related to converting the System.Data.Linq.Binary data type to the Devart.Data.Linq.Binary data type when migrating the LINQ to SQL model (*.dbml) to the LinqConnect model (*.lqml) via the LinqConnect Migration Wizard is fixed (SQL Server)</li>
+  <li>The bug related to the objects of the Devart.Data.Linq.Binary data type when using SubmitChanges() is fixed (SQL Server)</li>
+  <li>The bug related to wrong order of the insert/delete operations on SubmitChanges when the autogenerated primary keys are used is fixed</li>
+  <li>The bug related to the incorrect script generation for column names (lower case) when working with the CreateDatabase()/DeleteDatabase() methods is fixed (PostgreSQL)</li>
+  <li>The bug with 'Load Test Editor' is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.4.473 10-Apr-14</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>SQL Server 2014 is supported</li>
+  <li>The bug related to the script generation by the "Generate Database Script"/"Update Database From Model" wizards for properties with 'Default Value = getdate()' is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.4.463 27-Mar-14</b></p>
+<ul>
+  <li>The JSON data type is supported (PostgreSQL)</li>
+  <li>The bug related to the incorrect detection of class type when working with the TPH inheritances and discriminators of the String/Decimal type is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with setting nullable type for EnumType property by the Data Transfer Object template is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>4.4.453 06-Mar-14</b></p>
+<ul>
+  <li>The CommandTimeout property is added to the DataProvider class</li>
+  <li>The behaviour is changed: now explicit deletion of the foreign keys by their names is not performed via the DeleteDatabase() method (SQL Server, MySQL)</li>
+  <li>The bug related to the invalid generation of the foreign keys DDL for many-to-many associations when using CreateDatabase method is fixed</li>
+  <li>The bug with the query cache when performing several queries, having nullable parameters, sequentially is fixed</li>
+  <li>The bug related to the "Cannot use "timestamp(6)" type value in "DateTimeOffset" type argument" error is fixed (PostgreSQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The behaviour is changed: now paths to assemblies with attributes (Model Settings -> Model -> Attributes) are saved and used as relative paths</li>
+  <li>The bug with invalid code generation when different namespaces for context and entity classes are used in the VB.NET projects is fixed</li>
+  <li>The bug related to the "Timeout expired error" when working with replication stored procedures is fixed (SQL Server)</li>
+  <li>The bug related to the "Data is Null. This method or property cannot be called on Null values" when retrieving metadata is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+
+<p><b>4.4.441 18-Feb-14</b></p>
+<i>Entity Developer</i>
+<ul>
+    The behaviour is changed: now replication stored procedures are not shown on the "Select database objects" step of the Create/Update Model From Database wizard (SQL Server)
+</ul>
+<br/>
+
+<p><b>4.4.438 13-Feb-14</b></p>
+<ul>
+  <li>The behaviour is changed: now the script is generated with "ON DELETE NO ACTION" when using the CreateDatabase() method and the "Delete Rule" for the association is set to "NO ACTION"</li>
+  <li>The behaviour is changed: now the CreateDatabase() method uses the same algorithm for naming foreign keys as in Entity Developer</li>
+  <li>The behaviour is changed: now the cascade deletion of tables in DeleteDatabase() method is performed via the "DROP TABLE CASCADE" statement (PostgreSQL)</li>
+  <li>The bug with the compiled query cache when working with the DbLinqDataSource component when navigating through the pages of the DataGrid control is fixed</li>
+  <li>The bug with the wrong SQL query generation for Contains(), StartsWith(), EndsWith() methods when the string pattern includes '[' or '^' symbols is fixed (MySQL, Oracle, PostgreSQL, SQLite)</li>
+  <li>The bug with the wrong SQL query generation for LINQ queries with OrderBy and First()/Single()/Take() methods when working with Oracle 9/10/11 is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug related to the "Version string portion was too short or too long" error is fixed</li>
+  <li>The bug with dropping the UpdateCheck property value from Always to Never when re-opening the model is fixed</li>
+  <li>The bug related to the wrong script generation for "sp_addextendedproperty" is fixed: now the SQL is generated with the "schema" instead of "user" (SQL Server)</li>
+</ul>
+<br/>
+
+
+<p><b>4.4.428 30-Jan-14</b></p>
+<ul>
+  <li>The bug with handling complex types of the entity properties in the ServerDataTypeConvention class when working with fluent mapping is fixed</li>
+  <li>The bug related to the "Object reference not set to an instance of an object" exception on CreateDatabase() method when working with associations and fluent mapping is fixed</li>
+  <li>The bug with performing updates and deletes, when concurrency check is used for not-primary key columns, and the commands are combined to run in batches, is fixed</li>
+  <li>The bug related to re-materialization of objects of the same type when performing various SQL-queries via ExecuteQuery() method is fixed</li>
+  <li>The bug related to the "SQLite error\r\nnear \".\": syntax error" when foreign keys are created via CreateDatabase() method and if schema name is preserved in the storage part of the model is fixed (SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with generating NEWID() by "Generate Database Script"/"Update Database From Model wizards" for non-nullable Guid Identity property when 'Server Version=Azure' is fixed (SQL Server)</li>
+  <li>The bug with retrieving metadata when connecting to PostgreSQL server 8.0 is fixed (PostgreSQL)</li>
+  <li>The bug with creating association basing on composite foreign key, when the column order in the corresponding primary key is different, is fixed (PostgreSQL)</li>
+</ul>
+<br/>
+
+<p><b>4.4.418 16-Jan-14</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with not including the namespace name in the XML mapping, when namespaces for entity classes and context class are different, is fixed</li>
+  <li>The bug related to the incorrect change detection when updating database from model (the precision and comments) is fixed (MySQL)</li>
+</ul>
+<br/>
+
+<p><b>4.4.403 26-Dec-13</b></p>
+<ul>
+  <li>The bug with wrong order for creation tables with the many-to-many associations via the CreateDatabase() method is fixed</li>
+  <li>The bug with the entity cache (EntityCacheMode.WeakReference) is fixed</li>
+  <li>The bug related to working with the stored functions, that return results as "SETOF primitive_type", is fixed (PostgreSQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The predefined templates (POCO Entity and LinqConnect) are improved: new template setting, "Generate Dummy Comments", is added</li>
+  <li>The bug related to detecting unique keys is fixed</li>
+  <li>The bug with wrong script generation for System.Boolean when the default value is set, is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>4.4.393 12-Dec-13</b></p>
+<ul>
+  <li>The bug with foreign keys not created for many-to-many associations via the CreateDatabase() method is fixed</li>
+  <li>The bug related to the "The type initializer for 'DefaultXmlMappingProvider'" exception when working with the xml mapping and result sets is fixed</li>
+  <li>The bug with the comparison of the entity key property with a nullable variable, which is equal to null, is fixed</li>
+  <li>The bug with the data type conversions during materialization is fixed (SQL Server)</li>
+  <li>The bug with the comparison of constant with the column value, when the constant is on the left of the comparison operator, is fixed (SQL Server)</li>
+  <li>The bug related to the "Incorrect syntax near '<'" error when using SqlMethods.Between is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.4.383 28-Nov-13</b></p>
+<ul>
+  <li>The possibility to inherit from the data provider classes is added (Oracle, MySQL, PostgreSQL, SQLite, SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>The behaviour is changed: the values of "Target Server" and "Server Version" can be reset via the Model Settings > Synchronization > Mapping dialog despite the fact whether connection is specified in Database Explorer or not</li>
+</ul>
+<br/>
+
+<p><b>4.4.374 14-Nov-13</b></p>
+<ul>
+  <li>The bug related to the "System.ArgumentException: Property 'System.Collections.Generic.List`1..' is not defined for type 'System.Object'" error in Metro style applications is fixed</li>
+  <li>The bug related to the incorrect generation of the datatype names ( TINYTEXT/MEDIUMTEXT/LONGTEXT, TINYBLOB/MEDIUMBLOB/LONGBLOB) when using the CreateDatabase() method is fixed (MySQL)</li>
+  <li>The bug with comparison (AND/OR) of dates with another comparison results or boolean expressions is fixed (SQLite)</li>
+</ul>
+<br/>
+
+
+<p><b>4.4.364 31-Oct-13</b></p>
+<ul>
+  <li>Visual Studio 2013 is supported</li>
+  <li>The behaviour is changed: installation with the /VERYSILENT install parameter will uninstall the other version of the product without any dialog box if it is installed</li>
+  <li>The bug with SILENT/VERYSILENT uninstall with the NOFEEDBACK option is fixed</li>
+  <li>The bug with the date comparison is fixed (SQLite)</li>
+  <li>The bug related to the "Cannot open database..." error when calling CreateDatabase(false,true) after the DatabaseExists() method is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with IntelliSense when working with T4 Editor in Visual Studio 2012 is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>4.3.355 17-Oct-13</b></p>
+<ul>
+  <li>Oracle 12c is supported</li>
+  <li>VARCHAR2/NVARCHAR2/RAW types with length increased to 32KB are supported for Oracle 12c</li>
+  <li>Oracle 12c specific SQL generation for paging is supported</li>
+  <li>The Collate method of the SqlMethods class is implemented</li>
+  <li>The behaviour is changed: CreateDatabase functionality generates columns with the identity clause 'GENERATED AS IDENTITY' for primary key properties with 'IsDbGenerated=True' (only for Oracle 12c)</li>
+  <li>The bug with ignoring 'IsDbGenerated = True' when using Attach(TEntity entity, bool asModified) method is fixed</li>
+  <li>The bug with the compiled query cache when query contains parameters with the same values is fixed</li>
+  <li>The bug related to working with LinqConnect for Metro in WinJS applications is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The predefined templates are improved: new template setting, "Use Compiled Query Cache", is added</li>
+  <li>The behaviour is changed: "Generate Database Script"/"Update Database From Model" wizards generate columns with the identity clause 'GENERATED AS IDENTITY' for properties with 'Auto Generated Value=True' (only for Oracle 12c)</li>
+</ul>
+<br/>
+
+
+<p><b>4.2.338 23-Sep-13</b></p>
+<ul>
+  <li>Visual Studio 2013 Release Candidate is supported</li>
+  <li>The implementation for the DatabaseExists method, which checks the existance of the tables in the database, is added (Oracle)</li>
+  <li>The possibility of creating Oracle schemas (users) for mapped model classes via the CreateDatabase(false,true)/CreateDatabase(true, true) method of the DataContext class is implemented (Oracle)</li>
+  <li>The possibility of deleting Oracle schemas (users) for mapped model classes via the DeleteDatabase(false,true)/DeleteDatabase(true, true) method of the DataContext class is implemented (Oracle)</li>
+  <li>The encryption support for local SQLite storage in LinqConnect for Metro is added (SQLite)</li>
+  <li>The bug with the discrepancy of the parameter's type and the column's type in operations of equality (==) and inequality (!=) for varchar/nvarchar data types is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with releasing memory after closing the Retrieve Data window is fixed</li>
+  <li>The bug with the Overwrite.Merge template option is fixed</li>
+  <li>The bug related to the "Value cannot be null" error when selecting "Regenerate storage and mapping" from the shortcut menu in Model Explorer in Visual Studio is fixed</li>
+  <li>The bug with detecting default NULL values by the Update Model From Database wizard is fixed (SQLite)</li>
+  <li>The bug with creating complex primary keys when creating a model from a database is fixed (SQLite)</li>
+</ul>
+<br/>
+
+
+<p><b>4.2.327 05-Sep-13</b></p>
+<ul>
+  <li>The possibility to use the extension method AsQueryable() in LINQ queries is added</li>
+  <li>The support for correct retrieving of the TimeSpan and DateTimeOffset values while materializing is added</li>
+  <li>The support for the operators of equality(==) and inequality(!=) for the "inet" data type in LINQ queries is added (PostgreSQL)</li>
+  <li>The bug with eager loading is fixed</li>
+  <li>The bug with the redundant opened sessions is fixed</li>
+  <li>The bug with missing CreateCommand method in the DataProvider class is fixed</li>
+  <li>The bug related to the ArgumentNullException on SubmitChanges method when trying to update a row with the same values is fixed</li>
+  <li>The bug with performing the DatabaseExists() method when Persist Security Info is set to False is fixed (SQL Server)</li>
+  <li>The bug with the wrong DDL generation in the CreateDatabase() method with the DateTimeOffset properties is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The "Close the window when the generation completes successfully" option in the Generation Process window is implemented in the standalone Entity Developer</li>
+  <li>The bug with availability of the New Blank Template option of the Templates context menu in Model Explorer in the Entity Developer version integrated into Visual Studio is fixed</li>
+  <li>The bug with generating invalid code when using MVC View Advanced template is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>4.2.306 08-Aug-13</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The "Model Name As Files Prefix" property is implemented for the templates which generate classes for model entities</li>
+  <li>The possibility of adding custom attributes to enum members is implemented</li>
+  <li>The behaviour is changed: the possibility to exclude the generation of keys (primary, foreign) in "Update Database From Model" and "Generate Database Script From Model " wizards is added</li>
+  <li>The behaviour is changed: the possibility to add one-to-one associations with nullable foreign key properties is added</li>
+  <li>The behaviour is changed: a table storage engine is not set explicitly in the generated DDL (MySQL)</li>
+  <li>The behaviour is changed: now by default MVC Controller template generates files in the model folder, MVC View Advanced template creates files in the Views model subfolder</li>
+  <li>The behaviour is changed: the PostgreSQL limitation in 63 character for identifier names is taken into account when the SQL script is generated by Update Database From Model / Generate Database Script wizards</li>
+  <li>The bug with breaking the parameters order in Generator Parameters Editor is fixed</li>
+  <li>The bug with an error during a compilation of the 'LinqConnect' template for VB.NET projects in Visual Studio 2008 is fixed</li>
+  <li>The bug with breaking the IdGenerator configuration after closing the model is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.2.292 18-Jul-13</b></p>
+<ul>
+  <li>The bug related to the NRE on the CreateDatabase() method, when the navigation properties generation for one of the sides in one-to-one association is turned off, is fixed</li>
+  <li>The bug with wrong script generation on the CreateDatabase() method for one-to-one associations is fixed</li>
+  <li>The bug with materialization when converting decimal values is fixed</li>
+  <li>The bug related to the "Sequence contains no elements" exception when working with unmapped properties and PropertyChanging/PropertyChanged events is fixed</li>
+  <li>The bug related to materializing structs in the "select new" clause is fixed</li>
+  <li>The bug related to the "Method not found" exception when opening connection in LINQPad via LinqConnectDriver is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The behaviour is changed: a default value for the "Detect Table Per Type inheritances" option in Model settings is set to False</li>
+  <li>The bug related to the wrong Source values for foreign key properties when adding associations with the selected "Add foreign key properties to the child class" check box is fixed</li>
+  <li>The bug with applying RangeAttribute of the DataAnnotation validation framework for nullable properties is fixed</li>
+  <li>The bug with wrong script generation for several tables with autoincrement fields in the "Generate Database Script From Model" and "Update Database From Model" wizards is fixed (Oracle)</li>
+  <li>The bug with the "Recreate Database Tables" option for tables which use sequences is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>4.2.281 03-Jul-13</b></p>
+<ul>
+  <li>The bug related to working with decimal datatypes is fixed (SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The "Regenerate Storage and Mapping" option for regenerating model parts, specific to the database server, is added to the diagram shortcut menu</li>
+  <li>The bug with reading facets of a stored procedure parameter is fixed (Oracle)</li>
+</ul>
+<br/>
+
+
+<p><b>4.2.272 20-Jun-13</b></p>
+<ul>
+  <li>The performance when working with the TPT-inheritance and retrieving descendants via OfType<> is improved</li>
+  <li>The bug with the CreateDatabase() method when "Delete Rule" is set for the association (not empty and not "NO ACTION") is fixed</li>
+  <li>The bug related to the "The non-nullable navigation property '...' was set to null in the entity object '...'" error when working with nullable composite foreign keys is fixed</li>
+  <li>The bug related to working with the WCF Ria Domain Service template is fixed</li>
+  <li>The bug with the TPT-inheritance and associations to the descendants of the inheritance is fixed</li>
+  <li>The bug related to the "Violation of PRIMARY KEY constraint" error on SubmitChanges(), when DataContext has only one added entity for insertion with a custom key generator and DbGenerated=False for its primary key, is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with wrong code generation for nullable enum properties is fixed</li>
+  <li>The bug with generating "Access Denied" error when using MVC templates is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.2.262 06-Jun-13</b></p>
+<ul>
+  <li>The bug with the nullable properties in composite foreign keys is fixed </li>
+  <li>The bug related to the MissingMethodException error is fixed (SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Support for SQL Server Compact Edition 3.5 and 4.0 is added</li>
+  <li>Devart.Data.Linq.Binary and System.Data.Linq.Binary types are added to the "Type Mapping Rule Editor"</li>
+  <li>The bug with referencing a custom assembly in T4 template is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.2.257 30-May-13</b></p>
+<ul>
+  <li>The possibility to add LinqConnect assemblies as Extension SDKs for Oracle, MySQL and PostgreSQL databases in Metro style applications is added</li>
+  <li>The bug with referencing LinqConnect assemblies in Windows Phone 8 applications is fixed. Now LinqConnect assemblies for Windows Phone 8 are added as Extension SDKs</li>
+  <li>The bug with inserting dependent entity when the main entity has a key generator for the primary key property and DbGenerated is set to False is fixed</li>
+  <li>The bug with duplicate columns in an ORDER BY statement when using eager loading for several tables is fixed</li>
+  <li>The bug related to working with unmapped class members is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The "WCF DataMember Attribute on Navigation Properties" property is added to the DbContext and POCO templates for pointing the end (-s) where the attribute should be generated</li>
+   <li>The bug with adding many-to-many associations when one of the sides of the association is involved in the inheritance is fixed</li>
+   <li>The bug with placing tables names in the root of the "Choose change action" page of Update From Database Wizard is fixed</li>
+   <li>The bug with generating NRE when setting the output of the template to the unloaded project is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.2.247 16-May-13</b></p>
+<ul>
+  <li>The possibility to disable query cache via the DataContext's 'EntityCachingMode' property is added</li>
+  <li>Creation of auto-incrementing sequences and triggers for Oracle models is supported (Oracle)</li>
+  <li>Support for SERIAL and BIGSERIAL database types when using CreatedDatabase() method is added (PostgreSQL)</li>
+  <li>The bug related to the "Unable to open database file" with different variants of JournalMode in Metro style applications is fixed</li>
+  <li>The bug with inheriting an entity class from an unmapped type is fixed</li>
+  <li>The bug related to the 'Index was outside of the bounds of the array' error when using GroupBy in queries is fixed</li>
+  <li>The bug with the materializer cache and AssociateWith method is fixed</li>
+  <li>The bug with the CreatedDatabase() method for many-to-many associations is fixed</li>
+  <li>The bug with AddDays() method with negative parameters is fixed</li>
+  <li>The bug with inserting record with composite primary key is fixed</li>
+  <li>The bug related to the "ORA-22835: Buffer too small for CLOB to CHAR or BLOB to RAW conversion" error, when comparing CLOB/NCLOB columns or parameters, is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The Save and Refresh buttons for persisting and reloading changes to / from a database is added to the Retrieve Data grid</li>
+   <li>POCO Entity template is improved: new template setting, "Property Change Notifiers", is added</li>
+   <li>The behaviour is changed: a string default value for the property can be set without quotes in the Properties window</li>
+   <li>The bug with wrong detecting many-to-many associations is fixed</li>
+   <li>The bug related to the "Unknown column 'DATETIME_PRECISION' in 'field list'" error when creating model for MySQL 6.0.10-alpha-community is fixed (MySQL)</li>
+</ul>
+<br/>
+
+<p><b>4.2.231 23-Apr-13</b></p>
+<ul>
+  <li>Compatible with dotConnect providers</li>
+</ul>
+<br/>
+
+<p><b>4.2.229 18-Apr-13</b></p>
+<ul>
+  <li>The bug related to working with the database files which are located in the directory, where Metro style application is installed, is fixed</li>
+  <li>The bug with query cache issues when working with one DataContext instance and different data providers is fixed</li>
+  <li>The bug with method Any() when working with one DataContext instance and different data providers is fixed</li>
+  <li>The bug related to the issue with the OnListChanged() event when EntitySet collection is changed is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with wrong database script generation for tables with several many-to-many associations is fixed</li>
+   <li>The bug with loading mapping rules for some datatypes under .NET Framework 4.5 is fixed</li>
+</ul>
+<br/>
+
+
+
+<p><b>4.2.222 04-Apr-13</b></p>
+<ul>
+  <li>LINQPad integration is supported</li>
+  <li>The behaviour is changed: now, when trying to synchronize composite primary key after insert, the "Auto-sync of multiple key parameters is not supported for SQL Server" and SqlNullValueException exceptions are not thrown (SQL Server)</li>
+  <li>The behaviour is changed: new database is created when using CreateDatabase method with createSchema = true (SQL Server)</li>
+  <li>The behaviour is changed: now batch updates are disabled by default (SQLite)</li>
+  <li>The bug related to the NullReferenceException on SubmitChanges() method when working with isVersion properties is fixed</li>
+  <li>The bug with using blank fixed-length strings is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>A new MVC Controller template, generating a ASP.NET MVC controller with data access code, is added</li>
+   <li>A new MVC View Advanced template, generating an ASP.NET MVC view based in Twitter Bootstrap, is added</li>
+   <li>A new Data Transfer Object template for DTO classes generation is implemented</li>
+   <li>A new WCF RIA Domain Service template, generating a WCF RIA Services domain service class for a Devart LinqConnect model is added</li>
+   <li>A new Data Annotation Metadata template, generating Data Annotation metadata classes and decorating classes and properties with data annotation attributes for validation, presentation and defining metadata, is added</li>
+   <li>Add Template dialog box is improved</li>
+   <li>The Namespace property of class, complex type, enum is implemented</li>
+   <li>The capability for setting special rules for generating default names of database objects when using the Model First approach is implemented (a new Advanced page is added to the Synchronization->Database Naming section of the Model Settings dialog box)</li>
+   <li>The capability to customize properties that are automatically added when creating a new entity, and options that are automatically set when creating a new property is added (a new Initialization page is added to the Model->General section of the Model Settings dialog box)</li>
+   <li>The Refresh option in the Attributes tab of the Model Settings window is implemented; it updates the list of available attributes types in the referenced assemblies</li>
+   <li>The capability to modify custom attributes for several selected entities or properties at the same time is implemented</li>
+   <li>The capability to cancel metadata reading in wizards and Database Explorer is added</li>
+   <li>The "Recreate Database Tables" check box, which allows to drop and recreate database tables, is added to the "Update To Database" wizard</li>
+   <li>New setting "Detect Table Per Type inheritances", which enables automatic detection of TPT inheritances, is added for Create Model Wizard and model</li>
+   <li>The "Include Drop" check box for including DROP commands for database objects to the generated script is added to Generate Database Script Wizard</li>
+   <li>A new shortcut menu command "Include Related", which allows making a copy of the related objects in the specified diagram, is added</li>
+   <li>A new shortcut menu command "Add To Model with Related", which allows adding tables, related to the selected one, to the model, is added to the shortcut menu of tables in Database Explorer</li>
+   <li>A new shortcut menu command "Add On Diagram With Related", which allows creating an object and all the objects related to it on a diagram, is added to the shortcut menu of classes, complex types, and enums in Model Explorer</li>
+   <li>The support for enums declared in external assemblies is implemented</li>   
+   <li>New "Simple" diagram skin is added for displaying a diagram in metro style</li>
+   <li>The "Default Width" diagram property for specifying the default width for newly created diagram shapes (entities, complex types and enums) is added</li>
+   <li>Class Editor is improved: the capability to edit extended property settings, such as validation, presentation, and facets, is added</li>
+   <li>Type Editor is improved: the capability to edit extended property settings, such as validation, presentation, and facets, is added</li>
+   <li>The "Rewrite connection string during regeneration" check box of Model Settings is implemented to determine whether to overwrite the connection string in the project config file with the one, currently set in Entity Developer for the model, each time when regenerating code for the model</li>
+   <li>The user interface of Express Edition concerning availability of custom templates is improved</li>
+   <li>The behaviour is changed: "Save connection string in App.Config as" check box in Model Settings dialog box is renamed to "Use connection string from App.Config as"</li>
+   <li>The behaviour is changed:  now, when creating a new TPH discriminator column in Inheritance Editor, it has the string type by default</li>
+   <li>The behaviour is changed: the error is generated if the Abstract inheritance modifier is set for the class which is involved in the Table Per Type inheritance</li>
+   <li>The behaviour is changed: empty value is used in property editors instead of -1 for marking facets of class property without assigned value</li>
+   <li>The bug with the database script generation for the 'Delete Rule' association property is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.1.207 14-Mar-13</b></p>
+<ul>
+  <li>Support for SQL Server Compact Edition 3.5 and 4.0 is implemented</li>
+  <li>The bug with DataLoadOptions.AssociateWith() when working with several DataContext objects is fixed</li>
+  <li>The bug related to the "Specified cast is not valid" exception when working with auto-increment primary keys mapped to decimal entity property is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with obtaining DebuggerService when working with T4 Editor is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>4.1.197 28-Feb-13</b></p>
+<ul>
+  <li>The bug with working with stored procedures named like "[XXX.XXX]" is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The possibility of setting enum values via predefined dropdown list in the Retrieve Data window is implemented</li>
+   <li>The behaviour is changed: the Guid property is mapped to the UUID type in the database when using the Model First approach (PostgreSQL)</li>
+   <li>The bug related to the "Index was outside the bounds of the array" error when creating models for SQL Server 2000 is fixed</li>
+   <li>The bug related to the stored procedures with miltiple resultsets is fixed (MySQL, Oracle, PostgreSQL, SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.1.184 07-Feb-13</b></p>
+<ul>
+  <li>The bug related to creation of a new instance of DataContext when using fluent mapping with the 'Database Independent = true' property is fixed</li>
+  <li>The bug related to the "Cannot add query to cache. An item with the same key already exists" exception in multi-threading applications is fixed</li>
+  <li>The bug related to "Unable to open database file" exception when opening several connections in the LinqConnect for Metro edition is fixed (SQLite)</li>
+  <li>The bug related to rounding the result of stored procedures with decimal output parameters is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The behaviour is changed: the serializing property and corresponding methods are not generated when using 'Fluent Mapping'/'POCO Entity' templates and Unidirectional mode</li>
+  <li>The bug with setting SERIAL/BIGSERIAL data types for auto generated properties, which are not primary keys, when performing "Generate Database Script from Model" and "Update Database From Model" wizards is fixed (PostgreSQL)</li>
+  <li>The bug related to wrong script generating in "Update Database From Model" wizard when setting a property as 'Nullable=false' and setting the default value is fixed (Oracle)</li> 
+</ul>
+<br/>
+
+<p><b>4.1.169 17-Jan-13</b></p>
+<ul>
+  <li>The bug related to the "Cannot convert from 'string' to 'Devart.Data.Linq.Mapping.DeleteRule' " error when working with Fluent mapping is fixed</li>
+  <li>The bug with using DateTimeOffset in 'Where' statements is fixed (SQL Server)</li>
+</ul>
+<br/>
+
+<p><b>4.1.151 20-Dec-12</b></p>
+<ul>
+  <li>The bug related to the "Object does not match target type" exception  when working with DbLinqDataSources and gridviews is fixed</li>
+  <li>The bug with implicitly converting strings to integer type in queries when working with VB.NET projects is fixed</li>
+  <li>The bug related to the "Strong name validation failed" exception in the LinqConnect for Metro edition is fixed</li>
+  <li>The bug related to the "Unsupported delete rule 'NO ACTION'" exception when creating DataContext is fixed</li>
+  <li>The bug with update commands for dependent entities that participate in Table Per Type inheritance is fixed</li>
+  <li>The bug with creating DataContext with an already opened connection is fixed (SQL Server)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>Model Refactoring feature is implemented; it speeds up creating complex types and Table Per Type inheritance from several model entities</li>
+    <li>The functionality of ignoring columns in the database in the "Update To/From Database" wizards if they were omitted once before is implemented</li>
+    <li>Warnings about objects that are not mapped are added</li>
+    <li>A SHIFT+DELETE keyboard shortcut for deleting entity, complex type, or enum from diagram only is added</li>
+    <li>An INSERT keyboard shortcut for creating a new entity, adding property to the selected entity/complex type or new member to enum is added</li>
+    <li>The possibility to view notes, added through the "Documentation" property, for all the diagram objects via hints is implemented</li>
+    <li>Hints for diagram objects are improved</li>
+    <li>The behaviour is changed: Configure Behaviour dialog is renamed to Stored Procedure Mapping</li>
+    <li>The behaviour is changed: now the 'Read Only' property is not set to true for autoincrement fields by default when creating/updating models (MySQL, SQL Server)</li>
+    <li>The bug with generating a code for the initialization of the boolean property is fixed (MySQL)</li>
+</ul>
+<br/>
+
+
+<p><b>4.1.137 29-Nov-12</b></p>
+<ul>
+  <li>The fluent mapping is improved: support of the ID generators for primary keys is added</li>
+  <li>The bug with the integration into Visual Studio 2012 of LinqConnect for Silverlight edition is fixed</li>
+  <li>The bug with the INotifyPropertyChanging and INotifyPropertyChanged interfaces when working with LinqConnect/POCO Entity templates in Silverlight 5 applications is fixed</li>
+  <li>The bug with working with the database files, that are outside of isolated storage, with elevated trust for Silverlight 5 applications is fixed</li>
+  <li>The bug with the "Specified cast is not valid" exception when searching for an entity by its key is fixed</li>
+  <li>The bug with the failed updates to the database when using the Attach(TEntity,Boolean) method is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with renaming the navigation property when using the Update Model From Database wizard is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.1.127 15-Nov-12</b></p>
+<ul>
+  <li>The bugs with using LinqConnect for Dynamic Data projects under .NET Framework 4.0 or higher are fixed</li>
+  <li>The bug with using blank fixed-length strings is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>4.1.119 01-Nov-12</b></p>
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with availability of the Yes/No/Cancel options when saving models created with previous versions of Entity Developer is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.1.109 18-Oct-12</b></p>
+<ul>
+   <li>The bug with working with entities without INotifyPropertyChanging, INotifyPropertyChanged interfaces is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.1.101 04-Oct-12</b></p>
+<ul>
+   <li>The bug related to the "An item with the same key has already been added" exception when working with DevExpress GridView is fixed</li>
+   <li>The bug with synchronization of the parent and child entities is fixed</li>
+   <li>The bug with update checks of CLOB columns is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>Predefined template for generating Repositories and Unit of Work classes is added</li>
+    <li>Integration with Visual Studio refactoring for renaming model objects is implemented</li>
+    <li>The "Use Database Comments" option of Model Settings is implemented to determine whether comments for database objects, if supported by DBMS, will be used for model objects Documentation initialization and taken into account when executing model or database update operations</li>
+    <li>The "Implement IClonable" option for the generated classes based on the model entities is added to all templates</li>
+    <li>The behaviour is changed: the "Save connection string in App.Config as" option is available in the standalone Entity Developer (the entry in App.Config must be added manually afterwards)</li>
+</ul>
+<br/>
+
+<p><b>4.1.82 06-Sep-12</b></p>
+<ul>
+   <li>Visual Studio 2012 is supported</li>
+   <li>The bug with getting entities from the cache by keys of type Int16 is fixed</li>
+   <li>The bug with getting entities directly from the cache for the command First (predicate) etc, is fixed</li>
+   <li>The bug with wrong parameters when loading dependent entities with two-level LoadOptions are set is fixed</li>
+   <li>The bug with invalid type of parameters used for update commands is fixed (SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The 'Entity Base' class property, which allows specifying the ancestor class/interface for a particular entity type, is implemented</li>
+   <li>The behaviour is changed: only particular (not all) property characteristics are regenerated when using Update Model From Database wizard after the metadata of the corresponding column have been changed</li>
+   <li>The behaviour is changed: when preserving schema name is disabled, schema name is no more saved for Oracle package functions/procedures</li>
+</ul>
+<br/>
+
+<p><b>4.0.63 09-Aug-12</b></p>
+<ul>
+   <li>The bug with creating DataContext with complex types having no default mapping is fixed</li>
+   <li>The bug with modifying the list of tracked entities when it is being enumerated is fixed</li>
+   <li>The bug with clearing the collection of depending entities is fixed</li>
+   <li>The bug with datetime literals as default COALESCE arguments is fixed (MySQL, Oracle, PostgreSQL)</li>
+   <li>The bug with comparing nvarchar datatype strings is fixed (Oracle)</li>
+   <li>The bug related to the Oracle constants with empty strings is fixed (Oracle)</li>
+   <li>The bug with materializing result sets of Oracle procedures with single output cursor is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The possibility to unload assemblies from the main application domain by using separate application domain is implemented</li>
+   <li>The possibility to disable such Database First Settings as type mapping rules is implemented</li>
+   <li>The design time copy/cut/paste functionality for enum members is added</li>
+   <li>The bug with generating the "This model has been modified outside of the editor. Do you want to reload it?" error when Entity Developer is integrated into TFS is fixed</li>
+   <li>The bug with integration into TFS is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.0.45 17-Jul-12</b></p>
+<ul>
+   <li>The bug with enumerating queries that have empty result sets is fixed</li>
+   <li>The bug with materializing query results into invalid object properties is fixed</li>
+   <li>The query cache bug with distinguishing compiled queries that have nullable parameters is fixed</li>
+   <li>The bug with deleting many-to-many links of entity having multiple many-to-many associations is fixed</li>
+   <li>The bug in LinqConnect samples is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The behaviour is changed: the warning, related to the missing property setter, is disabled</li>
+   <li>The behaviour is changed: for the association, in which the many-side entity hasn't the primary key,  the code and the mapping are not generated</li>
+   <li>The behaviour is changed: the properties, that correspond autoincrement fields, are generated with a ReadOnly keyword in VB.NET</li>
+</ul>
+<br/>
+
+<p><b>4.0.29 21-Jun-12</b></p>
+<ul>
+   <li>The bug with deleting the entity and its many-to-many bunches outside the batch is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The "Pluralize  collection  navigation  properties" option for the possibility to turn off the pluralization of the many-end names of associations is implemented</li>
+   <li>The "sealed override" inheritance modifier for methods based on stored procedures and functions is added</li>
+   <li>The bug with copy/pasting entities having a common relation is fixed</li>
+   <li>The bug with the displaying many-to-many associations in the Association Editor is fixed</li>
+   <li>The bug with specifying the custom tool for LinqConnect models being added to web sites is fixed</li>
+   <li>The bug with mapping generation for associations with the 'Delete On Null' rule enabled is fixed</li>
+   <li>The bug with mapping generation for entity types having multiple complex types is fixed</li>
+</ul>
+<br/>
+
+<p><b>4.0.21 07-Jun-12</b></p>
+<ul>
+   <li>Visual Studio 2012 Release Candidate is supported</li>
+   <li>The CreateDatabase bug with creating a table for an entity type with multiple complex type fields is fixed</li>
+   <li>The CreateDatabase bug with creating a table for an entity type with no primary key is fixed</li>
+   <li>The bug with getting System.DateTimeOffset values via stored procedures is fixed (Microsoft SQL Server)</li>
+   <li>The bug with 'IS NULL' checks for non-nullable columns is fixed (MySQL, oracle)</li>
+</ul>
+<br/>
+
+<p><b>4.0.10 22-May-12</b></p>
+<ul>
+   <li>Support for Silverlight 4 and higher and Windows Phone 7 is added</li>
+   <li>References to System.Data.Linq are removed; now LinqConnect uses only its own classes</li>
+   <li>Upgrade wizard for upgrading projects to the new version of LinqConnect automatically is added</li>
+   <li>The possibility to choose cache mode (classic mode for cases when DataContext is used as a unit of work, and self-cleaning mode for cases when DataContext is a long-lived object) is added</li>
+   <li>The possibility to map stored procedure out parameters of the CURSOR type to IEnumerable parameters of the corresponding methods is added</li>
+   <li>Tracking of complex object graphs with chains of parent-child objects is optimized</li>
+   <li>Number of database calls required for managing objects with a many-to-many association is reduced</li>
+   <li>Delete rule performance is improved</li>
+   <li>Compilation performance is improved</li>
+   <li>Materialization performance is improved</li>
+   <li>Compiled query cache is improved</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>The sticker notes for adding comments to diagrams are implemented</li> 
+    <li>The possibility to add a stamp, specifying diagram author, company, version, copyrights, project name, and date, to a diagram is implemented</li>
+    <li>New  Collapse All and Expand All menu commands for collapsing and expanding diagram shapes are added</li>
+    <li>The behaviour is changed: context menu commands for working with diagram are grouped to the Diagram submenu of the context menu</li>
+    <li>The behaviour is changed: the possibility to change diagram shape color via the corresponding Shape -> Color context menu command is added</li>
+    <li>The behaviour is changed: when pasting a copied entity to a new diagram, a new entity is not created, the existing entity is added to this diagram</li>
+    <li>The behaviour is changed: when cutting an entity from the diagram, the entity is not cut from the model, only from the diagram</li>
+    <li>The bug with incorrect saving of method's extended properties is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>3.2.82 26-Apr-12</b></p>
+<i>Entity Developer</i>
+<ul>
+   <li>The multiline popup editor for the Documentation.Summary property is implemented</li>
+</ul>
+<br/>
+
+<p><b>3.2.73 12-Apr-12</b></p>
+<ul>
+  <li>The bug with the performance issues when generating complex queries is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The behaviour is changed: the Migrate option is added to the context menu of property in Model Explorer</li>
+   <li>The behaviour is changed: entities and enums on the designer surface are more resizable now</li>
+   <li>The bug with creating LinqConnect models is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>3.2.64 29-Mar-12</b></p>
+<ul>
+  <li>The bug with the generation of SQL queries including grouping by the whole entity is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The bug with model saving after performing copy/paste of an element with a custom attribute is fixed</li>
+   <li>The bug with the "Update Model From Database" wizard showing isVersion columns as changed is fixed</li>
+</ul>
+<br/>
+
+<p><b>3.2.57 15-Mar-12</b></p>
+<ul>
+  <li>Visual Studio 11 Beta is supported</li>
+  <li>The bug with column order in queries including the UNION clause is fixed</li>
+  <li>The bug with InvalidOperationException on disposing data contexts is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The copy/cut/paste functionality is added for objects of the conceptual part of a model</li>
+   <li>The possibility to drag&drop properties between classes in Model Explorer is implemented</li>
+   <li>The "HeaderTimestampVersionControlTag" generation template option is added for improving integration with version-control systems</li>
+   <li>The bug with retrieving database metadata on Windows Azure is fixed</li>
+   <li>The bug with generating mappings for many-to-many association of entity to itself is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>3.1.43 27-Feb-12</b></p>
+<ul>
+  <li>The bug with reading GUIDs from SQLite databases is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The validation of method parameters is added</li>
+   <li>The context menu options for unchecking changed/added/dropped tables are implemented for the root nodes in the "Update To/From Database" wizards</li>
+   <li>The diagram design is changed: an arrow (instead of a triangle) is used on the tip of an association now</li>
+   <li>The bug with the "Update Model From Database" wizard showing identity columns as changed is fixed (Microsoft SQL Server)</li>
+   <li>The bug with setting comments for columns and tables in database is fixed</li>
+</ul>
+<br/>
+
+<p><b>3.1.34 09-Feb-12</b></p>
+<i>Entity Developer</i>
+<ul>
+   <li>The "Identifier Case Sensitive" check box, which enables case-sensitive processing of database object identifier names, is added to MySQL Server Options</li>
+   <li>The bug with preserving the Validate Required property when saving the model is fixed</li>
+   <li>The bug with Entity Developer tool windows being shown when debugging an application is fixed</li>
+   <li>The bug with diagram representation in x64 environment is fixed</li>
+   <li>The bug with parsing PgSqlConnection.ServerVersion for Beta editions of PostgreSQL server is fixed</li>
+</ul>
+<br/>
+
+<p><b>3.1.25 27-Jan-12</b></p>
+<ul>
+  <li>The bug with empty spaces in foreign key names generated by the CreateDatabase() method is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>The documentation generation for navigation properties is implemented</li>
+   <li>The "Recreate Model" option, allowing to rebuild the model from a scratch, is added to  the "Update Model From Database" wizard</li>
+   <li>The "GeneratePartialClass" template property to generate a partial class, which will not be overwritten by the designer, for each class in the model is added</li>
+   <li>The behaviour is changed: database column comments are transfered to the Summary attribute of the Documentation property now</li>
+   <li>The behaviour is changed: the TINYINT(1) data type is now used for the columns which correspond to the System.Boolean properties (MySQL)</li>
+   <li>The bug with resetting the Validate Required property after reopening model is fixed</li>
+   <li>The bug with generating System.ComponentModel.DataAnnotations.KeyAttribute() for Primary Key columns is fixed</li>
+   <li>The bug with a workability of documentation links on Start Page is fixed</li>
+   <li>The bug with line breaks in default values of NUMBER columns is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>3.1.23 12-Jan-12</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The documentation generation for Enum members is implemented</li>
+  <li>The algorithm for forming the Navigation Properties names, when there are several FOREIGN KEY constraints between the same tables, is changed</li>
+  <li>The behaviour is changed: the Navigation Property will not be displayed on the diagram and in Model Explorer if "Generate" is set to false for the appropriate association end</li>
+  <li>The behaviour is changed: the Validate Max Length attribute is synchronized with the Max Length attribute of Property by default now</li>
+  <li>The behaviour is changed: the Validate Required attribute is synchronized with the Nullable attribute of Property by default now</li>
+  <li>The behaviour is changed: when selecting a property in the Model Explorer, the corresponding entity on the diagram does not expand if it is collapsed</li>
+  <li>The behaviour is changed: the DATETIME2 data type is now used for columns, corresponding to System.DateTime properties, for Microsoft SQL Server 2008 and later</li>
+  <li>The bug with adding diagrams when the Notation parameter of  the diagram "Property Details Level" is set to "Name And Type" is fixed</li>
+  <li>The bug with changing the Type property simultaneously for several inheritances is fixed</li>
+  <li>The bug with invalid Properties grid data refreshing for the selected attribute in the Attributes dialog box is fixed</li>
+  <li>The bug with formatting indents when generating code is fixed</li>
+  <li>The bug with saving inheritance layout on the diagram is fixed</li>
+  <li>The bug with incorrect model diagram saving after deleting a complex type from a diagram is fixed</li>
+  <li>The bug with invalid parameter direction in wrapper methods of stored procedures from MySQL 5.5 servers is fixed</li>
+  <li>The bug with generating sequences and triggers for auto-incremented primary keys mapped to the properties of the System.Decimal type is fixed (Oracle)</li>
+  <li>The bug with constructing too long names when using Generate Database Script From Model is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>3.1.21 22-Dec-11</b></p>
+<ul>
+  <li>The bug with inserting entities having a many-to-many association and auto-generated keys is fixed (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The behaviour is changed: the 'Real' SQLite data type is now mapped to System.Double by default</li>
+  <li>The bug with Visual Basic templates is fixed</li>
+  <li>The bug with scanning the network, when setting the connection to the PostgreSQL server, is fixed </li>
+</ul>
+<br/>
+
+<p><b>3.1.19 08-Dec-11</b></p>
+<ul>
+  <li>The bug with inserting both sides of a one-to-one relationship is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Capability for customizing the default Type Mapping Rules is implemented</li>
+  <li>Capability for setting diagram options either globally for all diagram documents or separately for a particular one is implemented: the Diagram Appearance and Printing options can now be set through the Options dialog box</li>
+  <li>Capability for setting such options as Environment, Diagram and Servers' to adjust the Entity Developer behavior, Model diagram  behavior and Type Mapping Rules to your needs is implemented</li>
+  <li>Capability for setting and defining the class property validation rules  based on different engines (Data Annotation, Enterprise Library, NHibernate Validator) is added</li>
+  <li>The 'Numeric Primary Key As Identity' Oracle option is added: if this option is checked, the "StoreGeneratedPattern" will be set to Identity by default for Number primary keys </li>
+  <li>The 'Integer Primary Key As Identity' SQLite option is added: if this option is checked, the "StoreGeneratedPattern" will be set to Identity by default for Integer primary keys</li>
+  <li>The bug with code generation for default values of DateTime fields is fixed</li>
+  <li>The bug with 'losing' additional diagrams when re-opening a model is fixed</li>
+</ul>
+<br/>
+
+<p><b>3.0.16 24-Nov-11</b></p>
+<i>Entity Developer</i>
+<ul>
+  <li>The bug related to Visual Studio crashes at query execution is fixed</li>
+  <li>The bug with removing associations when updating the model is fixed</li>
+</ul>
+<br/>
+
+<p><b>3.0.14 11-Nov-11</b></p>
+<ul>
+  <li>The bug with updating explicitly attached entities is fixed</li>
+  <li>The bug with inserting null values into Oracle XMLtype columns is fixed</li>
+  <li>The bug with returning invalid connections to pool is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The possibility of specifying the name of the connection string to be saved in the application configuration file is implemented</li>
+  <li>Behaviour is changed: table is not marked as "Changed" in Update Wizard if DefaultValue is set for its expression column</li>
+  <li>The bug with NRE being thrown when an invalid connection is used is fixed</li>
+  <li>The bug with the local settings used for the default value of DateTime fields is fixed</li>
+  <li>The bug with creating methods with the same names for different stored procedures is fixed (Oracle)</li>
+  <li>The default value of the Unicode facet is changed to true for PostgreSQL CITEXT columns</li>
+</ul>
+<br/>
+
+
+<p><b>3.0.10 19-Oct-11</b></p>
+<ul>
+  <li>The bug with getting wrong query from the compiled query cache is fixed</li>
+  <li>The bug with redundant parameter prefixes for auto-sync parameters is fixed</li>
+  <li>The bug with ordering results of a query with eager loading options enabled is fixed</li>
+  <li>The bug with inserting entity objects having multiple relations to other entity type with auto-generated primary key is fixed</li>
+  <li>The bug with updating navigation properties based on a composite foreign key which intersects with the primary key is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The default mapping of SQLite databases with LinqConnect models is improved: integer foreign keys of one-to-one relationships are no more marked as auto-generated</li>
+  <li>The default attribute mapping source for LinqConnect models is made static</li>
+</ul>
+<br/>
+
+<p><b>3.0.5 29-Sep-11</b></p>
+<ul>
+  <li>The bug with ordering queries with eager loading options is fixed</li>
+  <li>The bug with caching queries performed via the ExecuteQuery method is fixed</li>
+  <li>The bug with .Equals(null) conditions in LINQ queries is fixed</li>
+  <li>The bug with update operations on Oracle XMLType fields is fixed</li>
+  <li>The bug with conversion of System.Char to integer is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+   <li>Disabling facets that are not applicable to the current field type is implemented</li>
+   <li>Default behaviour changed: now the Update To Database Wizard does not drop foreign keys of a table if the 'master' one is not represented in the model</li>
+   <li>The 'Binary As Guid' connection string parameter is supported (MySQL)</li>
+   <li>The bug with saving a new solution provided that the Visual Studio option for 'Projects and Solutions -> Save new projects when created' is unchecked is fixed</li>
+   <li>The bug with pluralization algorithm is fixed when Naming rules are defined</li>
+   <li>The 'The given key was not present in the dictionary' error in the Entity Developer version integrated into Visual Studio 2010 is fixed</li>
+   <li>The bug with incorrect determining of association multiplicity (redundant 'many-to-many') is fixed</li>
+   <li>The bug with default mapping for PostgreSQL UUID columns is fixed</li>
+   <li>The bug with setting Extended Properties for RelationProperty is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>3.0.4 06-Sep-11</b></p>
+<ul>
+  <li>Fluent mapping is supported </li>
+  <li>The bug with inserting a TPT 'child' entity in case its primary key column names differ from the 'parent' entity ones is fixed</li>
+  <li>The bug with deleting dependent entities when other changes were made is fixed</li>
+  <li>The bug with entity materialization for queries with multiple eager loading options is fixed</li>
+  <li>The bug with saving (inserting or updating) System.Data.Linq.Binary objects is fixed</li>
+  <li>The bug with long sequence of IN operator arguments is fixed (Oracle)</li>
+  <li>The bug with null comparison for DateTime properties is fixed (Oracle)</li>
+  <li>The bug with SQL generation for Skip/Take methods is fixed (SQL Server)</li>
+  <li>The bug with creating foreign keys in SQLite databases on DataContext.CreateDatabase is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+    <li>Fluent Mapping template is added</li>
+    <li>Support for enumerated types ("enums") is implemented</li>
+    <li>New skins to improve the apllication appearance are implemented</li>
+    <li>Selection driven highlighting is implemented</li>
+    <li>Capability for changing the shape color for entities, complex types and enums is implemented</li> 
+    <li>Capability for selecting the diagram skin type is implemented</li>
+    <li>Changed behaviour: when the FirstLetterUpperCase / FirstLetterLowerCase option is enabled in Naming rules, each letter after underscore will be capital/lower</li>
+    <li>The bug with setting foreign keys to tables located in non-default schema via the Create Database wizard is fixed (SQL Server)</li>
+    <li>The bug with changing property names ("Index was outside the bounds of the array") is fixed</li>
+</ul>
+<br/>
+
+<p><b>2.50.30 11-Aug-11</b></p>
+<ul>
+ <li>The bug with deleting dependent entities when the 'main' one is modified is fixed</li>
+ <li>The bug with update commands for Table Per Type inheritance is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The pluralization algorithm is improved when Naming rules are defined</li>
+</ul>
+<br/>
+
+
+<p><b>2.50.29 28-Jul-11</b></p>
+<ul>
+ <li>The bug with columns named as Oracle keywords is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with parameter names of SQL Server stored procedures is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>2.50.27 07-Jul-11</b></p>
+<ul>
+ <li>The bug with the 'Cannot remove an entity that has not been attached' error when using compiled queries is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The possibility to export the diagram into an image file was added</li>
+  <li>The possibility to restrict adding the connection string information to the application configuration file is added</li>
+  <li>The bug with Primary Key naming in case of many-to-many associations in Model First is fixed</li>
+  <li>The bug with deleting associations on update from database is fixed (MySQL)</li>
+  <li>The bug with the 'condition' keyword in the script created by the Generate Database Wizard is fixed (MySQL)</li>
+</ul>
+<br/>
+
+<p><b>2.50.25 15-Jun-11</b></p>
+<ul>
+  <li>The 'IsReference' mode of entity serialization is supported</li>
+  <li>The generation of auto-increment columns on the CreateDatabase call is implemented (MySQL and SQL Server)</li>
+  <li>The bug with querying entity tables having no primary key is fixed</li>
+  <li>The bug with ArgumentException on accessing DataContext.Table<TEntity> when the TEntity class has user-defined properties is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>The bug with Extended Properties handling is fixed</li>
+</ul>
+<br/>
+
+
+<p><b>2.50.24 01-Jun-11</b></p>
+<ul>
+  <li>Implemented fetch mode customization for eager loading of related entities</li>
+  <li>Improved performance of ordered queries with the Skip() and Take() methods: the 'rownum' pseudo-column is now used instead of the 'row_number' function (Oracle)</li>
+  <li>The bug with NullReferenceException when selecting non-entity types is fixed</li>
+  <li>The bug with type mismatch when using null parameters in LINQ queries is fixed</li>
+  <li>The bug with refreshing entities with a changed entity reference is fixed</li>
+  <li>The bug with updating entities that have associations based on unique (not primary) keys is fixed</li>
+  <li>The bug with parameters of compiled queries not being refreshed is fixed</li>
+  <li>The bug with redundant subqueries in queries that use the Take method is fixed (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Behaviour is changed: string entity fields are now mapped to varchar2(4000) by default (Oracle)</li>
+  <li>The bug with configuring a sequence ID generator is fixed</li>
+  <li>The bug with LinqConnect external mapping file in case entity classes belong to non-default namespace is fixed</li>
+  <li>The bug with persisting associations between LinqConnect entity classes inherited from the same base class is fixed</li>
+  <li>The bug with Visual Basic code generation for related entities sets is fixed</li>
+  <li>The bug with Unicode symbols in template is fixed</li>
+  <li>The bug with recognizing associations between tables from different schemas is fixed (Oracle)</li>
+  <li>The bug with adding package functions to the model is fixed (Oracle)</li>
+  <li>The bug with column aliases in queries with several nested subqueries is fixed (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>2.50.23 17-May-11</b></p>
+<ul>
+  <li>Implemented eager loading in case the related entities collection is referenced in the select clause of the query</li>
+  <li>The bug with incorrect operation order during SubmitChanges() calls is fixed</li>
+  <li>The bug with ArgumentExceptions thrown in background threads is fixed</li>
+  <li>The bug with launching Devart documentation via Start menu is fixed</li>
+  <li>The bug with using public properties when refreshing or materializing an entity is fixed</li>
+  <li>The bug with grouping a collection by a whole entity is fixed</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>POCO template with XML mapping generation is added</li> 
+  <li>Templates usability is improved</li>
+  <li>Template Editor is significantly improved</li> 
+  <li>Ability to declare additional properties for model objects is added</li>
+  <li>Ability to specify .NET attributes for model objects is added</li>
+  <li>Implemented runtime support for literals specified in the 'Default Value' entity field property</li>
+  <li>The "Preserve schema name in storage" option is added</li>
+  <li>The bug with generation of attach/detach methods for many-to-many associations is fixed</li>
+  <li>The bug with external mapping is fixed</li>
+  <li>The bug with default values set via a function for string fields is fixed</li>
+  <li>The bug with the "Access" combobox of the Association editor is fixed</li>
+</ul>
+
+<br/>
+
+<p><b>2.20.21 19-Apr-11</b></p>
+<ul>
+  <li>Implemented workaround for comparing SQLite DateTime values as strings in LinqConnect update checks (such values are explicitly converted to the SQLite DateTime type now)</li>
+  <li>Fixed bug with invalid aliases in queries that include the UNION clause</li>
+  <li>Fixed bug with simultaneous insert of both sides of a one-to-one association when the 'master' side has auto-generated ID</li>
+  <li>Fixed bug with GUID parameters in SQL server queries</li>
+</ul>
+<br/>
+
+<p><b>2.20.19 06-Apr-11</b></p>
+<ul>
+  <li>Implemented the Attach(object entity, object original) method of the Devart.Data.Linq.ITable interface</li>
+  <li>Implemented proper support for both text and binary representations of System.Guid (SQLite)</li>
+  <li>Fixed bug with passing GUID parameters to compiled queries (Oracle)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Changed behaviour: when retrieving metadata for Oracle servers 9.2.0.5 and prior, the JOIN syntax of Oracle 8 is used now</li>
+</ul>
+<br/>
+
+
+<p><b>2.20.17 23-Mar-11</b></p>
+<ul>
+  <li>Supported Visual Studio 2010 Service Pack 1</li>
+  <li>Fixed bug with inserting 'detail' entities together with 'master' ones for one-to-one associations</li>
+  <li>Fixed bug with 'double' parameters of PostgreSQL stored functions</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Added multiple database file support for SQLite (using Attach connection string parameter)</li>
+  <li>Changed behaviour: when adding two related entities with the corresponding properties having different types, an invalid association is created now</li>
+  <li>Changed default mapping for MySQL signed TinyInt columns: they are mapped to SByte now</li>
+  <li>Changed behaviour: when retrieving metadata, Oracle stored procedures and functions that don't return cursors are no longer executed</li>
+  <li>Fixed bug with generating incorrect code for models having one-to-one associations with a nullable property at the 'detail' side</li>
+  <li>Fixed bug with generating script with duplicate columns for entities having two fields of the same complex type</li>
+</ul>
+<br/>
+
+<p><b>2.20.15 11-Mar-11</b></p>
+<ul>
+  <li>Implemented implicit sorting by the entity key in queries with defined LoadWith rules</li>
+  <li>Fixed bug with the "The message filter indicated that the application is busy" error during uninstall</li>
+  <li>Fixed bug with calling the base Devart.Data.Linq.DataContext constructor with the mapping argument</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Fixed bug with discarding changes in Navigation Properties names</li>
+</ul>
+<br/>
+
+<p><b>2.20.14 24-Feb-11</b></p>
+<ul>
+  <li>Fixed bug with deserializing LinqConnect exceptions</li>
+  <li>Fixed bug with attaching entities as modified to DataContext</li>
+  <li>Fixed bug with creating auto-incremented columns with the DataContext.CreateDatabase method (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Added sorting in the 'Return Type' ComboBox for methods in the Properties window</li>
+  <li>Fixed code generation for many-to-many associations when the Unidirectional serialization mode is enabled</li>
+  <li>Fixed bug with adding Oracle procedures declared inside packages to the model</li>
+  <li>Fixed bug with the Update From Database Wizard showing no changes when connecting under a MySQL user account with limited 
+privileges</li>
+</ul>
+<br/>
+
+<p><b>2.20.12 09-Feb-11</b></p>
+<ul>
+  <li>Changed behaviour: update check is now disabled by default for properties that represent MySQL FLOAT columns</li>
+  <li>Fixed bug with setting no reference to the Devart.Data.Linq.Web assembly when adding a DbLinqDataSource object to a web form</li>
+  <li>Fixed bug with retrieving entities participating in a many-to-many association with a composite key</li>
+  <li>Fixed bug with continuing identity tracking for deleted entities</li>
+  <li>Fixed bug with incorrect order of executing create/update/delete commands on SubmitChanges()</li>
+  <li>Fixed bug with creating a new MySQL database with the DataContext.CreateDatabase method</li>  
+  <li>Fixed bug with generating methods for Oracle stored procedures with PL/SQL Boolean parameters</li>
+  <li>Fixed bug with selecting top N rows from tables on SQL Server 2000</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Changed behaviour: classes created with the Update From Database Wizard are now added to the current diagram</li>
+  <li>Changed behaviour: the 'Update Check' is now set to 'Always' and disabled for properties that form the entity key</li>
+  <li>Fixed bug with wrong Complex Type properties in Stored Procedures</li>
+  <li>Fixed bug with retrieving metadata in case that objects with the same name were available in different schemas (SQL Server)</li>
+  <li>Fixed bug with mapping NUMBER fields to System.Double (Oracle)</li>
+  <li>Fixed bug with the 'Show Print Markup' button and 'Page Setup' menu item being disabled</li>
+</ul>
+<br/>
+
+<p><b>2.20.11 27-Jan-11</b></p>
+<ul>
+  <li>Fixed bug with repeated creation of DataContexts with external mapping</li>
+  <li>Fixed bug with many-to-many associations based on composite keys</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Added possibility to split model into several diagrams for better handling of large models </li>
+  <li>Supported automatic generation of sequences and triggers for Autoincrement properties in Oracle</li>
+  <li>Implemented possibility to disable automatic recognition of many-to-many associations</li>
+  <li>Fixed bug with handling errors when accessing server via an invalid connection</li>
+  <li>Fixed bug with opening the connection dialog of the Create Model Wizard with Turkish regional settings (PostgreSQL)</li>
+  <li>Fixed bug with loading metadata for SQL Server 2000</li>
+  <li>Fixed bug with SQL Server default value for Boolean columns (Model First)</li>
+  <li>Fixed bug with opening models that have invalid connection strings</li>
+</ul>
+<br/>
+
+
+<p><b>2.0.10 12-Jan-11</b></p>
+<ul>
+  <li>Fixed bug with incorrect detaching entities in the master/detail association</li>
+  <li>Fixed bug with VB code generation for models with Unidirectional serialization</li>
+  <li>Fixed bug with creating DataContext using external mapping</li>
+  <li>Fixed bug with using the Convert.ToDateTime function with Greek culture info in LINQ queries (Oracle)</li>
+  <li>Fixed bug with inserting Int32 values (SQLite)</li>
+  <li>Fixed bug with columns marked as NUMERIC (SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Fixed bug with many-to-many and Update From Database Wizard</li>
+  <li>Fixed bug with using functions which return void (PostgreSQL)</li>
+</ul>
+<br/>
+
+
+<p><b>2.0.9 16-Dec-10</b></p>
+<ul>
+  <li>Supported Visual Studio 2010 Service Pack 1 Beta</li>
+  <li>Implemented support for custom type arguments in LinqConnect compiled queries</li>
+  <li>Fixed bug with redundant subqueries and Order By clauses in commands generated for entities with configured load options</li>
+  <li>Fixed bug with Visual Basic code generation for sequence-generated entity properties</li>
+  <li>Fixed bug with the DataContext.Query&lt;TResult&gt; method in the case when TResult is not an entity class</li>
+  <li>Fixed bug with the 'The process was terminated due to an unhandled exception' error on severely loaded applications</li>
+  <li>Fixed bug with queries with the OrderBy(...).Any() statement (Oracle)</li>
+  <li>Fixed code generation bug with functions having output parameters (Oracle)</li>
+  <li>Fixed bug with LINQ queries with parameters in the Select clause (SQLite)</li>
+  <li>Fixed bug with inserting new rows into tables with auto-generated fields (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Fixed bug with the null-reference exception when adding LinqConnect model to web site folders other than App_Code</li>
+</ul>
+<br/>
+
+
+<p><b>2.0.8 29-Nov-10</b></p>
+<ul>
+  <li>Ability to execute DML statements in batches on SubmitChanges added</li>
+  <li>Table Per Type inheritance supported</li>
+  <li>Supported ASP.NET Dynamic Data with ASP.NET Dynamic Data project templates</li>
+  <li>PLINQ support added (connection manager redesigned for thread safety)</li>
+  <li>Supported Visual Studio Debugger Visualizer with SQL syntax highlighting for the DataQuery objects</li>
+  <li>Implemented overloads of DataContext.CreateDatabase and DeleteDatabase methods with boolean parameters specifying whether to create/delete database or not (MySQL, SQLite)</li>
+  <li>Changed behaviour: retrieving master entity from details one now generates left outer join instead of inner join</li>
+  <li>Fixed bug with default mappings for Medium-, Large- and TinyBlob data types (MySQL)</li>
+  <li>Fixed bug with creating table constraints when using the DataContext.CreateDatabase() method (SQLite)</li>
+  <li>Fixed bug with executing compiled queries with boolean parameters (SQLite)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Added Update Model From Database functionality</li>
+  <li>Update To Database with Storage Synchronization functionality added</li>
+  <li>Added possibility for changing the UpdateCheck property for several fields at once</li>
+  <li>Added multiselect support for properties</li>
+  <li>Improved large models handling</li>
+  <li>Fixed bug with IndexOutOfRangeException on code generation</li>
+  <li>Fixed bug with keyword quotation in the Source property</li>
+  <li>Fixed bug with Unknown parameter direction</li>
+  <li>Fixed "Cannot find column Position" bug</li>
+  <li>Fixed bug with Visual Basic code generation for stored functions</li>
+  <li>Fixed bug with not loading Master property in Detail entity of master/details associations</li>
+  <li>Fixed bug with mapping One-to-One associations to One-to-Many</li>
+  <li>Fixed bug with default editor in Visual Studio</li>
+  <li>Fixed 'Model is not registered' bug</li>
+  <li>Fixed some bugs in Team Foundation Server support</li>
+</ul>
+<br/>
+
+<p><b>1.0.43 04-Nov-10</b></p>
+<ul>
+  <li>Improved transaction behaviour in case when exception is thrown</li>
+  <li>Added support for the String.Equals(string, StringComparison) overload, allowing to specify whether to use or not the binary string comparison (MySQL)</li>
+  <li>Fixed bug with translating the IIf method in LINQ queries</li>
+  <li>Fixed bug with custom methods in the 'select new' clause of LINQ queries</li>
+  <li>Fixed bug with not loading associated entity when LoadWith is not used</li>
+  <li>Fixed bug with processing Char(1) fields (SQL Server)</li>
+  <li>Fixed bug with creating tables with LongBlob fields on CreateDatabase() (MySQL)</li>
+</ul>
+<br>
+
+<p><b>1.0.42 14-Oct-10</b></p>
+<ul>
+  <li>DataContext class is now CLS-Compilant</li>
+  <li>Changed behaviour: Substring() in LINQ queries is now translated to DBMS_LOB.SUBSTR for LOBs (Oracle)</li>
+  <li>Fixed bug with DataLoadOptions not working when object tracking is disabled</li>
+  <li>Fixed bug with second-level details loading</li>
+  <li>Fixed bug with creating compiled query using more than three parameters</li>
+  <li>Fixed bug with select queries from tables with no primary key</li>
+  <li>Fixed bug with constraint violation on inserting details before master data</li>
+  <li>Fixed bug with ArgumentException when using System.Nullable.GetValueOrDefault in Visual Basic LINQ queries</li>  
+  <li>Fixed bug with incorrect marking of changed fields when using several DataContexts</li>
+  <li>Fixed bug with creating constraints on executing the DataContext.CreateDatabase method (Oracle)</li>
+  <li>Fixed bug with incorrect ROWNUM function usage in generated SQL (Oracle)</li>
+  <li>Fixed problem with recognizing MySql numeric type synonyms (MySQL)</li>
+  <li>Fixed bug in LinqConnect samples (License not valid: Code 11)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Added default bindings to entity fields in Insert(Update/Delete) MethodMappings</li>
+  <li>Fixed bug with serializing entities loaded using DataLoadOptions</li>
+</ul>
+<br/>
+
+<p><b>1.0.41 23-Sep-10</b></p>
+<ul>
+  <li>Added the client NLS settings support in the TO_NUMBER function (Oracle)</li>
+  <li>Fixed bug with editing Entity Key values</li>
+  <li>Fixed bug with IndexOutOfRangeException on the DeleteOnSubmit call</li>
+  <li>Fixed bug on inserting new rows into a table with many-to-many association</li>
+  <li>Fixed bug with fetching records one-by-one from the 'detail' table in master/details relation</li>
+  <li>Fixed bug with retrieving entities of an inherited type</li>
+  <li>Fixed bugs with using the Contains method of empty arrays</li>
+  <li>Fixed bug with the RejectChanges method not working</li>
+  <li>Fixed bug with structs in queries</li>
+  <li>Fixed bug with Command Timeout</li>
+  <li>Fixed the 'invalid type mapping' bug when using TimeSpan in a primary key (MySQL)</li>
+</ul>
+
+<i>Entity Developer</i>
+<ul>
+  <li>Fixed bug with VB Code generation for Associations</li>
+  <li>Fixed bug with Unidirectional serialization mode</li>
+  <li>Fixed design time bug with Referential constraints</li>
+  <li>Fixed bug with generating code for stored procedures with out parameters</li>
+</ul>
+
+<br/>
+
+<p><b>1.0.39 28-Jul-10</b></p><ul>
+  <li>Added implementation of the ITable<TEntity> interface for the Table<TEntity> class</li>
+  <li>Changed DataContext.Log output format for Microsoft compatibility reasons</li>
+  <li>Fixed bug with creating XmlMappingSource object when the File Per Class model property is set to true</li>
+  <li>Fixed bug with IndexOutOfRangeException on the Refresh call</li>
+  <li>Fixed bug with CompiledQueryCache</li>
+  <li>Fixed bug with InvalidCastException on selecting a new anonymous type</li>
+  <li>Fixed bug with FilePerClass and XMLMappingSource</li>
+  <li>Fixed bug with functions that return NVarchar values (Oracle)</li>
+</ul>
+<br/>
+
+<p><b>1.0.38 07-Jul-10</b></p><ul>
+  <li>Improved select performance</li>
+  <li>Improved insert performance</li>
+  <li>Added support for the DatabaseExists method (MySQL)</li>
+  <li>Fixed bug with Concat()</li>
+  <li>Fixed bug with the CacheStoreReader and Cast</li>
+  <li>Fixed bug with charset mismatch (Oracle)</li>
+</ul>
+<br/>
+
+
+<p><b>1.0.36 28-May-10</b></p><ul>
+  <li>First release of Devart LinqConnect</li>
+</ul>
+<br/>
+
+
+<!-- end content -->
+
+<p>&nbsp;</p><p>&nbsp;</p><hr size=1><p>&copy; 2010-2021 Devart. All rights reserved.</p>
+</div>
+
+<script type="text/javascript">
+TestEngine();
+AdjustContentSize();
+</script>
+</body>
+</html>

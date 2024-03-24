@@ -1,0 +1,342 @@
+<!-- saved from url=(0013)about:internet --> <!-- Disable WinXP SP2 and Vista warning when opened locally -->
+<!doctype html public "-//w3c//dtd html 4.0 Transitional//en">
+<html>
+<head>
+  <title>Devart LinqConnect Readme</title>
+
+  <style>
+  body {
+    overflow: hidden;
+    margin: 0px 0px 0px 0px;
+    padding: 0px 0px 0px 0px;
+    background: #ffffff;
+    color: #000000;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    font-size: 70%;
+    width: 100%;
+    }
+  p
+    {
+    margin: .5em 0em .5em 0em;
+    }
+  ol, ul
+    {
+    margin-top: .5em;
+    }
+  li
+    {
+    margin-bottom: .5em;
+    }
+  ul p, ol p, dl p
+    {
+    margin-left: 0em;
+    }
+  blockquote.dxOverload
+    {
+    margin: .5em 1.5em .5em 1.5em;
+    }
+  h1, h2, h3, h4
+    {
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    margin-bottom: .4em;
+    margin-top: 1em;
+    font-weight: bold;
+    }
+  h1
+    {
+    font-size: 120%;
+    margin-top: 0em;
+    }
+  h2
+    {
+    font-size: 130%;
+    }
+  h3
+    {
+    font-size: 115%;
+    }
+  h4
+    {
+    font-size: 100%;
+    }
+  .dxH1, .dxH2, .dxH3, .dxH4
+    {
+    margin-left: -18px;
+    }
+  A
+    {
+    color: #0000FF;
+    }
+  A:link
+    {
+    color: #0000FF;
+    }
+  A:active
+    {
+    color: #000080;
+    }
+  A:visited
+    {
+    color: #800080;
+    }
+  A:hover
+    {
+    color: #FF0000;
+    }
+  pre
+    {
+    font-family: Courier New;
+    font-size: 9pt;
+    color: #000060;
+    margin-top: 0px;
+    }
+  code, p.example, p.sourcecode, table.sourcecode, tr.sourcecode, td.sourcecode
+    {
+    font-family: Courier New;
+    font-size: 9pt;
+    color: #000060;
+    }
+  div#pagetop {
+    margin: 0px;
+    padding: 0px;
+    background-color: #99ccff;
+    height: 44;
+    width: 100%;
+    border-bottom: 1px solid #999999;
+    }
+  div#pagebody {
+    margin: 0px 0px 0px 0px;
+    padding: 5px 10px 0px 22px;
+    height: 90%;
+    width: 100%;
+    overflow: auto;
+    background-color: #FFFFFF;
+    vertical-align: top;
+    }
+  table#BannerTable
+    {
+    width: 100%;
+    height: 100%;
+    border-collapse:collapse;
+    font-family: Verdana, Arial, Helvetica, sans-serif;
+    }
+  table#BannerTable td
+    {
+    padding-left: 8px;
+    padding-right: 8px;
+    }
+  tr#BannerTopRow
+    {
+    font-style: italic;
+    font-size: 70%;
+    }
+  tr#Banner2ndRow
+    {
+    font-weight: bold;
+    font-size: 80%;
+    }
+  table.filtereditemlisttable, table.xmldoctable
+    {
+    width: 95%;
+    margin-top: .6em;
+    margin-bottom: .3em;
+    border-width: 1px 1px 0px 0px;
+    border-style: solid;
+    border-color: #999999;
+    background-color: #999999;
+    font-size: 100%;
+    border-collapse:collapse;
+    }
+  table.filtereditemlisttable th, table.filtereditemlisttable td, table.xmldoctable th, table.xmldoctable td
+    {
+    border-style: solid;
+    border-width: 0px 0px 1px 1px;
+    border-style: solid;
+    border-color: #999999;
+    padding: 4px 6px;
+    text-align: left;
+    vertical-align: top;
+    }
+  table.filtereditemlisttable th, table.xmldoctable th
+    {
+    background: #cccccc;
+    vertical-align: bottom;
+    }
+  table.filtereditemlisttable td, table.xmldoctable td
+    {
+    background-color: #ffffff;
+    vertical-align: top;
+    }
+  </style>
+
+  <script>
+
+  var Engine;
+  var enOpera = 'Opera';
+  var enIE = 'IE';
+  var enGecko = 'Gecko';
+
+  function TestEngine()
+  {
+    if (document.all) {
+      if (window.opera) {
+        Engine = enOpera;
+      }
+      else {
+        Engine = enIE;
+      }
+    }
+    else {
+      Engine = enGecko;
+    }
+  }
+
+
+  function AdjustContentSize()
+  {
+    var cDiv = document.getElementById("pagebody");
+    if ((Engine == enGecko)||(Engine == enOpera))//amend padding
+      {
+        var w = document.body.clientWidth;
+        cDiv.style.width = w - 32;
+      }
+      var h = document.body.clientHeight;
+    
+      if (h > 0)
+      {
+        var diff = 44;
+        
+        if ((Engine == enGecko)||(Engine == enOpera)) 
+        {
+           diff = diff + 6;
+        }        
+           
+        cDiv.style.height = h - diff + 'px';        
+      }
+  }
+
+
+  function Startup()
+  {
+    //add startup code here
+  }
+  </script>
+
+</head>
+
+
+<body onresize="AdjustContentSize()" onload="Startup()">
+
+<div id="pagetop">
+  <table id="BannerTable">
+    <tr id="BannerTopRow">
+      <td>Devart LinqConnect</td>
+      <td align="right">support@devart.com</td>
+    </tr>
+    <tr id="Banner2ndRow">
+      <td>Readme</td>
+      <td>&nbsp;</td>
+    </tr>
+  </table>
+</div>
+
+<div id="pagebody">
+<!-- begin content -->
+
+<h4 class="dxH4">Product Description</h4>
+
+<p>
+Devart LinqConnect is a fast and easy to use ORM solution, developed closely to the 
+<a href="http://msdn.microsoft.com/en-us/library/bb425822.aspx">Microsoft LINQ to SQL</a> 
+technology, and having its own powerful model designer tool with seamless integration 
+to the Visual Studio - Entity Developer. Devart LinqConnect allows storing objects of your 
+.NET classes in relational databases. 
+</p>
+
+<p>
+Devart LinqConnect supports Oracle, MySQL, PostgreSQL,
+SQLite and SQL Server databases and provides database 
+independent interface. 
+</p>
+
+<p>
+Devart LinqConnect provides a wide list of ORM features and advantages.
+</p>
+
+<h4 class="dxH4">Supported Platforms</h4>
+
+<p>
+LinqConnect supports different .NET-based frameworks, including Full .NET Framework, 
+.NET Core, Silverlight, Mono, and Windows Phone. In addition to LINQ data access, it 
+offers you ADO.NET interfaces for Silverlight, Metro, and Windows Phone, that was not 
+available for these platforms before! Moreover, for these platforms, LinqConnect provides 
+a managed embedded database engine from C# SQLite project for working with local SQLite 
+databases.
+</p>
+
+<h4 class="dxH4">Key Features</h4>
+
+<ul>
+  <li>Interchangeable with Microsoft LINQ to SQL</li>
+  <li>Wide support for LINQ capabilities</li>
+  <li>Wide database support</li>  
+  <li>High performance</li>
+  <li>Visual schema modelling with <a href="http://www.devart.com/entitydeveloper">Entity Developer</a></li> 
+  <li>Visual Studio integration</li>      
+  <li>POCO classes used (no need to use a common base class)</li>
+  <li>Full CRUD (Create, Retrieve, Update, Delete) support</li>
+  <li>Batch updates</li>
+  <li>PLINQ support</li>
+  <li>ASP.NET Dynamic Data support</li>
+  <li>Change tracking support</li>
+  <li>Inheritance mapping (Table per hierarchy, Table per type)</li>
+  <li>Metadata mapping</li>
+  <li>Well-thought predefined templates for class generation</li>
+  <li>Custom templates for generated classes</li>
+  <li>Visual Studio debugger visualizer for DataQuery objects</li>
+  <li>Query logging</li>
+  <li><a href="http://www.devart.com/dbmonitor">dbMonitor</a> support</li>
+</ul>
+
+<h4 class="dxH4">Requirements</h4>
+
+<p>
+Devart LinqConnect requires .NET Framework 3.5 SP1 or later installed on the computer.
+</p>
+
+<h4 class="dxH4">Installation</h4>
+
+<p>
+Devart LinqConnect is bundled with Express Editions
+of the dotConnect products. Devart LinqConnect contains
+all required files and documentation. By default all files are
+installed in the "Program Files\Devart\dotConnect\Linq"
+folder.
+</p>
+
+<h4 class="dxH4">Documentation</h4>
+
+<p>
+Devart LinqConnect includes complete documentation on its features. You can access it
+from the application's Help menu item, or from the Start menu. You can also press F1
+to get context-sensitive help.
+</p>
+
+<h4 class="dxH4">Getting Support</h4>
+
+<p>
+You can contact the support team through the <a href="https://forums.devart.com/viewforum.php?f=31"
+target="_blank">forum</a> or <a href="mailto:support@devart.com">e-mail</a>.
+</p>
+
+<!-- end content -->
+
+<p>&nbsp;</p><p>&nbsp;</p><hr size=1><p>&copy; 2010-2021 Devart. All rights reserved.</p>
+</div>
+
+<script>
+TestEngine();
+AdjustContentSize();
+</script>
+</body>
+</html>
