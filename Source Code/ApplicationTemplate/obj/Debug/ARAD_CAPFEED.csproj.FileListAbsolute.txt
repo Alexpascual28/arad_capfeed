@@ -1,0 +1,178 @@
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Copyright Notices.txt
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe.config
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.pdb
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe.CodeAnalysisLog.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe.lastcodeanalysissucceeded
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\BouncyCastle.Crypto.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.GL.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.World.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Extras.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Platform.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.Merlin.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\MySql.Data.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.GLControl.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\System.Windows.Interactivity.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Traciot.Types.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\TraciotAPI.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ZedGraph.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\hasp_net_windows.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\NETOmniDriver-NET40.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\RCAPINet.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\TwinCAT.Ads.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\NrcCmdProc.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Phidget22.NET.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\HidGlobal.OK.Readers.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Sias.SingleCanDevice.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\bonetwrap.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Impinj.OctaneSdk.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\System.Data.SQLite.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\canlibCLSNET.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Newtonsoft.Json.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Google.Apis.Auth.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Google.Apis.Core.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Google.Apis.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.Merlin.pdb
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.Merlin.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.GL.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.World.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.pdb
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Extras.pdb
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Extras.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Platform.pdb
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Platform.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\MySql.Data.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.GLControl.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ZedGraph.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Phidget22.NET.pdb
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Phidget22.NET.xml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\HidGlobal.OK.Readers.pdb
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\de\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\es\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\fr\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\hu\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\it\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ja\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\pt\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ru\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\sk\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\sv\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\tr\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\zh-cn\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\zh-tw\ZedGraph.resources.dll
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.AssemblyReference.cache
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\MainWindow.baml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\PreRunChecksHelpers.baml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\UserControlViews\Process1UserControl.baml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\App.baml
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\MainWindow.g.cs
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\UserControlViews\Process1UserControl.g.cs
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\App.g.cs
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate_Content.g.cs
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate_MarkupCompile.cache
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate_MarkupCompile.lref
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate.g.resources
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.Properties.Resources.resources
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.GenerateResource.cache
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.CoreCompileInputs.cache
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.CopyComplete
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate.exe
+C:\LABMAN\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Copyright Notices.txt
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe.config
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe.CodeAnalysisLog.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.ApplicationTemplate.exe.lastcodeanalysissucceeded
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\BouncyCastle.Crypto.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Devart.Data.Linq.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Devart.Data.MySql.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.GL.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.World.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Extras.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Platform.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.Merlin.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\MySql.Data.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.GLControl.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\System.Windows.Interactivity.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Traciot.Types.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\TraciotAPI.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ZedGraph.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\hasp_net_windows.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\NETOmniDriver-NET40.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\RCAPINet.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\TwinCAT.Ads.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\NrcCmdProc.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Phidget22.NET.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\HidGlobal.OK.Readers.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Sias.SingleCanDevice.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\bonetwrap.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Impinj.OctaneSdk.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\System.Data.SQLite.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\canlibCLSNET.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Newtonsoft.Json.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Google.Apis.Auth.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Google.Apis.Core.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Devart.Data.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Google.Apis.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.Merlin.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Labman.Merlin.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.UI.GL.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Emgu.CV.World.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Extras.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Extras.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Platform.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\GalaSoft.MvvmLight.Platform.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\MySql.Data.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\OpenTK.GLControl.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ZedGraph.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Phidget22.NET.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Phidget22.NET.xml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\HidGlobal.OK.Readers.pdb
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\de\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\es\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\fr\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\hu\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\it\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ja\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\pt\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\ru\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\sk\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\sv\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\tr\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\zh-cn\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\zh-tw\ZedGraph.resources.dll
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.AssemblyReference.cache
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\App.baml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\MainWindow.g.cs
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\UserControlViews\Process1UserControl.g.cs
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\App.g.cs
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate_Content.g.cs
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate_MarkupCompile.cache
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate_MarkupCompile.lref
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\MainWindow.baml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\PreRunChecksHelpers.baml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\UserInterface\UserControlViews\Process1UserControl.baml
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate.g.resources
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.Properties.Resources.resources
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.GenerateResource.cache
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.CoreCompileInputs.cache
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\ARAD_CAPFEED.csproj.CopyComplete
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate.exe
+C:\Source Code\ARAD_CAPFEED\Source Code\ApplicationTemplate\obj\Debug\Labman.ApplicationTemplate.pdb
+C:\Labman\ARAD_CAPFEED\Source Code\ApplicationTemplate\bin\Devart.Data.dll
