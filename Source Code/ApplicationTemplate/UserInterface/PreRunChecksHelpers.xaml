@@ -1,0 +1,17 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:Labman.UserInterface">
+      <StackPanel x:Key="PreRunCheckHelper1" Orientation="Vertical">
+            <Label Style="{StaticResource Heading3LabelStyle}" Content="Make sure the things are all good." Margin="0 0 0 5" />
+            <Label Style="{StaticResource DefaultLabelStyle}" Content="Make sure that all the things that should be good are indeed good." Margin="0 0 0 20" />
+            <Label Style="{StaticResource Heading3LabelStyle}" Content="Make sure the things are not bad." Margin="0 0 0 5" />
+            <Label Style="{StaticResource DefaultLabelStyle}" Content="Make sure that all the things that should not be bad are indeed not bad." Margin="0 0 0 20" />
+            <Label Style="{StaticResource Heading3LabelStyle}" Content="T'Lipsum" Margin="0 0 0 5" />
+            <TextBlock TextWrapping="Wrap" Text="Th'art nesh thee nay lad soft lad wacken thi sen up t'foot o' our stairs. Nay lad where's tha bin. Th'art nesh thee a pint 'o mild any rooad t'foot o' our stairs. Where there's muck there's brass t'foot o' our stairs ah'll gi' thee a thick ear." Margin="0 0 0 20" />
+      </StackPanel>
+
+      <StackPanel x:Key="PreRunCheckHelper2" Orientation="Vertical">
+            <Label Style="{StaticResource Heading3LabelStyle}" Content="T'Lipsum" Margin="0 0 0 5" />
+            <TextBlock TextWrapping="Wrap" Text="Th'art nesh thee nay lad soft lad wacken thi sen up t'foot o' our stairs. Nay lad where's tha bin. Th'art nesh thee a pint 'o mild any rooad t'foot o' our stairs. Where there's muck there's brass t'foot o' our stairs ah'll gi' thee a thick ear. Ah'll learn thi tintintin tell thi summat for nowt soft lad mardy bum. Chuffin' nora ah'll box thi ears soft lad ee by gum tell thi summat for nowt ah'll gi' thee a thick ear. Bobbar nay lad. Breadcake soft southern pansy wacken thi sen up. Be reet where's tha bin mardy bum mardy bum. Tell thi summat for nowt where there's muck there's brass shu' thi gob. Dahn t'coil oil. That's champion ey up will 'e 'eckerslike shurrup by 'eck. Eeh. Shu' thi gob face like a slapped arse god's own county soft lad th'art nesh thee tha daft apeth." Margin="0 0 0 20" />
+      </StackPanel>
+</ResourceDictionary>

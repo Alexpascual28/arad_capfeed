@@ -1,0 +1,171 @@
+﻿<#@ template debug="true" hostSpecific="true" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="System.Configuration" #>
+<#@ Assembly Name="System.Xml.dll" #>
+<#@ Assembly Name="System.Xml.Linq.dll" #>
+<#@ Assembly Name="System.Xml.Serialization.dll" #>
+<#@ Assembly Name="System.Windows.Forms.dll" #>
+<#@ assembly name="$(SolutionDir)..\..\baseapp\Source Code\bin32\Labman.Merlin.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Configuration" #>
+<#@ import namespace="Labman" #>
+<#@ import namespace="Labman.Settings" #>
+<#
+
+      //==================================================================================================================================
+      // This template file is used to automatically generate the static classes for easy-access to hardware objects.
+      // It iterates through the hardware config .xml files in bin/Config and populates the Labman.Hardware.RobotHardware class from them.
+      // The code in this file is compiled and run ("transformed") whenever this file is saved, irrespective of wether there are changes.
+      // This template is also transformed if it is edited then loses focus (e.g. moving the caret to another file). Templates can also be
+      // configured to transform during builds and can be manually transformed, with "Build > Transform All T4 Templates".
+      //==================================================================================================================================
+
+      // Get the location of the config files.
+      var configFolder = this.Host.ResolvePath(@"..\bin\Config");
+
+      // Create a Dictionary with a key for each device section, where the value for each key is a list of devices.
+      SortedDictionary<string, List<Device>> sectionedDevices = new SortedDictionary<string, List<Device>>();
+
+      // Create a list of using directives.
+      List<string> usingDirectives = new List<string>();
+
+      foreach (var folder in Directory.GetDirectories(configFolder))
+      {
+            string[] filesInFolder = Directory.GetFiles(folder);
+            if (filesInFolder.Count() == 0) { continue; }
+
+            DirectoryInfo folderInfo = new DirectoryInfo(folder);
+            List<Device> devices = new List<Device>();
+
+            // Go through each config file in the folder adding a device to the list for this section.
+            bool hardwareFolder = folderInfo.Name == "Hardware";
+            foreach (var file in filesInFolder)
+            {
+                  string name = (new FileInfo(file)).Name.Replace(".xml", string.Empty);
+
+                  XElement xmlContent = XElement.Load(file);
+                  Type classObject = hardwareFolder ? GetClass(xmlContent.Descendants("BaseSettings").FirstOrDefault().Element("DeviceClassType").Value) :
+                                                      GetClass(xmlContent.Name.LocalName.Replace("Settings", string.Empty));
+
+                  if (classObject == null)
+                        continue;
+
+                  var collection = ConnectedHardware.GetConnectedHardwareCollection(classObject);
+
+                  Device device = new Device
+                  {
+                        Name = name,
+                        CodeName = MakeCodeFriendly(name),
+                        CollectionName = collection.Name,
+                        DeviceType = classObject.Name,
+                        Cast = collection.PropertyType.GenericTypeArguments[1] != classObject,
+                  };
+
+
+                  if (!usingDirectives.Contains(classObject.Namespace))
+                        usingDirectives.Add(classObject.Namespace);
+
+                  devices.Add(device);
+            }
+
+            // Add a section for this device type.
+            sectionedDevices.Add(folderInfo.Name, devices);
+      }
+
+#>
+//=============================================================================
+// <copyright file="<#= Path.GetFileName(Path.ChangeExtension(Host.TemplateFile, "cs")) #>" company="Labman Automation Ltd">
+// Copyright (c) Labman Automation Ltd. All rights reserved.
+// </copyright>
+//
+// THIS FILE HAS BEEN AUTO-GENERATED. DO NOT EDIT. CHANGES WILL BE LOST.
+// The classes are declared as partial so additions can be made in other files.
+//=============================================================================
+
+using System.Collections.Generic;
+<#= string.Join(Environment.NewLine, usingDirectives.OrderBy(ud => ud).Select(ud => $"using {ud};")) #>
+
+namespace Labman.Hardware
+{
+      /// <summary>Exposes the ConnectedHardware types used by this system as properties.<summary>
+      public static partial class RobotHardware
+      {
+            #region Classes
+
+<#
+foreach (var section in sectionedDevices)
+{
+      var sectionName = section.Key;
+      var devices = section.Value;
+#>
+            /// <summary><#= sectionName #> connected to the robot.</summary>
+            public static partial class <#= sectionName #>
+            {
+                  #region Properties
+
+<#
+      foreach (var device in devices)
+      {
+#>
+                  /// <summary><#= device.Name #></summary>
+                  public static <#= device.DeviceType #> <#= device.CodeName #> => <#= device.Cast ? $"({device.DeviceType})" : string.Empty #>ConnectedHardware.<#= device.CollectionName #>["<#= device.Name #>"];
+
+<#
+      }
+#>
+                  #endregion
+            }
+
+<#
+}
+#>
+            #endregion
+      }
+}
+<#+
+
+    public class Device
+    {
+          // The name of the device
+          public string Name { get; set; }
+
+          // The code-friendly name of the device
+          public string CodeName { get; set; }
+
+          // The type of the device
+          public string DeviceType { get; set; }
+
+          // The collection in ConnectedHardware to which the device belongs
+          public string CollectionName { get; set; }
+
+          // Whether the device needs casting to its type
+          public bool Cast { get; set; }
+    }
+
+#>
+<#+
+
+    public string MakeCodeFriendly(string input) {
+          return input.Replace(" ", string.Empty).Replace("&", "And").Replace("-", "_").Replace("/", "Per").Replace("\\", "_").Replace("%", "Percent").Replace("(","_").Replace(")","_").Trim('_');
+    }
+
+    private static Type GetClass(string className)
+    {
+          var merlin = typeof(Labman.BaseClass).Assembly;
+
+          var typeQuery = from t in merlin.GetTypes()
+                          where t.Namespace != null
+                          where t.IsClass && t.Namespace.Contains("Labman.") && t.Name.Trim().Equals(className)
+                          select t;
+
+          return typeQuery.FirstOrDefault();
+    }
+
+#>

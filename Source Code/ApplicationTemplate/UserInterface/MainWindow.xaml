@@ -1,0 +1,866 @@
+﻿<lab:WindowBase x:Class="Labman.UserInterface.MainWindow"
+                xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+                xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+                xmlns:cmd="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Platform"
+                xmlns:ap="clr-namespace:Labman.UserInterface.AttachedProperties;assembly=Labman.Merlin"
+                xmlns:usercontrolviews="clr-namespace:Labman.UserInterface.UserControlViews"
+                xmlns:usercontrols="clr-namespace:Labman.UserInterface.UserControlViews;assembly=Labman.Merlin"
+                xmlns:viewmodels="clr-namespace:Labman.UserInterface.ViewModels"
+                xmlns:lab="clr-namespace:Labman.UserInterface.WindowViews;assembly=Labman.Merlin"
+                xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+                mc:Ignorable="d"
+                Title="Labman Automation Ltd"
+                d:DesignHeight="1040" d:DesignWidth="1920"
+                Background="{StaticResource LabmanSlateGreyBrush}"
+                WindowState="Maximized"
+                WindowStartupLocation="CenterScreen"
+                CloseEndsApp="true"
+                Closing="MainWindow_Closing">
+
+      <!-- TODO: Set main window title above. This is visible in task manager, taskbar etc. -->
+
+      <lab:WindowBase.DataContext>
+            <viewmodels:MainWindowViewModel/>
+      </lab:WindowBase.DataContext>
+      <lab:WindowBase.Resources>
+            <DockPanel x:Key="LabmanEngineerWarningMessage" x:Shared="False" LastChildFill="True">
+                  <Control DockPanel.Dock="Left" Style="{StaticResource Icon.Warning}" Width="32" Height="32" Foreground="{StaticResource OffRedLightBrush}" />
+                  <TextBlock Foreground="{StaticResource Nav.Text.Dark}" Margin="20 0 0 0" Style="{StaticResource Heading3TextBlockStyle}" TextWrapping="Wrap" VerticalAlignment="Center"
+                                               Text="The controls on this page are only to be used by a system administrator or a Labman engineer. Incorrect use could cause damage to the system." />
+            </DockPanel>
+            <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+            <QuinticEase x:Key="QuinticEase" EasingMode="EaseOut" />
+            <Style x:Key="RobotNameStyle" TargetType="Label">
+                  <Setter Property="Foreground" Value="{StaticResource Nav.Text.Dark}" />
+                  <Setter Property="FontFamily" Value="Segeo IO" />
+                  <Setter Property="FontWeight" Value="SemiBold" />
+                  <Setter Property="Margin" Value="0 -26 0 0" />
+                  <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=NavCollapseButton, Path=IsChecked}" Value="False">
+                              <DataTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="(TextElement.FontWeight)">
+                                                      <DiscreteObjectKeyFrame KeyTime="0:0:0.1">
+                                                            <DiscreteObjectKeyFrame.Value>
+                                                                  <FontWeight>SemiBold</FontWeight>
+                                                            </DiscreteObjectKeyFrame.Value>
+                                                      </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <ThicknessAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Padding">
+                                                      <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="40 34 0 16">
+                                                            <EasingThicknessKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingThicknessKeyFrame.EasingFunction>
+                                                      </EasingThicknessKeyFrame>
+                                                </ThicknessAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="FontSize">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="17">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </DataTrigger.EnterActions>
+                              <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <ObjectAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="(TextElement.FontWeight)">
+                                                      <DiscreteObjectKeyFrame KeyTime="0:0:0.1">
+                                                            <DiscreteObjectKeyFrame.Value>
+                                                                  <FontWeight>Normal</FontWeight>
+                                                            </DiscreteObjectKeyFrame.Value>
+                                                      </DiscreteObjectKeyFrame>
+                                                </ObjectAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <ThicknessAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Padding">
+                                                      <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="5 4 0 16">
+                                                            <EasingThicknessKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingThicknessKeyFrame.EasingFunction>
+                                                      </EasingThicknessKeyFrame>
+                                                </ThicknessAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="FontSize">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="14">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </DataTrigger.ExitActions>
+                        </DataTrigger>
+                  </Style.Triggers>
+            </Style>
+            <Style x:Key="LeftGridStyle" TargetType="Grid">
+                  <Setter Property="Width" Value="340" />
+                  <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=NavCollapseButton, Path=IsChecked}" Value="True">
+                              <DataTrigger.EnterActions>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Width">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="50">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </DataTrigger.EnterActions>
+                              <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Width">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="340">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </DataTrigger.ExitActions>
+                        </DataTrigger>
+                  </Style.Triggers>
+            </Style>
+            <Style x:Key="NavCollapseButtonStyle" TargetType="ToggleButton" BasedOn="{StaticResource NavButtonStyle}">
+                  <Style.Triggers>
+                        <Trigger Property="IsChecked" Value="False">
+                              <Trigger.EnterActions>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <ThicknessAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Margin">
+                                                      <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="0 30 0 8">
+                                                            <EasingThicknessKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingThicknessKeyFrame.EasingFunction>
+                                                      </EasingThicknessKeyFrame>
+                                                </ThicknessAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                                    <BeginStoryboard x:Name="IsCheckedTrueStoryboard">
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="(Control.RenderTransform).(RotateTransform.Angle)">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="0">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </Trigger.EnterActions>
+                              <Trigger.ExitActions>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <ThicknessAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Margin">
+                                                      <EasingThicknessKeyFrame KeyTime="0:0:0.2" Value="5 30 0 0">
+                                                            <EasingThicknessKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingThicknessKeyFrame.EasingFunction>
+                                                      </EasingThicknessKeyFrame>
+                                                </ThicknessAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                                    <BeginStoryboard x:Name="IsCheckedFalseStoryboard">
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="(Control.RenderTransform).(RotateTransform.Angle)">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="-180">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </Trigger.ExitActions>
+                        </Trigger>
+                        <Trigger Property="IsMouseOver" Value="True">
+                              <Setter Property="TextElement.Foreground" Value="{Binding Path=(ap:BrushAnimations.HoverBrush), RelativeSource={RelativeSource Mode=Self}}" />
+                        </Trigger>
+                  </Style.Triggers>
+                  <Setter Property="Height" Value="35" />
+                  <Setter Property="Width" Value="40" />
+                  <Setter Property="VerticalAlignment" Value="Bottom" />
+                  <Setter Property="HorizontalAlignment" Value="Left" />
+                  <Setter Property="HorizontalContentAlignment" Value="Center" />
+                  <Setter Property="Background" Value="Transparent" />
+                  <Setter Property="Margin" Value="0 30 0 8" />
+                  <Setter Property="RenderTransformOrigin" Value="0.5 0.5" />
+                  <Setter Property="RenderTransform">
+                        <Setter.Value>
+                              <RotateTransform Angle="0" />
+                        </Setter.Value>
+                  </Setter>
+            </Style>
+            <Style x:Key="LogoBorderStyle" TargetType="Border">
+                  <Style.Triggers>
+                        <DataTrigger Binding="{Binding ElementName=NavCollapseButton, Path=IsChecked}" Value="True">
+                              <DataTrigger.EnterActions>
+                                    <BeginStoryboard x:Name="ShrinkImageSB">
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Width">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="26">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </DataTrigger.EnterActions>
+                              <DataTrigger.ExitActions>
+                                    <BeginStoryboard>
+                                          <Storyboard>
+                                                <DoubleAnimationUsingKeyFrames Duration="0:0:0.2" Storyboard.TargetProperty="Width">
+                                                      <EasingDoubleKeyFrame KeyTime="0:0:0.2" Value="180">
+                                                            <EasingDoubleKeyFrame.EasingFunction>
+                                                                  <QuinticEase EasingMode="EaseInOut" />
+                                                            </EasingDoubleKeyFrame.EasingFunction>
+                                                      </EasingDoubleKeyFrame>
+                                                </DoubleAnimationUsingKeyFrames>
+                                          </Storyboard>
+                                    </BeginStoryboard>
+                              </DataTrigger.ExitActions>
+                        </DataTrigger>
+                  </Style.Triggers>
+            </Style>
+            <Style x:Key="NotificationBadge" TargetType="TextBox">
+                  <Setter Property="Template">
+                        <Setter.Value>
+                              <ControlTemplate TargetType="TextBox">
+                                    <Border CornerRadius="10"
+                                            BorderThickness="1.75"
+                                            BorderBrush="{TemplateBinding Foreground}"
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Padding="6 1">
+                                          <Label Style="{StaticResource DefaultLabelStyle}" Foreground="{TemplateBinding Foreground}" Content="{Binding RelativeSource={RelativeSource Mode=TemplatedParent}, Path=Text}" />
+                                    </Border>
+                              </ControlTemplate>
+                        </Setter.Value>
+                  </Setter>
+                  <Setter Property="FontSize" Value="12" />
+                  <Setter Property="Margin" Value="16 0 0 0" />
+                  <Setter Property="Visibility" Value="Visible" />
+                  <Style.Triggers>
+                        <DataTrigger Binding="{Binding RelativeSource={RelativeSource Mode=Self}, Path=Text}" Value="0">
+                              <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                  </Style.Triggers>
+            </Style>
+            <Style x:Key="LogNotificationDot" TargetType="Ellipse">
+                  <Setter Property="Width" Value="7" />
+                  <Setter Property="Height" Value="7" />
+                  <Setter Property="HorizontalAlignment" Value="Right" />
+                  <Setter Property="VerticalAlignment" Value="Top" />
+                  <Setter Property="Margin" Value="0 -5 -5 0" />
+                  <Setter Property="Visibility" Value="Visible" />
+                  <Setter Property="Fill" Value="{StaticResource StatusColours.RedBrush}" />
+                  <Style.Triggers>
+                        <MultiDataTrigger>
+                              <MultiDataTrigger.Conditions>
+                                    <Condition Binding="{Binding UnreadErrorLogs}" Value="0" />
+                                    <Condition Binding="{Binding UnreadWarningLogs}" Value="0" />
+                              </MultiDataTrigger.Conditions>
+                              <Setter Property="Visibility" Value="Collapsed" />
+                        </MultiDataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=NavCollapseButton, Path=IsChecked}" Value="false">
+                              <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding UnreadErrorLogs}" Value="0">
+                              <Setter Property="Fill" Value="{StaticResource StatusColours.YellowBrush}" />
+                        </DataTrigger>
+                  </Style.Triggers>
+            </Style>
+            <Style x:Key="LogNotificationBackground" TargetType="Rectangle">
+                  <Style.Triggers>
+                        <EventTrigger RoutedEvent="Binding.TargetUpdated">
+                              <BeginStoryboard>
+                                    <Storyboard>
+                                          <DoubleAnimationUsingKeyFrames Storyboard.TargetProperty="Opacity">
+                                                <DiscreteDoubleKeyFrame KeyTime="0:0:0" Value="0.7" />
+                                                <DiscreteDoubleKeyFrame KeyTime="0:0:0.2" Value="0.7" />
+                                                <EasingDoubleKeyFrame KeyTime="0:0:0.5" Value="0" />
+                                          </DoubleAnimationUsingKeyFrames>
+                                    </Storyboard>
+                              </BeginStoryboard>
+                        </EventTrigger>
+                        <DataTrigger Binding="{Binding ElementName=LogsNavButton, Path=IsChecked}" Value="True">
+                              <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                        <DataTrigger Binding="{Binding ElementName=NavCollapseButton, Path=IsChecked}" Value="False">
+                              <Setter Property="Visibility" Value="Collapsed" />
+                        </DataTrigger>
+                  </Style.Triggers>
+            </Style>
+      </lab:WindowBase.Resources>
+
+      <Grid>
+            <Grid.ColumnDefinitions>
+                  <ColumnDefinition Width="auto" />
+                  <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+
+            <!-- TODO: Set robot name. -->
+            <Label Grid.ColumnSpan="2" Style="{StaticResource RobotNameStyle}" Content="Labman Application Template" />
+
+            <!--#region LEFT PANEL-->
+
+            <Grid Grid.Column="0" Margin="0 -30 0 0" Style="{StaticResource LeftGridStyle}">
+                  <Grid.RowDefinitions>
+                        <RowDefinition Height="auto" />
+                        <RowDefinition Height="*" />
+                        <RowDefinition Height="auto" />
+                  </Grid.RowDefinitions>
+
+                  <!--#region NAVIGATION PANEL -->
+
+                  <!-- TODO: Set visibility to visible to show the navbar shrink/expand button when on narrow displays -->
+                  <!-- TODO: Set IsChecked to "True" to open with navbar narrow -->
+                  <ToggleButton Name="NavCollapseButton" Style="{StaticResource NavCollapseButtonStyle}" IsChecked="False" Visibility="Hidden">
+                        <Control Style="{StaticResource Icon.Arrow.Left}" Focusable="False" Margin="11"/>
+                  </ToggleButton>
+
+                  <ScrollViewer Grid.Row="1" HorizontalScrollBarVisibility="Disabled" VerticalScrollBarVisibility="Auto">
+                        <StackPanel Orientation="Vertical">
+
+                              <!--#region INITIALISE/EStop/HOME/START/STOP-->
+
+                              <!--Initialise-->
+                              <Button Style="{StaticResource NavButtonStyle}" Command="{Binding InitialiseCommand}" ToolTip="{Binding ElementName=InitialisedTextBlock, Path=Text}">
+                                    <StackPanel Orientation="Horizontal">
+                                          <StackPanel.Style>
+                                                <Style TargetType="StackPanel">
+                                                      <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding IsInitialised}" Value="True">
+                                                                  <Setter Property="TextElement.Foreground" Value="{StaticResource OnGreenLightBrush}" />
+                                                            </DataTrigger>
+                                                      </Style.Triggers>
+                                                </Style>
+                                          </StackPanel.Style>
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Initialise}" />
+                                          </Label>
+                                          <TextBlock x:Name="InitialisedTextBlock" VerticalAlignment="Center" Margin="20 0 0 0">
+                                                <TextBlock.Style>
+                                                      <Style TargetType="TextBlock">
+                                                            <Setter Property="Text" Value="Initialise" />
+                                                            <Style.Triggers>
+                                                                  <DataTrigger Binding="{Binding IsInitialised}" Value="True">
+                                                                        <Setter Property="Text" Value="Initialised" />
+                                                                  </DataTrigger>
+                                                            </Style.Triggers>
+                                                      </Style>
+                                                </TextBlock.Style>
+                                          </TextBlock>
+                                    </StackPanel>
+                              </Button>
+
+                              <!--EStop-->
+                              <Label Style="{StaticResource NavLabelStyle}" ToolTip="{Binding EStoppedText}">
+                                    <StackPanel Orientation="Horizontal">
+                                          <StackPanel.Style>
+                                                <Style TargetType="StackPanel">
+                                                      <Style.Triggers>
+                                                            <DataTrigger Binding="{Binding ElementName=EStopTextBlock, Path=Text}" Value="System EStopped">
+                                                                  <Setter Property="TextElement.Foreground" Value="{StaticResource OffRedLightBrush}" />
+                                                            </DataTrigger>
+                                                            <DataTrigger Binding="{Binding EStoppedText}" Value="EStop OK">
+                                                                  <Setter Property="TextElement.Foreground" Value="{StaticResource OnGreenLightBrush}" />
+                                                            </DataTrigger>
+                                                      </Style.Triggers>
+                                                </Style>
+                                          </StackPanel.Style>
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Exclamation}" />
+                                          </Label>
+                                          <TextBlock x:Name="EStopTextBlock" Text="{Binding EStoppedText}" VerticalAlignment="Center" Margin="20 0 0 0" FontSize="14" />
+                                    </StackPanel>
+                              </Label>
+
+                              <!--Home-->
+                              <Button Style="{StaticResource NavButtonStyle}" Command="{Binding HomeCommand}" ToolTip="Home">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Home}" />
+                                          </Label>
+                                          <TextBlock Text="Home System" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </Button>
+
+                              <!--Start-->
+                              <Button Style="{StaticResource NavButtonStyle}" Command="{Binding StartCommand}" ToolTip="Start"
+                                      ap:BrushAnimations.HoverBrush="{StaticResource Icon.Start.Green.HovBrush}"
+                                      ap:BrushAnimations.NormalBrush="{StaticResource Icon.Start.GreenBrush}"
+                                      ap:BrushAnimations.AnimateHoverColor="False">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Start}" />
+                                          </Label>
+                                          <TextBlock Text="Start" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </Button>
+
+                              <!--Stop-->
+                              <Button Style="{StaticResource NavButtonStyle}" Command="{Binding StopCommand}" ToolTip="Stop"
+                                      ap:BrushAnimations.HoverBrush="{StaticResource Icon.Stop.Red.HovBrush}"
+                                      ap:BrushAnimations.NormalBrush="{StaticResource Icon.Stop.RedBrush}"
+                                      ap:BrushAnimations.AnimateHoverColor="False">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Stop}" />
+                                          </Label>
+                                          <TextBlock Text="Stop" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </Button>
+
+                              <!--#endregion-->
+
+                              <!--#region PROCESS VIEWS -->
+
+                              <Label Content="Process Views" Style="{StaticResource ShrinkingHorizontalSeparator}" Foreground="{StaticResource Nav.Text.Dark}" Margin="40 15" />
+
+                              <!-- TODO: Add nav buttons with custom icons for processes / other views. Each with an x:Name. -->
+                              <RadioButton x:Name="ProcessView1" Style="{StaticResource NavRadioButtonStyle}" GroupName="Menu" ToolTip="Process View" IsChecked="True">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Process}" />
+                                          </Label>
+                                          <TextBlock Text="Process View" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                              <!--#region SETTINGS ITEMS -->
+
+                              <Label Content="Settings &amp; Engineering" Style="{StaticResource ShrinkingHorizontalSeparator}" Foreground="{StaticResource Nav.Text.Dark}" Margin="40 15" />
+
+                              <!--#region HARDWARE CONFIGURATION -->
+
+                              <RadioButton x:Name="HardwareConfigNavButton" Style="{StaticResource NavRadioButtonStyle}" Visibility="{Binding EngineeringVisibility}" IsEnabled="{Binding IsHardwareConfigEnabled}" GroupName="Menu" ToolTip="Hardware Configuration">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.HardwareConfig}" />
+                                          </Label>
+                                          <TextBlock Text="Hardware Configuration" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                              <!--#region ENGINEERING ACTIONS -->
+
+                              <RadioButton x:Name="EngineeringNavButton" Style="{StaticResource NavRadioButtonStyle}" Visibility="{Binding EngineeringVisibility}" IsEnabled="{Binding IsEngineeringEnabled}" GroupName="Menu" ToolTip="Engineering Actions">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.EngineeringActions}" />
+                                          </Label>
+                                          <TextBlock Text="Engineering Actions" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                              <!--#region PARAMETERS -->
+
+                              <RadioButton x:Name="ParametersNavButton" Style="{StaticResource NavRadioButtonStyle}" Visibility="{Binding EngineeringVisibility}" IsEnabled="{Binding IsParametersEnabled}" GroupName="Menu" ToolTip="Parameters">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Parameters}" />
+                                          </Label>
+                                          <TextBlock Text="Parameters" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                              <!--#region POSITIONS -->
+
+                              <RadioButton x:Name="PositionsNavButton" Style="{StaticResource NavRadioButtonStyle}" Visibility="{Binding PositionDatabaseVisibility}" IsEnabled="{Binding IsPositionsDatabaseEnabled}" GroupName="Menu" ToolTip="Positions">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Positions}" />
+                                          </Label>
+                                          <TextBlock Text="Positions" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+
+
+
+                              <!--#region SOAK TEST -->
+
+                              <RadioButton x:Name="SoakNavButton" Style="{StaticResource NavRadioButtonStyle}" Visibility="{Binding EngineeringVisibility}" IsEnabled="{Binding IsSoakTestEnabled}" GroupName="Menu" ToolTip="Soak Tests">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.SoakTest}" />
+                                          </Label>
+                                          <TextBlock Text="Soak Test" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                              <!--#region PROCESS STATES -->
+
+                              <RadioButton x:Name="ProcessStatesNavButton" Style="{StaticResource NavRadioButtonStyle}" Visibility="{Binding ProcessStatesVisibility}" GroupName="Menu" ToolTip="Process States">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.ProcessStates}" />
+                                          </Label>
+                                          <TextBlock Text="Process States" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                              <!--#region LOGS -->
+
+                              <RadioButton x:Name="LogsNavButton" Style="{StaticResource NavRadioButtonStyle}" GroupName="Menu" ToolTip="Logs" IsChecked="{Binding LogsVisible}">
+                                    <Grid>
+                                          <!-- Rectangles to flash when errors or warnings are logged when nav bar is collapsed -->
+                                          <Rectangle Style="{StaticResource LogNotificationBackground}" Fill="{StaticResource StatusColours.YellowBrush}" Tag="{Binding UnreadWarningLogs, NotifyOnTargetUpdated=True}" />
+                                          <Rectangle Style="{StaticResource LogNotificationBackground}" Fill="{StaticResource StatusColours.RedBrush}" Tag="{Binding UnreadErrorLogs, NotifyOnTargetUpdated=True}" />
+
+                                          <StackPanel Orientation="Horizontal" Tag="{Binding UnreadErrorLogs, NotifyOnTargetUpdated=True}" Background="Transparent">
+                                                <Label Style="{StaticResource NavButtonImageStyle}">
+                                                      <Grid>
+                                                            <Control Style="{StaticResource Icon.Info}" />
+
+                                                            <!-- Dot to alert to unseen error or warning log messages when nav bar is collapsed -->
+                                                            <Ellipse Style="{StaticResource LogNotificationDot}" />
+                                                      </Grid>
+                                                </Label>
+                                                <TextBlock Text="Logs" VerticalAlignment="Center" Margin="20 0 0 0" />
+
+                                                <!-- Badges to show number of unseen error and warning log messages -->
+                                                <TextBox Text="{Binding UnreadWarningLogs}" Foreground="{StaticResource StatusColours.YellowBrush}">
+                                                      <TextBox.Style>
+                                                            <Style TargetType="TextBox" BasedOn="{StaticResource NotificationBadge}">
+                                                                  <Style.Triggers>
+                                                                        <DataTrigger Binding="{Binding ElementName=ErrorLogsBadge, Path=Visibility}" Value="Visible">
+                                                                              <Setter Property="Visibility" Value="Collapsed" />
+                                                                        </DataTrigger>
+                                                                  </Style.Triggers>
+                                                            </Style>
+                                                      </TextBox.Style>
+                                                </TextBox>
+                                                <TextBox Style="{StaticResource NotificationBadge}" Text="{Binding UnreadErrorLogs}" Foreground="{StaticResource StatusColours.RedBrush}" x:Name="ErrorLogsBadge" />
+                                          </StackPanel>
+                                    </Grid>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                              <!--#endregion-->
+
+                              <!--#region USER -->
+
+                              <Label Content="User &amp; System" Style="{StaticResource ShrinkingHorizontalSeparator}" Foreground="{StaticResource Nav.Text.Dark}" Margin="40 15" />
+
+                              <!--Login/out-->
+                              <Button Style="{StaticResource NavButtonStyle}" ToolTip="{Binding UserLoginToolTip}" Command="{Binding LoginCommand}">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}" Visibility="{Binding UnLockedIconVisibility}">
+                                                <Control Style="{StaticResource Icon.User}" />
+                                          </Label>
+
+                                          <Label Style="{StaticResource NavButtonImageStyle}" Visibility="{Binding LockedIconVisibility}">
+                                                <Control Style="{StaticResource Icon.User}" />
+                                          </Label>
+
+                                          <TextBlock Text="{Binding UserLoginText}" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </Button>
+
+                              <!--About-->
+                              <Button Style="{StaticResource NavButtonStyle}" ToolTip="About" Command="{Binding AboutCommand}">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.InfoCircle}" />
+                                          </Label>
+                                          <TextBlock Text="About" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </Button>
+
+                              <!-- Icons -->
+                              <!-- TODO: Can be used to find icons. Or just open IconBrowserUserControl in design view. Remove this before releasing the robot. -->
+                              <RadioButton x:Name="IconsNavButton" Style="{StaticResource NavRadioButtonStyle}" GroupName="Menu" ToolTip="Icons">
+                                    <StackPanel Orientation="Horizontal">
+                                          <Label Style="{StaticResource NavButtonImageStyle}">
+                                                <Control Style="{StaticResource Icon.Magnifier}" />
+                                          </Label>
+                                          <TextBlock Text="Icons" VerticalAlignment="Center" Margin="20 0 0 0" />
+                                    </StackPanel>
+                              </RadioButton>
+
+                              <!--#endregion-->
+
+                        </StackPanel>
+                  </ScrollViewer>
+
+                  <!--#endregion-->
+
+                  <Border Grid.Row="2" Style="{StaticResource LogoBorderStyle}" Margin="0 20">
+                        <Image RenderOptions.BitmapScalingMode="HighQuality" Source="pack://application:,,,/Labman.Merlin;component/Images/labman-logo.png" Width="180" />
+                  </Border>
+            </Grid>
+
+            <!--#endregion-->
+
+            <!--#region RIGHT (CONTENT) PANEL-->
+
+            <Grid Grid.Column="1">
+
+                  <!--#region PROCESS CONTROL -->
+
+                  <!-- TODO: Add views for processes / other views as necessary. Bind their visibility to their Nav buttons. -->
+                  <!-- TODO: Customise or remove the header for each view using same icon and name as used in the Nav button. -->
+                  <!-- TODO: Customise or remove the ribbon for each view. -->
+
+                  <!--#region Process View 1-->
+
+                  <DockPanel Visibility="{Binding ElementName=ProcessView1, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+
+                        <!--Header-->
+                        <StackPanel DockPanel.Dock="Top" Visibility="Collapsed" HorizontalAlignment="Left" Orientation="Horizontal" MinHeight="32" Margin="0 0 0 10">
+                              <Control Style="{StaticResource Icon.Process}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                              <Label Content="Process View 1" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                        </StackPanel>
+
+                        <!--Ribbon-->
+                        <DockPanel DockPanel.Dock="Top" Margin="0 0 0 10" LastChildFill="True">
+
+                              <!--Right aligned controls-->
+                              <StackPanel DockPanel.Dock="Right" Visibility="Collapsed" Orientation="Horizontal">
+
+                                    <Button Command="{Binding HomeCommand}" Style="{StaticResource RibbonButtonStyle}">
+                                          <DockPanel LastChildFill="True">
+                                                <TextBlock DockPanel.Dock="Bottom" Text="Home" TextWrapping="Wrap" Margin="0 5 0 0" />
+                                                <Control Style="{StaticResource Icon.Home}" />
+                                          </DockPanel>
+                                    </Button>
+
+                                    <Label Style="{StaticResource VerticalLineSeparatorLabelStyle}" BorderBrush="{StaticResource Nav.Text.Dark.Disabled}" Margin="15 0" />
+
+                                    <Button Command="{Binding StartCommand}">
+                                          <Button.Style>
+                                                <Style TargetType="Button" BasedOn="{StaticResource RibbonButtonStyle}">
+                                                      <Setter Property="Foreground" Value="{StaticResource Icon.Start.GreenBrush}" />
+                                                      <Style.Triggers>
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                  <Setter Property="Foreground" Value="{StaticResource Nav.Text.Dark.Disabled}" />
+                                                            </Trigger>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                  <Setter Property="Foreground" Value="{StaticResource Icon.Start.Green.HovBrush}" />
+                                                            </Trigger>
+                                                      </Style.Triggers>
+                                                </Style>
+                                          </Button.Style>
+                                          <DockPanel LastChildFill="True">
+                                                <TextBlock DockPanel.Dock="Bottom" Text="Start" TextWrapping="Wrap" Margin="0 5 0 0" />
+                                                <Control Style="{StaticResource Icon.Start}" />
+                                          </DockPanel>
+                                    </Button>
+
+                                    <Button Command="{Binding StopCommand}">
+                                          <Button.Style>
+                                                <Style TargetType="Button" BasedOn="{StaticResource RibbonButtonStyle}">
+                                                      <Setter Property="Foreground" Value="{StaticResource Icon.Stop.RedBrush}" />
+                                                      <Style.Triggers>
+                                                            <Trigger Property="IsEnabled" Value="False">
+                                                                  <Setter Property="Foreground" Value="{StaticResource Nav.Text.Dark.Disabled}" />
+                                                            </Trigger>
+                                                            <Trigger Property="IsMouseOver" Value="True">
+                                                                  <Setter Property="Foreground" Value="{StaticResource Icon.Stop.Red.HovBrush}" />
+                                                            </Trigger>
+                                                      </Style.Triggers>
+                                                </Style>
+                                          </Button.Style>
+                                          <DockPanel LastChildFill="True">
+                                                <TextBlock DockPanel.Dock="Bottom" Text="Stop" TextWrapping="Wrap" Margin="0 5 0 0" />
+                                                <Control Style="{StaticResource Icon.Stop}" />
+                                          </DockPanel>
+                                    </Button>
+                              </StackPanel>
+
+
+                        </DockPanel>
+
+                        <!--Process Main Content-->
+                        <usercontrolviews:Process1UserControl Background="White"/>
+                        <!--DataContext="{Binding MainProcessVM}"-->
+
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+                  <!--#endregion-->
+
+                  <!--#region HARDWARE CONFIG. -->
+
+                  <!-- TODO: Set TreeViewIsResizable to "True" if required on narrow monitors -->
+                  <DockPanel Visibility="{Binding ElementName=HardwareConfigNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+                        <DockPanel DockPanel.Dock="Top" MinHeight="32" LastChildFill="True">
+                              <StackPanel DockPanel.Dock="Left" HorizontalAlignment="Left" VerticalAlignment="Center" Orientation="Horizontal">
+                                    <Control Style="{StaticResource Icon.HardwareConfig}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                                    <Label Content="Hardware Configuration" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                              </StackPanel>
+                              <ContentControl HorizontalAlignment="Right" Content="{StaticResource LabmanEngineerWarningMessage}" Margin="20 0 20 0" />
+                        </DockPanel>
+
+                        <usercontrols:HardwareConfigUserControl DataContext="{Binding HardwareConfigurationUserControlViewModel}" TreeViewIsResizable="False" DefaultTreeViewWidth="400" Margin="0 10 0 0" />
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+                  <!--#region ENGINEERING ACTIONS -->
+
+                  <DockPanel Visibility="{Binding ElementName=EngineeringNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+                        <DockPanel DockPanel.Dock="Top" MinHeight="32" LastChildFill="True">
+                              <StackPanel DockPanel.Dock="Left" HorizontalAlignment="Left" Orientation="Horizontal" VerticalAlignment="Center">
+                                    <Control Style="{StaticResource Icon.EngineeringActions}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                                    <Label Content="Engineering Actions" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                              </StackPanel>
+                              <ContentControl HorizontalAlignment="Right" Content="{StaticResource LabmanEngineerWarningMessage}" Margin="20 0" />
+                        </DockPanel>
+
+                        <!-- TODO: Add ComboBoxItems for engineering action classes. If the classes have instances, add the instance to HardwareInstancesViewModel. -->
+                        <!-- TODO: Set ap:EngineeringActions.ClassName for each item and ap:EngineeringActions.ClassInstance if it is non-static. ap:EngineeringAcitons.AssemblyName isn't necessary if the class is baseapp/robot assembly but helps with design view. -->
+
+                        <ComboBox x:Name="EngineeringActionsComboBox" Style="{StaticResource ScrollingTabControl}" DockPanel.Dock="Top" Margin="0 10 0 0" SelectedIndex="0">
+                               <ComboBoxItem ap:EngineeringActions.AssemblyName="{Binding ProjectAssemblyName}" ap:EngineeringActions.ClassName="Labman.Hardware.CapClassifier" Content="Cap Classifier" />
+                              <ComboBoxItem ap:EngineeringActions.AssemblyName="{Binding ProjectAssemblyName}" ap:EngineeringActions.ClassName="Labman.Hardware.CapLifter" Content="Cap Lifter" />
+                              <ComboBoxItem ap:EngineeringActions.AssemblyName="{Binding ProjectAssemblyName}" ap:EngineeringActions.ClassName="Labman.Hardware.Conveyor" Content="Conveyor" />
+                              <!-- <ComboBoxItem ap:EngineeringActions.AssemblyName="{Binding ProjectAssemblyName}" ap:EngineeringActions.ClassName="Labman.Hardware.CapFeeder" Content="Cap Feeder" /> -->
+                        </ComboBox>
+
+                        <usercontrols:AutomaticallyGeneratedEngineeringUserControl Title="{Binding ElementName=EngineeringActionsComboBox, Path=SelectedItem.Content}"
+                                          AssemblyPath="{Binding ElementName=EngineeringActionsComboBox, Path=SelectedItem.(ap:EngineeringActions.AssemblyName)}"
+                                          ClassInstance="{Binding ElementName=EngineeringActionsComboBox, Path=SelectedItem.(ap:EngineeringActions.ClassInstance)}"
+                                          ClassName="{Binding ElementName=EngineeringActionsComboBox, Path=SelectedItem.(ap:EngineeringActions.ClassName)}" />
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+                  <!--#region PARAMETERS -->
+
+                  <DockPanel Visibility="{Binding ElementName=ParametersNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+                        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Orientation="Horizontal" MinHeight="32">
+                              <Control Style="{StaticResource Icon.Parameters}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                              <Label Content="Parameters" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                        </StackPanel>
+
+                        <usercontrols:AutomaticallyGeneratedParametersUserControl Margin="0 10 0 0" />
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+                  <!--#region POSITIONS -->
+
+                  <DockPanel Visibility="{Binding ElementName=PositionsNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+                        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Orientation="Horizontal" MinHeight="32">
+                              <Control Style="{StaticResource Icon.Positions}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                              <Label Content="Positions" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                        </StackPanel>
+
+                        <usercontrols:PositionsDatabaseUserControl DataContext="{Binding PositionsDatabaseViewModel}" Margin="0 10 0 0" />
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+
+                  <!--#region SOAK TEST -->
+
+                  <DockPanel Visibility="{Binding ElementName=SoakNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+                        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Orientation="Horizontal" MinHeight="32">
+                              <Control Style="{StaticResource Icon.SoakTest}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                              <Label Content="Soak Test" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                        </StackPanel>
+
+                        <usercontrols:SoakTestUserControl DataContext="{Binding SoakTestUserControlViewModel}" Margin="0 10 0 0" />
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+                  <!--#region PROCESS STATES -->
+
+                  <DockPanel Visibility="{Binding ElementName=ProcessStatesNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+                        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Orientation="Horizontal" MinHeight="32">
+                              <Control Style="{StaticResource Icon.ProcessStates}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                              <Label Content="Process States" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                        </StackPanel>
+
+                        <Border Background="{StaticResource BackgroundBrush}" Margin="0 10 0 0">
+                              <StackPanel>
+                                    <!-- TODO: Set column widths of the ProcessStatesUserControl to suit the length of process names and states. -->
+                                    <usercontrols:ProcessStatesUserControl DataContext="{Binding ProcessStatesViewModel}" HorizontalAlignment="Left" Width="400" ProcessNamesWidth="2*" ProcessStatesWidth="5*" />
+
+                                    <!-- TODO: Or use the ProcessStatesIndicatorUserControl with the generically typed ViewModel. -->
+                                    <usercontrols:ProcessStatesIndicatorUserControl DataContext="{Binding ProcessStatesViewModel}" Orientation="Vertical" />
+                              </StackPanel>
+                        </Border>
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+                  <!--#region LOGS -->
+
+                  <DockPanel Visibility="{Binding ElementName=LogsNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}" LastChildFill="True">
+                        <StackPanel DockPanel.Dock="Top" HorizontalAlignment="Left" Orientation="Horizontal" MinHeight="32">
+                              <Control Style="{StaticResource Icon.Info}" Foreground="{StaticResource Nav.Text.Dark}" Width="20" Height="20" Margin="10 0" />
+                              <Label Content="Logs" Style="{StaticResource Heading3LabelStyle}" VerticalAlignment="Center" Margin="0" Foreground="{StaticResource Nav.Text.Dark}" />
+                        </StackPanel>
+
+                        <ComboBox DockPanel.Dock="Top" Style="{StaticResource ScrollingTabControl}" x:Name="LogsComboBox" HorizontalAlignment="Stretch" Margin="0 10 0 0" SelectedIndex="0" SelectedValuePath="Tag">
+                              <ComboBoxItem Name="SystemLogComboBoxItem" Tag="System Log">System Log</ComboBoxItem>
+                              <ComboBoxItem Name="ProcessLogComboBoxItem" Tag="Process Log">Process Log</ComboBoxItem>
+                              <ComboBoxItem Name="DebugLogComboBoxItem" Tag="Debug Log">Debug Log</ComboBoxItem>
+                              <ComboBoxItem Name="HardwareLogComboBoxItem" Tag="Hardware Log">Hardware Log</ComboBoxItem>
+                        </ComboBox>
+
+                        <usercontrols:LogUserControl BoundLogName="{Binding ElementName=LogsComboBox, Path=SelectedValue}" />
+                  </DockPanel>
+
+                  <!--#endregion-->
+
+                  <!--#region ICONS-->
+
+                  <Grid  Visibility="{Binding ElementName=IconsNavButton, Path=IsChecked, Converter={StaticResource BoolToVisibilityConverter}}">
+
+                        <!-- TODO: Can be used to find icons. Or just open IconBrowserUserControl in design view. Remove this before releasing the robot. -->
+                        <usercontrols:IconBrowserUserControl Foreground="{StaticResource Nav.Text.Dark}" />
+                  </Grid>
+
+                  <!--#endregion-->
+
+            </Grid>
+
+            <!--#endregion-->
+
+      </Grid>
+</lab:WindowBase>

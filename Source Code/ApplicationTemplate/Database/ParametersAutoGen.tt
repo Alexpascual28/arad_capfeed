@@ -1,0 +1,212 @@
+﻿<#@ template debug="true" hostSpecific="true" #>
+<#@ output extension=".cs" #>
+<#@ Assembly Name="System.Core.dll" #>
+<#@ Assembly Name="System.Configuration" #>
+<#@ Assembly Name="System.Xml.dll" #>
+<#@ Assembly Name="System.Xml.Linq.dll" #>
+<#@ Assembly Name="System.Windows.Forms.dll" #>
+<#@ assembly name="$(SolutionDir)..\..\baseapp\Source Code\bin32\Labman.Merlin.dll" #>
+<#@ import namespace="System" #>
+<#@ import namespace="System.IO" #>
+<#@ import namespace="System.Diagnostics" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Xml.Linq" #>
+<#@ import namespace="System.Collections" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="System.Configuration" #>
+<#@ import namespace="Labman" #>
+<#@ import namespace="Labman.ParametersDatabase" #>
+<#
+
+      //==================================================================================================================================
+      // This template file is used to automatically generate the static classes for easy-access to database parameters.
+      // It iterates through the rows in the configured parameters table and populates the Labman.Database.Parameters class from them.
+      // The code in this file is compiled and run ("transformed") whenever this file is saved, irrespective of wether there are changes.
+      // This template is also transformed if it is edited then loses focus (e.g. moving the caret to another file). Templates can also be
+      // configured to transform during builds and can be manually transformed, with "Build > Transform All T4 Templates".
+      //==================================================================================================================================
+
+      // Get the app.config information from the project.
+      var map = new ExeConfigurationFileMap();
+      map.ExeConfigFilename = this.Host.ResolvePath(@"..\App.config");
+      var config = ConfigurationManager.OpenMappedExeConfiguration(map, ConfigurationUserLevel.None);
+
+      // TODO: Set the database settings or just use App.config (same as App.xaml.cs)
+      Labman.Database.Providers.ProviderSettings databaseSettings = new Labman.Database.Providers.ProviderSettings(
+                 Labman.Database.Providers.ProviderSettings.ProviderType.MySQL, // TODO: set the type of database being used
+                 null,
+                 config.AppSettings.Settings["databaseHost"]?.Value ?? "localhost",
+                 config.AppSettings.Settings["databaseUserName"]?.Value ?? "root",
+                 config.AppSettings.Settings["databasePassword"]?.Value ?? "root",
+                 config.AppSettings.Settings["databaseSchema"]?.Value ?? "merlin");
+      Labman.Database.Connection connection = new Labman.Database.Connection(databaseSettings);
+
+      // TODO: Setup names of parameters table, and field names or just use App.config (same as App.xaml.cs).
+      // "typeFieldName", "descriptionFieldName" and "isReadOnlyField" can be null if not used.
+      string parametersTableName = config.AppSettings.Settings["parametersTableName"]?.Value ?? "tbl_parameters";
+      string sectionFieldName = config.AppSettings.Settings["parametersSectionFieldName"]?.Value ?? "section";
+      string nameFieldName = config.AppSettings.Settings["parametersNameFieldName"]?.Value ?? "name";
+      string typeFieldName = config.AppSettings.Settings["parametersTypeFieldName"]?.Value ?? null;
+      string descriptionFieldName = config.AppSettings.Settings["parametersDescriptionFieldName"]?.Value ?? "description";
+      string isReadOnlyField = config.AppSettings.Settings["parametersIsReadOnlyFieldName"]?.Value ?? null;
+
+      // TODO: Set to true to create Get/Set functions instead of using properties.
+      bool useFunctionsNotProperties = false;
+
+      // Get all the parameter records from the database
+      var databaseParameters = connection.Provider.QueryRecords("SELECT * FROM " + parametersTableName);
+
+      // Create a Dictionary with a key for each parameter section, where the value for each key is a list of paramters.
+      // TODO: use normal or sorted Dictionary and List to retain or override database ordering respectively.
+      SortedDictionary<string, List<Parameter>> sectionedParameters = new SortedDictionary<string, List<Parameter>>();
+      foreach (var dbParameter in databaseParameters)
+      {
+            // Create a new parameter.
+            Parameter newParameter = new Parameter
+            {
+                  DbSection = dbParameter[sectionFieldName],
+                  DbName = dbParameter[nameFieldName],
+                  Name = MakeCodeFriendly(dbParameter[nameFieldName].Replace(" ", string.Empty)),
+                  Type = string.IsNullOrEmpty(typeFieldName) ? "string" : dbParameter[typeFieldName],
+                  Description = string.IsNullOrEmpty(descriptionFieldName) ? dbParameter[nameFieldName] : dbParameter[descriptionFieldName],
+                  IsReadOnly = string.IsNullOrEmpty(isReadOnlyField) ? false : Convert.ToBoolean(int.Parse(dbParameter[isReadOnlyField])),
+            };
+            // If no description was given, use the parameter database name
+            if (string.IsNullOrEmpty(newParameter.Description))
+                newParameter.Description = newParameter.DbName;
+
+            // Create the private variable name from the public one.
+            newParameter.PrivateName = "_" + newParameter.Name[0].ToString().ToLower() + newParameter.Name.Substring(1);
+
+            // Create a code-friendly section name from the database section name.
+            string section = MakeCodeFriendly(dbParameter[sectionFieldName]);
+
+            // Add a key-value-pair to the dictionary if the key doesn't exist.
+            if (!sectionedParameters.ContainsKey(section))
+            {
+                  sectionedParameters.Add(section, new List<Parameter>());
+            }
+
+            // Add the parameter to the list for the section key in the dictionary.
+            sectionedParameters[section].Add(newParameter);
+      }
+
+#>
+//=============================================================================
+// <copyright file="<#= Path.GetFileName(Path.ChangeExtension(Host.TemplateFile, "cs")) #>" company="Labman Automation Ltd">
+// Copyright (c) Labman Automation Ltd. All rights reserved.
+// </copyright>
+//
+// THIS FILE HAS BEEN AUTO-GENERATED. DO NOT EDIT. CHANGES WILL BE LOST.
+// The classes are declared as partial so additions can be made in other files.
+//=============================================================================
+using System;
+
+namespace Labman.Database
+{
+      /// <summary>The parameters used by this system.</summary>
+      public static partial class Parameters
+      {
+            #region Classes
+
+<#
+foreach (var section in sectionedParameters)
+{
+      var sectionName = section.Key;
+      var parameters = section.Value;
+#>
+            /// <summary>The <#= sectionName #> parameters.</summary>
+            public static partial class <#= sectionName #>
+            {
+                  #region Properties
+
+<#
+      foreach (var parameter in parameters)
+      {
+            if (useFunctionsNotProperties)
+            {
+#>
+                  /// <summary>Gets <#= parameter.Description #></summary>
+                  /// <returns>Returns <#= parameter.Description #></returns>
+                  public static <#= parameter.Type #> Get<#= parameter.Name #>() => ParametersDatabase.ParametersDatabase.GetParameter<<#= parameter.Type #>>("<#= parameter.DbName #>", "<#= parameter.DbSection #>");
+
+<#
+                  if (!parameter.IsReadOnly)
+                  {
+#>
+                  /// <summary>Sets <#= parameter.Description #></summary>
+                  /// <param name="value">The new <#= parameter.DbName #></param>
+                  public static void Set<#= parameter.Name #>(<#= parameter.Type #> value) => ParametersDatabase.ParametersDatabase.SetParameter("<#= parameter.DbName #>", "<#= parameter.DbSection #>", value);
+
+                  /// <summary>Sets <#= parameter.Description #></summary>
+                  /// <param name="value">The new <#= parameter.DbName #></param>
+                  public static void Set<#= parameter.Name #>AsString(string value) => ParametersDatabase.ParametersDatabase.SetParameter("<#= parameter.DbName #>", "<#= parameter.DbSection #>", value);
+
+<#
+                  }
+#>
+<#
+            }
+            else
+            {
+#>
+                  /// <summary><#= parameter.Description #></summary>
+                  public static <#= parameter.Type #> <#= parameter.Name #>
+                  {
+                        get => ParametersDatabase.ParametersDatabase.GetParameter<<#= parameter.Type #>>("<#= parameter.DbName #>", "<#= parameter.DbSection #>");
+<#
+                  if (!parameter.IsReadOnly)
+                  {
+#>
+                        set => ParametersDatabase.ParametersDatabase.SetParameter("<#= parameter.DbName #>", "<#= parameter.DbSection #>", value);
+<#
+                  }
+#>
+                  }
+
+<#
+            }
+      }
+#>
+                  #endregion
+            }
+
+<#
+}
+#>
+            #endregion
+      }
+}
+<#+
+
+    public class Parameter
+    {
+          // The section name in the database
+          public string DbSection { get; set; }
+
+          // The name of the parameter in the database
+          public string DbName { get; set; }
+
+          // The name of the parameter used in code
+          public string Name { get; set; }
+
+          // The name of the private backing variable of the parameter used in code
+          public string PrivateName { get; set; }
+
+          // The type of the parameter used to define code
+          public string Type { get; set; }
+
+          // The description of the parameter used for code comments
+          public string Description { get; set; }
+
+          // Whether the database parameter is read-only
+          public bool IsReadOnly { get; set; }
+    }
+#>
+<#+
+
+    public string MakeCodeFriendly(string input) {
+          return input.Replace(" ", string.Empty).Replace("&", "And").Replace("-", "_").Replace("/", "Per").Replace("\\", "_").Replace("%", "Percent");
+    }
+
+#>
