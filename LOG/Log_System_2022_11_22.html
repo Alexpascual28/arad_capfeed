@@ -1,0 +1,65 @@
+<html><head>
+<style type='text/css' media='all'>body {margin:0; font-family: arial, helvetica, sans-serif;color: #000000;text-align: left;background-color: #ffffff;font-size: 10pt;scrollbar-arrow-color:#000000;scrollbar-track-color:#FFFFFF;scrollbar-shadow-color:#000000;scrollbar-face-color:#FFFFFF;scrollbar-highlight-color:#000000;scrollbar-darkshadow-color:#FFFFFF;scrollbar-3dlight-color:#FFFFFF; word-spacing:0; text-indent:0; line-height:100%; text-align:left}a:link, a:visited, a:active {color: #03f; background-color: inherit;} a:hover {color: #006;background-color: inherit;}div.titlebar {padding: 10 0 10 0;border: 0px solid #000;vertical-align: top;}.titlebar h1 {margin: 0;font-size: 14pt;padding: 0 0 10 0;text-align: inherit;color: white;background-color: 333399;}div.Warning {	border: 0px solid #000;vertical-align: top; font-size: 10pt; }.Warning h1 {margin: 0;font-size: 10pt;padding: 0 0 3 0;text-align: inherit;color: inherit;background-color:yellow;}div.Information {	border: 0px solid #000;vertical-align: top; font-size: 10pt; }.Information h1 {margin: 0;font-size: 10pt;padding: 0 0 3 0;text-align: inherit;color: inherit;background-color:white;}div.CriticalError {	border: 0px solid #000;vertical-align: top; font-size: 10pt; }.CriticalError h1 {margin: 0;font-size: 10pt;padding: 0 0 3 0;text-align: inherit;color: inherit;background-color:red;}div.Data {	border: 0px solid #000;vertical-align: top; font-size: 10pt; }.Data h1 {margin: 0;font-size: 10pt;padding: 0 0 3 0;text-align: inherit;color: inherit;background-color:green;}</style>
+<title>Labman Automation Robot Log File</title>
+</head><body>
+<div class='titlebar'><h1>Event Log started at 22/11/2022 17:05:08</h1></div>
+<div class='Information'><h1>22/11/2022 17:05:08 | Merlin Base Application (v2.37) has been setup ready for use.</h1></div>
+<div class='Information'><h1>22/11/2022 17:05:08 | Application (v0.1.0.0) setup complete</h1></div>
+<div class='titlebar'><h1>Event Log started at 22/11/2022 23:05:44</h1></div>
+<div class='Information'><h1>22/11/2022 23:05:44 | Merlin Base Application (v2.37) has been setup ready for use.</h1></div>
+<div class='Information'><h1>22/11/2022 23:05:45 | Application (v0.1.0.0) setup complete</h1></div>
+<div class='CriticalError'><h1>22/11/2022 23:05:46 | An unhandled exception occurred: System.InvalidOperationException: A TwoWay or OneWayToSource binding cannot work on the read-only property 'PercentageCapsRejected' of type 'Labman.UserInterface.ViewModels.Process1UserControlViewModel'.
+   at MS.Internal.Data.PropertyPathWorker.CheckReadOnly(Object item, Object info)
+   at MS.Internal.Data.PropertyPathWorker.ReplaceItem(Int32 k, Object newO, Object parent)
+   at MS.Internal.Data.PropertyPathWorker.UpdateSourceValueState(Int32 k, ICollectionView collectionView, Object newValue, Boolean isASubPropertyChange)
+   at MS.Internal.Data.ClrBindingWorker.AttachDataItem()
+   at System.Windows.Data.BindingExpression.Activate(Object item)
+   at System.Windows.Data.BindingExpression.AttachToContext(AttachAttempt attempt)
+   at System.Windows.Data.BindingExpression.MS.Internal.Data.IDataBindEngineClient.AttachToContext(Boolean lastChance)
+   at MS.Internal.Data.DataBindEngine.Task.Run(Boolean lastChance)
+   at MS.Internal.Data.DataBindEngine.Run(Object arg)
+   at MS.Internal.Data.DataBindEngine.OnLayoutUpdated(Object sender, EventArgs e)
+   at System.Windows.ContextLayoutManager.fireLayoutUpdateEvent()
+   at System.Windows.ContextLayoutManager.UpdateLayout()
+   at System.Windows.UIElement.UpdateLayout()
+   at System.Windows.Interop.HwndSource.SetLayoutSize()
+   at System.Windows.Interop.HwndSource.set_RootVisualInternal(Visual value)
+   at System.Windows.Interop.HwndSource.set_RootVisual(Visual value)
+   at System.Windows.Window.SetRootVisual()
+   at System.Windows.Window.SetRootVisualAndUpdateSTC()
+   at System.Windows.Window.SetupInitialState(Double requestedTop, Double requestedLeft, Double requestedWidth, Double requestedHeight)
+   at System.Windows.Window.CreateSourceWindow(Boolean duringShow)
+   at System.Windows.Window.CreateSourceWindowDuringShow()
+   at System.Windows.Window.SafeCreateWindowDuringShow()
+   at System.Windows.Window.ShowHelper(Object booleanBox)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)</h1></div>
+<div class='titlebar'><h1>Event Log started at 22/11/2022 23:07:53</h1></div>
+<div class='Information'><h1>22/11/2022 23:07:53 | Merlin Base Application (v2.37) has been setup ready for use.</h1></div>
+<div class='Information'><h1>22/11/2022 23:07:53 | Application (v0.1.0.0) setup complete</h1></div>
+<div class='CriticalError'><h1>22/11/2022 23:07:54 | An unhandled exception occurred: System.InvalidOperationException: A TwoWay or OneWayToSource binding cannot work on the read-only property 'PercentageCapsRejected' of type 'Labman.UserInterface.ViewModels.Process1UserControlViewModel'.
+   at MS.Internal.Data.PropertyPathWorker.CheckReadOnly(Object item, Object info)
+   at MS.Internal.Data.PropertyPathWorker.ReplaceItem(Int32 k, Object newO, Object parent)
+   at MS.Internal.Data.PropertyPathWorker.UpdateSourceValueState(Int32 k, ICollectionView collectionView, Object newValue, Boolean isASubPropertyChange)
+   at MS.Internal.Data.ClrBindingWorker.AttachDataItem()
+   at System.Windows.Data.BindingExpression.Activate(Object item)
+   at System.Windows.Data.BindingExpression.AttachToContext(AttachAttempt attempt)
+   at System.Windows.Data.BindingExpression.MS.Internal.Data.IDataBindEngineClient.AttachToContext(Boolean lastChance)
+   at MS.Internal.Data.DataBindEngine.Task.Run(Boolean lastChance)
+   at MS.Internal.Data.DataBindEngine.Run(Object arg)
+   at MS.Internal.Data.DataBindEngine.OnLayoutUpdated(Object sender, EventArgs e)
+   at System.Windows.ContextLayoutManager.fireLayoutUpdateEvent()
+   at System.Windows.ContextLayoutManager.UpdateLayout()
+   at System.Windows.UIElement.UpdateLayout()
+   at System.Windows.Interop.HwndSource.SetLayoutSize()
+   at System.Windows.Interop.HwndSource.set_RootVisualInternal(Visual value)
+   at System.Windows.Interop.HwndSource.set_RootVisual(Visual value)
+   at System.Windows.Window.SetRootVisual()
+   at System.Windows.Window.SetRootVisualAndUpdateSTC()
+   at System.Windows.Window.SetupInitialState(Double requestedTop, Double requestedLeft, Double requestedWidth, Double requestedHeight)
+   at System.Windows.Window.CreateSourceWindow(Boolean duringShow)
+   at System.Windows.Window.CreateSourceWindowDuringShow()
+   at System.Windows.Window.SafeCreateWindowDuringShow()
+   at System.Windows.Window.ShowHelper(Object booleanBox)
+   at System.Windows.Threading.ExceptionWrapper.InternalRealCall(Delegate callback, Object args, Int32 numArgs)
+   at System.Windows.Threading.ExceptionWrapper.TryCatchWhen(Object source, Delegate callback, Object args, Int32 numArgs, Delegate catchHandler)</h1></div>
