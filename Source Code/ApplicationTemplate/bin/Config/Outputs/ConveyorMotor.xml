@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<OutputSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IODeviceName>Moxa IO</IODeviceName>
+  <IODeviceOutputIndex>8</IODeviceOutputIndex>
+  <OutputName>ConveyorMotor</OutputName>
+  <OnSensorTimeout>0</OnSensorTimeout>
+  <OffSensorTimeout>0</OffSensorTimeout>
+  <OnSwitchDelay>0</OnSwitchDelay>
+  <OffSwitchDelay>0</OffSwitchDelay>
+  <IgnoreEstop>false</IgnoreEstop>
+  <IsCylinder>false</IsCylinder>
+  <IsInverted>false</IsInverted>
+</OutputSettings>

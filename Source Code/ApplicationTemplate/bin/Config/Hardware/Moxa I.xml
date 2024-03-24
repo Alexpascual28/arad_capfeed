@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<MoxaIOLogikE1242IODeviceSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <BaseSettings>
+    <DeviceDescription>Moxa I</DeviceDescription>
+    <DeviceClassType>MoxaIOLogikE1242IODevice</DeviceClassType>
+    <DeviceAssembly>Labman.Merlin</DeviceAssembly>
+    <IsDeviceEnabled>true</IsDeviceEnabled>
+  </BaseSettings>
+  <Mileage>0</Mileage>
+  <CommunicationSettings>
+    <CommunicationType>TCPIP</CommunicationType>
+    <HostName>10.0.0.2</HostName>
+    <MODBUSAddress>1</MODBUSAddress>
+    <PortNumber>502</PortNumber>
+    <BaudRate>0</BaudRate>
+    <DataBits>0</DataBits>
+    <StopBits>None</StopBits>
+    <Parity>None</Parity>
+    <Handshake>None</Handshake>
+    <RtsEnable>false</RtsEnable>
+    <DtrEnable>false</DtrEnable>
+    <PeakCanBaudRate>BAUD_1M</PeakCanBaudRate>
+    <KVaserCanBaudRate>BAUD_1M</KVaserCanBaudRate>
+    <ReceiveLoopSleepDuration>0</ReceiveLoopSleepDuration>
+  </CommunicationSettings>
+  <NumberOfInputsConnected>16</NumberOfInputsConnected>
+  <NumberOfOutputsConnected>0</NumberOfOutputsConnected>
+  <NumberOfAnalogInputsConnected>0</NumberOfAnalogInputsConnected>
+  <NumberOfAnalogOutputsConnected>0</NumberOfAnalogOutputsConnected>
+  <Address>0</Address>
+</MoxaIOLogikE1242IODeviceSettings>

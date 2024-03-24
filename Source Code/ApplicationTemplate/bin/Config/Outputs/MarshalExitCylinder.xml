@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<OutputSettings xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IODeviceName>Moxa IO</IODeviceName>
+  <IODeviceOutputIndex>2</IODeviceOutputIndex>
+  <OutputName>MarshalExitCylinder</OutputName>
+  <OnSensorName>MarshalExitCylinderSensorExtended</OnSensorName>
+  <OffSensorName>MarshalExitCylinderSensorRetracted</OffSensorName>
+  <OnSensorTimeout>1500</OnSensorTimeout>
+  <OffSensorTimeout>1500</OffSensorTimeout>
+  <OnSwitchDelay>0</OnSwitchDelay>
+  <OffSwitchDelay>1000</OffSwitchDelay>
+  <IgnoreEstop>false</IgnoreEstop>
+  <IsCylinder>true</IsCylinder>
+  <IsInverted>true</IsInverted>
+</OutputSettings>
