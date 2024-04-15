@@ -48,7 +48,7 @@ The hardware modules interface includes components for controlling robotic arms,
 - CapLifter.cs: Elevates the sorted caps to the application point.
 - Conveyor.cs: Manages the conveyor that moves bottles into position under the cap application mechanism.
 
-Further explanation can be found in [Code Explanation](#code-explanation)
+Further explanation can be found in [Hardware Modules](#hardware-modules)
 
 **Processes**
 
@@ -59,7 +59,7 @@ The Processes directory contains classes representing different states of the bo
 - CapFeedingProcess.cs: Controls the cap feeding mechanism.
 - CapMarshallingProcess.cs: Manages the organization and delivery of caps to the classifier.
 
-Further explanation can be found in [Code Explanation](#code-explanation)
+Further explanation can be found in [Processes](#processes)
 
 ---
 
