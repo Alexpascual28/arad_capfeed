@@ -689,48 +689,55 @@ Refer to **packages.config** for a complete list of dependencies.
 
 ### Hardware Modules
 
-**Cap Classifier**
+#### Cap Classifier
 
-The CapClassifier.cs script is key in ensuring that caps are correctly oriented and ready for application to bottles. The file is written in C# and is used to control the cap classifier module which sorts caps based on their orientation before they are applied to bottles.
+The **CapClassifier.cs** script is key in ensuring that caps are correctly oriented and ready for application to bottles. The file is written in C# and is used to control the cap classifier module which sorts caps based on their orientation before they are applied to bottles.
 
 The system uses a combination of sensors to detect cap orientation and pneumatic actuators to physically sort the caps based on these detections. The logic includes robust error handling to deal with mechanical failures or misalignments, making it a critical component of the cap feeding system in an industrial bottling setup. The use of logging ensures that the system's operation can be monitored and troubleshot effectively.
 
-*Namespace and Dependencies*
+**Namespace and Dependencies**
 
-The CapClassifier class is contained within the Labman.Hardware namespace, suggesting its role in interfacing with physical hardware components. It uses various classes and libraries for input/output control (Labman.Hardware.IODevices), logging (Labman.Logging), and possibly other operations under Labman.IO.
+The **CapClassifier** class is contained within the **Labman.Hardware** namespace, suggesting its role in interfacing with physical hardware components. It uses various classes and libraries for input/output control (**Labman.Hardware.IODevices**), logging (**Labman.Logging**), and other operations under **Labman.IO**.
 
-*Class Description*
+**Class Description**
 
 Class CapClassifier: Defined as a static class, which means it doesn't require an instance to invoke its methods. It is designed to process actions related to cap sorting, including managing how caps are marshalled and sorted.
 
-Public Properties
-SortedCaps: Static integer tracking the number of caps successfully sorted.
-RejectedCaps: Static integer tracking the number of caps identified as unsuitable and rejected.
+*Public Properties*
 
-Private Properties
+- **SortedCaps**: Static integer tracking the number of caps successfully sorted.
+- **RejectedCaps**: Static integer tracking the number of caps identified as unsuitable and rejected.
+
+*Private Properties*
+
 These involve hardware interfaces, specifically sensors and actuators:
-SideSensor: Checks the presence of a cap.
-TopSensor: Determines if a cap is placed inverted (upside down).
-SortingCylinder, MarshalEntranceCylinder, and MarshalExitCylinder: Actuators that manage the movement of caps through the sorting mechanism.
+- **SideSensor**: Checks the presence of a cap.
+- **TopSensor**: Determines if a cap is placed inverted (upside down).
+- **SortingCylinder**, **MarshalEntranceCylinder**, and **MarshalExitCylinder**: Actuators that manage the movement of caps through the sorting mechanism.
 
-Methods
+**Methods**
 
-MarshalCap()
+*MarshalCap()*
+
 This method orchestrates the sorting of a single cap through the classifier system:
 
-It begins by checking if the system is in simulation mode, in which case it exits early.
-It then uses the TopSensor to check if the cap is facing the correct way.
-It controls the entrance and exit cylinders to manage the flow of caps into and out of the sorting area.
-It contains logic to handle retry attempts if a marshalling gate fails to close.
-Depending on the cap's orientation, it either allows the cap to pass through or activates the SortingCylinder to reject the cap.
-Logs are generated for each sorted or rejected cap.
-ResetMarshallingGates() and CloseMarshallingGates()
+* It begins by checking if the system is in simulation mode, in which case it exits early.
+* It then uses the TopSensor to check if the cap is facing the correct way.
+* It controls the entrance and exit cylinders to manage the flow of caps into and out of the sorting area.
+* It contains logic to handle retry attempts if a marshalling gate fails to close.
+* Depending on the cap's orientation, it either allows the cap to pass through or activates the SortingCylinder to reject the cap.
+* Logs are generated for each sorted or rejected cap.
+
+*ResetMarshallingGates()* and *CloseMarshallingGates()*
+
 These methods manage the state of the marshalling gates to prepare for the next operation or to reset the system to a known state.
 
-OpenMarshallingGates()
-This method opens all gates, presumably to clear the path or prepare the system for maintenance or non-operational modes.
+*OpenMarshallingGates()*
 
-IsCapFed()
+This method opens all gates, to clear the path or prepare the system for maintenance or non-operational modes.
+
+*IsCapFed()*
+
 Returns a boolean indicating whether a cap is ready to be processed. This might also involve checking the orientation of the cap, though the current implementation checks only for presence.
 
 **Cap Lifter**
