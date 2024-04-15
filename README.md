@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://icons8.com/icon/oC3bdbpC3jYh/plastic-bottle" width="100" alt="project-logo">
+  <img src="https://www.svgrepo.com/show/321883/bottle-cap.svg" width="100" alt="project-logo">
 </p>
 <p align="center">
     <h1 align="center">ARAD Cap feeder system</h1>
