@@ -20,6 +20,8 @@
   - [ Installation](#-installation)
   - [ Usage](#-usage)
 - [ Code Explanation](#code-explanation)
+
+</details>
 <hr>
 
 ##  Overview
