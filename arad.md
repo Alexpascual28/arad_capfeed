@@ -109,6 +109,8 @@ Further explanation can be found in [Code Explanation](#code-explanation)
 
 ##  Modules
 
+<details closed><summary>All modules</summary>
+
 <details closed><summary>packages</summary>
 
 | File                                                                                        | Summary                         |
@@ -633,6 +635,8 @@ Further explanation can be found in [Code Explanation](#code-explanation)
 | ---                                                                                                                                                                                     | ---                             |
 | [Process1UserControl.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/UserControlViews/Process1UserControl.xaml)       | <code>► INSERT-TEXT-HERE</code> |
 | [Process1UserControl.xaml.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/UserControlViews/Process1UserControl.xaml.cs) | <code>► INSERT-TEXT-HERE</code> |
+
+</details>
 
 </details>
 
