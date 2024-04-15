@@ -744,8 +744,69 @@ This method opens all gates, to clear the path or prepare the system for mainten
 
 Returns a boolean indicating whether a cap is ready to be processed. This might also involve checking the orientation of the cap, though the current implementation checks only for presence.
 
-**Cap Lifter**
+#### Cap Lifter
 
-**Conveyor**
+The **CapLifter.cs** script is essential for ensuring that caps are correctly positioned for the marshalling process. The system uses a pneumatic cylinder to lift caps stored in a hopper. It includes robust error handling to manage jams effectively. The script also uses logging to monitor the status of operations, for troubleshooting and ensuring the reliability of the cap lifting mechanism in an industrial setting. This component plays a key role in maintaining the smooth operation of the bottle capping process. The file is written in C# and is part of the **Labman.Hardware** namespace, due to its role in interfacing with physical hardware.
+
+##### Namespace and Dependencies
+
+The CapLifter class uses several namespaces for input/output control (Labman.Hardware.IODevices), logging (Labman.Logging), and additional operations provided by Labman.IO.
+
+##### Class Description
+
+Class CapLifter: Defined as a static class, meaning it does not require an instance to invoke its methods. It manages the cap lifting mechanism, particularly focusing on the operation of a pneumatic cylinder that lifts caps from a hopper.
+
+##### Public Enum: HopperFeedResult
+
+Okay: Indicates that the caps were successfully lifted.
+Jammed: Indicates that the shelf could not lift because caps obstructed it, causing a jam.
+
+##### Private Properties
+
+LiftingCylinder: A hardware output representing the pneumatic cylinder that lifts caps. This is likely connected to a PLC or other control system that manages pneumatic operations.
+
+##### Methods
+
+*LowerHopperShelf()*
+
+This method deactivates the lifting cylinder to lower the hopper shelf:
+
+- It first checks if the system is in simulation mode, bypassing the hardware interaction if true.
+- The **LiftingCylinder.Off()** method call will stop the pneumatic pressure, allowing the shelf to lower under gravity or by mechanical retraction.
+
+*LiftHopperShelf()*
+
+This method attempts to lift the hopper shelf and returns a result indicating success or failure:
+
+* The method starts by logging the beginning of a lift operation.
+* It then checks if the system is in simulation mode, returning **HopperFeedResult.Okay** if true.
+* The **LiftingCylinder.On()** method is called to activate the cylinder. The parameter **SkipSensorCheckAndDelay** might be used to bypass certain safety checks or delays for faster response.
+* A timeout loop monitors whether the cylinder reaches its intended state within a set period (**OnSensorTimeout**). If the shelf does not lift fully within this time, it logs a message and returns **HopperFeedResult.Jammed**.
+* If the shelf lifts successfully within the timeout, it waits an additional half second before confirming the operation was successful.
+
+#### Conveyor
+
+This file, **Conveyor.cs**, forms a part of the cap handling and bottle transport mechanism within a bottle capping system. It is responsible for managing the conveyor belt that moves caps and bottles through different stages of the capping process. The **Conveyor.cs** script is tasked with controlling the conveyor belt's motor, an essential function for moving both caps and bottles through the production line. This includes starting and stopping the conveyor as required by the production process. Effective control of this motor is essential for maintaining the flow of operations and avoiding bottlenecks or delays in the production line. The system's ability to log actions provides valuable information for monitoring and troubleshooting, ensuring the conveyor operates smoothly within the broader bottling system. The file is written in C# and belongs to the **Labman.Hardware** namespace, indicating its role in controlling physical hardware components related to the conveyor system.
+
+##### Namespace and Dependencies
+The **Conveyor** class relies on namespaces for input/output control (**Labman.Hardware.IODevices**), logging (**Labman.Logging**), and additional operations provided by **Labman.IO**.
+
+##### Class Description
+
+* **Class Conveyor**: Defined as a static class, meaning it doesn't require an instance to call its methods. Its primary responsibility is to manage the operations of the conveyor belt, specifically the motor that drives the belt.
+
+##### Private Properties
+
+* **ConveyorMotor**: Represents the motor that powers the conveyor belt. This property interfaces with a hardware output, likely controlled by a PLC (Programmable Logic Controller) or similar device.
+
+##### Methods
+
+*SwitchBelt(IODevice.OutputState state)*
+
+This method controls the operation of the conveyor motor:
+
+* It begins by checking if the system is operating in simulation mode, which would bypass actual hardware interaction.
+* A log message is recorded to indicate the action of switching the belt motor either **On** or **Off**, depending on the **state** parameter passed to the method.
+* The **ConveyorMotor.Switch(state)** method call is used to either start or stop the motor based on the desired state.
 
 ---
