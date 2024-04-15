@@ -809,6 +809,8 @@ This method controls the operation of the conveyor motor:
 * A log message is recorded to indicate the action of switching the belt motor either **On** or **Off**, depending on the **state** parameter passed to the method.
 * The **ConveyorMotor.Switch(state)** method call is used to either start or stop the motor based on the desired state.
 
+---
+
 ### Processes
 
 #### Cap Feeding Process
