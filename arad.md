@@ -699,7 +699,7 @@ The **CapClassifier.cs** script is key in ensuring that caps are correctly orien
 
 The system uses a combination of sensors to detect cap orientation and pneumatic actuators to physically sort the caps based on these detections. The logic includes robust error handling to deal with mechanical failures or misalignments, making it a critical component of the cap feeding system in an industrial bottling setup. The use of logging ensures that the system's operation can be monitored and troubleshot effectively.
 
-**Namespace and Dependencies**
+##### Namespace and Dependencies
 
 The **CapClassifier** class is contained within the **Labman.Hardware** namespace, suggesting its role in interfacing with physical hardware components. It uses various classes and libraries for input/output control (**Labman.Hardware.IODevices**), logging (**Labman.Logging**), and other operations under **Labman.IO**.
 
