@@ -763,7 +763,7 @@ Jammed: Indicates that the shelf could not lift because caps obstructed it, caus
 
 ##### Private Properties
 
-LiftingCylinder: A hardware output representing the pneumatic cylinder that lifts caps. This is likely connected to a PLC or other control system that manages pneumatic operations.
+LiftingCylinder: A hardware output representing the pneumatic cylinder that lifts caps. This is connected to a PLC control system that manages pneumatic operations.
 
 ##### Methods
 
@@ -797,7 +797,7 @@ The **Conveyor** class relies on namespaces for input/output control (**Labman.H
 
 ##### Private Properties
 
-* **ConveyorMotor**: Represents the motor that powers the conveyor belt. This property interfaces with a hardware output, likely controlled by a PLC (Programmable Logic Controller) or similar device.
+* **ConveyorMotor**: Represents the motor that powers the conveyor belt. This property interfaces with a hardware output controlled by a PLC (Programmable Logic Controller) or similar device.
 
 ##### Methods
 
@@ -808,5 +808,123 @@ This method controls the operation of the conveyor motor:
 * It begins by checking if the system is operating in simulation mode, which would bypass actual hardware interaction.
 * A log message is recorded to indicate the action of switching the belt motor either **On** or **Off**, depending on the **state** parameter passed to the method.
 * The **ConveyorMotor.Switch(state)** method call is used to either start or stop the motor based on the desired state.
+
+### Processes
+
+#### Cap Feeding Process
+
+This file, **CapFeedingProcess.cs**, is responsible for using the cap lifter and the conveyor to dispense the caps through the system. It therefore provides a framework for the cap feeding process. The file is structured in C# and makes use of a base class ProcessBase to implement the necessary state machine logic. It integrates error handling, state management, and direct hardware control to ensure that caps are correctly handled through their journey from the hopper to the conveyor. This framework not only facilitates the automation of the cap feeding process but also ensures its reliability and efficiency through state tracking and error management.
+
+##### Namespace and Dependencies
+
+The class **CapFeedingProcess** is part of the **Labman.Processes** namespace, indicating its role in process management within the system. It utilizes **GalaSoft.MvvmLight.Messaging** for messaging capabilities, which are likely used for notifying system components of state changes or errors.
+
+##### Class Description
+
+**CapFeedingProcess**: Inherits from ProcessBase and is designed to manage the feeding of caps from a hopper to a conveyor, including error handling and state transitions.
+
+*Constructors*
+
+There are two constructors available:
+
+* A default constructor that initializes the class without parameters.
+* An overloaded constructor that allows specifying the process name and whether to log state changes, enhancing traceability and debugging capabilities.
+
+##### Enum: ProcessState
+
+Defines various states of the cap marshalling process:
+
+- Faulted: Indicates an error state.
+- Complete: Marks the end of the process when the hopper is empty.
+- Initialising: Represents setup actions being performed.
+- Running: The normal operational state where caps are being marshalled.
+
+##### State Machine Methods
+
+*PreProcess()*
+
+This method prepares the system for the cap feeding process:
+
+* Resets the **_consecutiveJamCount** to zero, which tracks consecutive jams in the system.
+* Attempts to start the conveyor and reset marshalling gates using method calls to *Conveyor.SwitchBelt()* and *CapClassifier.ResetMarshallingGates()*.
+* In case of an exception, it ensures that the conveyor is stopped and the gates are opened to prevent damage or further issues.
+
+*ProcessLoop()*
+
+This method contains the main logic for handling caps:
+
+It checks the current state and performs actions accordingly.
+
+* Initialising: Sets up hardware to start positions and transitions to the Running state.
+* Running: Attempts to lift the hopper shelf. If the shelf is jammed, it increments the jam count and may throw an exception if jams exceed a predefined limit. It handles the cap correctly or tries again depending on the result.
+
+Uses a switch statement to manage transitions between states and handle errors or specific conditions like jams.
+
+*PostProcess()*
+
+Called when the process loop exits, whether due to completion, fault, or an operational halt:
+
+* Attempts to stop the conveyor and abort all processes as a cleanup step.
+* Handles exceptions by aborting all processes and providing error feedback, essential for safe shutdowns and preventing hardware damage.
+
+#### Cap Marshalling Process
+
+The **CapMarshallingProcess.cs** file implements a process class for a cap marshalling system in a demo state machine aimed at dispensing stations. The process controls the cap classifier hardware module, lifting the marshalling gate at the right time to ensure that the caps are fed at a constant rate. Here, I'll walk through the structure and functionality of this class, which I have tailored to manage the workflow of feeding and organizing caps before they are used in the capping process.
+
+##### Namespace and Dependencies
+
+The class **CapMarshallingProcess** resides within the **Labman.Processes** namespace, indicating its role in managing specific processes within the Labman system. It uses the **GalaSoft.MvvmLight.Messaging** for inter-component communication, to update UI components and other parts of the system about state changes or important events.
+
+##### Class Description
+
+**CapMarshallingProcess**: Inherits from **ProcessBase**. This class is structured as a state machine, managing states from initial startup to running and completion, handling cap feeding and organization tasks.
+
+*Constructors*
+
+Two constructors are provided:
+
+* A default constructor that sets up the class with default values.
+* A more specific constructor that allows setting the process name and whether to log state changes, enhancing traceability and operational oversight.
+
+##### Enum: ProcessState
+
+Defines states for the marshalling process, where negative values represent terminal states:
+
+- Faulted: -2, indicating an error state.
+- Complete: -1, indicating that the process has successfully completed.
+- Startup: 0, indicating initial state before processing begins.
+- Initialising: 1, where system checks and setups occur.
+- Running: 2, the active state where caps are being fed and processed.
+
+##### State Machine Methods
+
+*PreProcess()*
+
+Executed before the main process loop starts:
+
+* Initializes variables like **_averageTotalCappingTime** and sets **_lastCapFedTime**.
+* Configures **_outOfCapsTimeout** to determine when to end the process if caps are no longer being fed.
+* Returns **OkToStart**, indicating readiness to enter the main processing loop.
+
+*ProcessLoop()*
+
+This is the core method where the state machine logic is applied:
+
+* Startup: Transitions to the Initialising state.
+* Initialising: Prepares hardware by closing marshalling gates, then moves to the Running state.
+* Running: Continuously checks if caps are being fed. If a cap is detected, it is processed and the system metrics are updated. If no cap is detected for a predefined period, the system logs a message and transitions to the Complete state.
+* Implements robust error handling to manage unexpected state assignments.
+
+*PostProcess()*
+
+Handles cleanup and system resets when the process loop exits:
+
+* Resets hardware states, turns off belts, and ensures that all processes are cleanly terminated.
+* Catches and manages exceptions, ensuring that the system can recover gracefully from timeouts or operational errors.
+
+##### Utility and Messaging Methods
+
+- *CalculateThroughput()*: Computes the throughput based on the number of caps sorted and the total time taken.
+- *SendCapFeederDataToUI()*: Sends updated process data to the user interface using the MVVM Light Messenger. This includes total caps sorted, rejected caps, time between the last caps fed, and the calculated throughput.
 
 ---
