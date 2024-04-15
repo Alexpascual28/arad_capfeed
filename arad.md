@@ -703,7 +703,7 @@ The system uses a combination of sensors to detect cap orientation and pneumatic
 
 The **CapClassifier** class is contained within the **Labman.Hardware** namespace, suggesting its role in interfacing with physical hardware components. It uses various classes and libraries for input/output control (**Labman.Hardware.IODevices**), logging (**Labman.Logging**), and other operations under **Labman.IO**.
 
-**Class Description**
+##### Class Description
 
 Class CapClassifier: Defined as a static class, which means it doesn't require an instance to invoke its methods. It is designed to process actions related to cap sorting, including managing how caps are marshalled and sorted.
 
@@ -719,7 +719,7 @@ These involve hardware interfaces, specifically sensors and actuators:
 - **TopSensor**: Determines if a cap is placed inverted (upside down).
 - **SortingCylinder**, **MarshalEntranceCylinder**, and **MarshalExitCylinder**: Actuators that manage the movement of caps through the sorting mechanism.
 
-**Methods**
+##### Methods
 
 *MarshalCap()*
 
