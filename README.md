@@ -112,7 +112,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                        | Summary                         |
 | ---                                                                                         | ---                             |
-| [packages](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/packages) | <code>► INSERT-TEXT-HERE</code> |
+| [packages](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/packages) | <code> </code> |
 
 </details>
 
@@ -120,7 +120,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                    | Summary                         |
 | ---                                                                                                                                     | ---                             |
-| [OpenTK.dll.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/OpenTK.1.1.2225.0/content/OpenTK.dll.config) | <code>► INSERT-TEXT-HERE</code> |
+| [OpenTK.dll.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/OpenTK.1.1.2225.0/content/OpenTK.dll.config) | <code> </code> |
 
 </details>
 
@@ -128,7 +128,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                 | Summary                         |
 | ---                                                                                                                                                  | ---                             |
-| [THIRD-PARTY-NOTICES.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/StyleCop.Analyzers.1.1.118/THIRD-PARTY-NOTICES.txt) | <code>► INSERT-TEXT-HERE</code> |
+| [THIRD-PARTY-NOTICES.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/StyleCop.Analyzers.1.1.118/THIRD-PARTY-NOTICES.txt) | <code> </code> |
 
 </details>
 
@@ -136,8 +136,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                         | Summary                         |
 | ---                                                                                                                          | ---                             |
-| [EmguCV.props](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/EmguCV.3.1.0.1/build/EmguCV.props)     | <code>► INSERT-TEXT-HERE</code> |
-| [EmguCV.targets](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/EmguCV.3.1.0.1/build/EmguCV.targets) | <code>► INSERT-TEXT-HERE</code> |
+| [EmguCV.props](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/EmguCV.3.1.0.1/build/EmguCV.props)     | <code> </code> |
+| [EmguCV.targets](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/EmguCV.3.1.0.1/build/EmguCV.targets) | <code> </code> |
 
 </details>
 
@@ -145,8 +145,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                       | Summary                         |
 | ---                                                                                                                        | ---                             |
-| [License-LGPL.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/ZedGraph.5.1.5/License-LGPL.txt) | <code>► INSERT-TEXT-HERE</code> |
-| [readme.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/ZedGraph.5.1.5/readme.txt)             | <code>► INSERT-TEXT-HERE</code> |
+| [License-LGPL.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/ZedGraph.5.1.5/License-LGPL.txt) | <code> </code> |
+| [readme.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/ZedGraph.5.1.5/readme.txt)             | <code> </code> |
 
 </details>
 
@@ -154,7 +154,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                   | Summary                         |
 | ---                                                                                                                    | ---                             |
-| [ZedGraph.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/ZedGraph.5.1.5/lib/ZedGraph.XML) | <code>► INSERT-TEXT-HERE</code> |
+| [ZedGraph.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/ZedGraph.5.1.5/lib/ZedGraph.XML) | <code> </code> |
 
 </details>
 
@@ -162,8 +162,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                        | Summary                         |
 | ---                                                                                                                                                         | ---                             |
-| [MainViewModel.cs.pp](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLight.5.4.1.1/Content/ViewModel/MainViewModel.cs.pp)       | <code>► INSERT-TEXT-HERE</code> |
-| [ViewModelLocator.cs.pp](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLight.5.4.1.1/Content/ViewModel/ViewModelLocator.cs.pp) | <code>► INSERT-TEXT-HERE</code> |
+| [MainViewModel.cs.pp](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLight.5.4.1.1/Content/ViewModel/MainViewModel.cs.pp)       | <code> </code> |
+| [ViewModelLocator.cs.pp](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLight.5.4.1.1/Content/ViewModel/ViewModelLocator.cs.pp) | <code> </code> |
 
 </details>
 
@@ -171,7 +171,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                        | Summary                         |
 | ---                                                                                                                                         | ---                             |
-| [MvvmLightLibs.5.4.1.1](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/MvvmLightLibs.5.4.1.1) | <code>► INSERT-TEXT-HERE</code> |
+| [MvvmLightLibs.5.4.1.1](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/MvvmLightLibs.5.4.1.1) | <code> </code> |
 
 </details>
 
@@ -179,7 +179,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                        | Summary                         |
 | ---                                                                                                         | ---                             |
-| [lib](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/lib) | <code>► INSERT-TEXT-HERE</code> |
+| [lib](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/lib) | <code> </code> |
 
 </details>
 
@@ -187,8 +187,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                                                          | Summary                         |
 | ---                                                                                                                                                                                                                           | ---                             |
-| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.XML)               | <code>► INSERT-TEXT-HERE</code> |
-| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.XML) | <code>► INSERT-TEXT-HERE</code> |
+| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.XML)               | <code> </code> |
+| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/portable-net45+wp8+wpa81+netcore45+monoandroid1+xamarin.ios10/GalaSoft.MvvmLight.Extras.XML) | <code> </code> |
 
 </details>
 
@@ -196,9 +196,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                              | Summary                         |
 | ---                                                                                                                                                                               | ---                             |
-| [GalaSoft.MvvmLight.Platform.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML) | <code>► INSERT-TEXT-HERE</code> |
-| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.XML)                   | <code>► INSERT-TEXT-HERE</code> |
-| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.XML)     | <code>► INSERT-TEXT-HERE</code> |
+| [GalaSoft.MvvmLight.Platform.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Platform.XML) | <code> </code> |
+| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.XML)                   | <code> </code> |
+| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/xamarin.ios10/GalaSoft.MvvmLight.Extras.XML)     | <code> </code> |
 
 </details>
 
@@ -206,9 +206,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                      | Summary                         |
 | ---                                                                                                                                                                       | ---                             |
-| [GalaSoft.MvvmLight.Platform.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/wpa81/GalaSoft.MvvmLight.Platform.XML) | <code>► INSERT-TEXT-HERE</code> |
-| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/wpa81/GalaSoft.MvvmLight.XML)                   | <code>► INSERT-TEXT-HERE</code> |
-| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/wpa81/GalaSoft.MvvmLight.Extras.XML)     | <code>► INSERT-TEXT-HERE</code> |
+| [GalaSoft.MvvmLight.Platform.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/wpa81/GalaSoft.MvvmLight.Platform.XML) | <code> </code> |
+| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/wpa81/GalaSoft.MvvmLight.XML)                   | <code> </code> |
+| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/wpa81/GalaSoft.MvvmLight.Extras.XML)     | <code> </code> |
 
 </details>
 
@@ -216,9 +216,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                             | Summary                         |
 | ---                                                                                                                                                                              | ---                             |
-| [GalaSoft.MvvmLight.Platform.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML) | <code>► INSERT-TEXT-HERE</code> |
-| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/monoandroid1/GalaSoft.MvvmLight.XML)                   | <code>► INSERT-TEXT-HERE</code> |
-| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/monoandroid1/GalaSoft.MvvmLight.Extras.XML)     | <code>► INSERT-TEXT-HERE</code> |
+| [GalaSoft.MvvmLight.Platform.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/monoandroid1/GalaSoft.MvvmLight.Platform.XML) | <code> </code> |
+| [GalaSoft.MvvmLight.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/monoandroid1/GalaSoft.MvvmLight.XML)                   | <code> </code> |
+| [GalaSoft.MvvmLight.Extras.XML](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/packages/MvvmLightLibs.5.4.1.1/lib/monoandroid1/GalaSoft.MvvmLight.Extras.XML)     | <code> </code> |
 
 </details>
 
@@ -226,58 +226,58 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                         | Summary                         |
 | ---                                                                                                                                          | ---                             |
-| [Log_Process_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_28.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_22.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_24.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_28.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_28.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_21.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_23.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_23.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_22.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_19.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2023_01_13.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_27.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_22.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2023_01_13.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_21.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_24.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_22.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_22.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_21.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_28.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_16.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_22.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_28.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_21.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_24.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_15.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_22.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_16.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_21.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_15.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_23.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2023_01_13.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_22.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_28.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_16.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_16.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_19.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_28.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_28.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_21.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_19.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_24.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_27.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Process_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_27.html)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_23.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_21.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_21.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_27.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_19.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_System_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2023_01_13.html)                   | <code>► INSERT-TEXT-HERE</code> |
-| [Log_Debug_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_15.html)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Log_UserActivityLog_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_15.html) | <code>► INSERT-TEXT-HERE</code> |
+| [Log_Process_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_28.html)                 | <code> </code> |
+| [Log_UserActivityLog_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_22.html) | <code> </code> |
+| [Log_UserActivityLog_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_24.html) | <code> </code> |
+| [Log_System_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_28.html)                   | <code> </code> |
+| [Log_Debug_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_28.html)                     | <code> </code> |
+| [Log_Process_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_21.html)                 | <code> </code> |
+| [Log_Process_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_23.html)                 | <code> </code> |
+| [Log_System_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_23.html)                   | <code> </code> |
+| [Log_Process_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_22.html)                 | <code> </code> |
+| [Log_Process_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_19.html)                 | <code> </code> |
+| [Log_UserActivityLog_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2023_01_13.html) | <code> </code> |
+| [Log_Debug_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_27.html)                     | <code> </code> |
+| [Log_Debug_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_22.html)                     | <code> </code> |
+| [Log_Process_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2023_01_13.html)                 | <code> </code> |
+| [Log_Debug_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_21.html)                     | <code> </code> |
+| [Log_Process_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_11_24.html)                 | <code> </code> |
+| [Log_Process_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_22.html)                 | <code> </code> |
+| [Log_UserActivityLog_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_22.html) | <code> </code> |
+| [Log_Process_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_21.html)                 | <code> </code> |
+| [Log_Debug_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_28.html)                     | <code> </code> |
+| [Log_Process_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_16.html)                 | <code> </code> |
+| [Log_Debug_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_22.html)                     | <code> </code> |
+| [Log_UserActivityLog_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_28.html) | <code> </code> |
+| [Log_System_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_21.html)                   | <code> </code> |
+| [Log_Debug_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_24.html)                     | <code> </code> |
+| [Log_System_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_15.html)                   | <code> </code> |
+| [Log_System_2022_09_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_22.html)                   | <code> </code> |
+| [Log_System_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_16.html)                   | <code> </code> |
+| [Log_UserActivityLog_2022_11_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_21.html) | <code> </code> |
+| [Log_Process_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_15.html)                 | <code> </code> |
+| [Log_UserActivityLog_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_11_23.html) | <code> </code> |
+| [Log_Debug_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2023_01_13.html)                     | <code> </code> |
+| [Log_System_2022_11_22.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_22.html)                   | <code> </code> |
+| [Log_UserActivityLog_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_28.html) | <code> </code> |
+| [Log_Debug_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_16.html)                     | <code> </code> |
+| [Log_UserActivityLog_2022_09_16.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_16.html) | <code> </code> |
+| [Log_Debug_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_19.html)                     | <code> </code> |
+| [Log_System_2022_11_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_28.html)                   | <code> </code> |
+| [Log_Process_2022_09_28.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_28.html)                 | <code> </code> |
+| [Log_UserActivityLog_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_21.html) | <code> </code> |
+| [Log_UserActivityLog_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_19.html) | <code> </code> |
+| [Log_System_2022_11_24.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_11_24.html)                   | <code> </code> |
+| [Log_UserActivityLog_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_27.html) | <code> </code> |
+| [Log_Process_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Process_2022_09_27.html)                 | <code> </code> |
+| [Log_Debug_2022_11_23.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_11_23.html)                     | <code> </code> |
+| [Log_System_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_21.html)                   | <code> </code> |
+| [Log_Debug_2022_09_21.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_21.html)                     | <code> </code> |
+| [Log_System_2022_09_27.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_27.html)                   | <code> </code> |
+| [Log_System_2022_09_19.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2022_09_19.html)                   | <code> </code> |
+| [Log_System_2023_01_13.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_System_2023_01_13.html)                   | <code> </code> |
+| [Log_Debug_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_Debug_2022_09_15.html)                     | <code> </code> |
+| [Log_UserActivityLog_2022_09_15.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/LOG/Log_UserActivityLog_2022_09_15.html) | <code> </code> |
 
 </details>
 
@@ -285,7 +285,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                        | Summary                         |
 | ---                                                                                                                                         | ---                             |
-| [Create Merlin Database MySQL.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Database/Create Merlin Database MySQL.sql) | <code>► INSERT-TEXT-HERE</code> |
+| [Create Merlin Database MySQL.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Database/Create Merlin Database MySQL.sql) | <code> </code> |
 
 </details>
 
@@ -293,7 +293,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                       | Summary                         |
 | ---                                                                                        | ---                             |
-| [er](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/er) | <code>► INSERT-TEXT-HERE</code> |
+| [er](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/er) | <code> </code> |
 
 </details>
 
@@ -301,9 +301,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                  | Summary                         |
 | ---                                                                                                                                   | ---                             |
-| [History.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/History.html) | <code>► INSERT-TEXT-HERE</code> |
-| [Readme.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Readme.html)   | <code>► INSERT-TEXT-HERE</code> |
-| [License.rtf](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/License.rtf)   | <code>► INSERT-TEXT-HERE</code> |
+| [History.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/History.html) | <code> </code> |
+| [Readme.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Readme.html)   | <code> </code> |
+| [License.rtf](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/License.rtf)   | <code> </code> |
 
 </details>
 
@@ -311,7 +311,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                        | Summary                         |
 | ---                                                                                                                                         | ---                             |
-| [Readme.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/Readme.html) | <code>► INSERT-TEXT-HERE</code> |
+| [Readme.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/Readme.html) | <code> </code> |
 
 </details>
 
@@ -319,18 +319,18 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                        | Summary                         |
 | ---                                                                                                                                                                                         | ---                             |
-| [crm_demo_mysql.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_mysql.sql)                       | <code>► INSERT-TEXT-HERE</code> |
-| [CrmDataMappingSQLite.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingSQLite.lqml)         | <code>► INSERT-TEXT-HERE</code> |
-| [CrmDataMappingMySql.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingMySql.lqml)           | <code>► INSERT-TEXT-HERE</code> |
-| [crm_demo_postgresql.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_postgresql.sql)             | <code>► INSERT-TEXT-HERE</code> |
-| [VBasicLinqDemo.sln](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VBasicLinqDemo.sln)                       | <code>► INSERT-TEXT-HERE</code> |
-| [CrmDataMappingOracle.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingOracle.lqml)         | <code>► INSERT-TEXT-HERE</code> |
-| [CSharpLinqDemo.sln](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CSharpLinqDemo.sln)                       | <code>► INSERT-TEXT-HERE</code> |
-| [App.Config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/App.Config)                                       | <code>► INSERT-TEXT-HERE</code> |
-| [CrmDataMappingPostgreSql.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingPostgreSql.lqml) | <code>► INSERT-TEXT-HERE</code> |
-| [crm_demo_sql.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_sql.sql)                           | <code>► INSERT-TEXT-HERE</code> |
-| [CrmDataMappingSqlClient.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingSqlClient.lqml)   | <code>► INSERT-TEXT-HERE</code> |
-| [crm_demo_oracle.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_oracle.sql)                     | <code>► INSERT-TEXT-HERE</code> |
+| [crm_demo_mysql.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_mysql.sql)                       | <code> </code> |
+| [CrmDataMappingSQLite.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingSQLite.lqml)         | <code> </code> |
+| [CrmDataMappingMySql.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingMySql.lqml)           | <code> </code> |
+| [crm_demo_postgresql.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_postgresql.sql)             | <code> </code> |
+| [VBasicLinqDemo.sln](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VBasicLinqDemo.sln)                       | <code> </code> |
+| [CrmDataMappingOracle.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingOracle.lqml)         | <code> </code> |
+| [CSharpLinqDemo.sln](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CSharpLinqDemo.sln)                       | <code> </code> |
+| [App.Config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/App.Config)                                       | <code> </code> |
+| [CrmDataMappingPostgreSql.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingPostgreSql.lqml) | <code> </code> |
+| [crm_demo_sql.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_sql.sql)                           | <code> </code> |
+| [CrmDataMappingSqlClient.lqml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CrmDataMappingSqlClient.lqml)   | <code> </code> |
+| [crm_demo_oracle.sql](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/crm_demo_oracle.sql)                     | <code> </code> |
 
 </details>
 
@@ -338,18 +338,18 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                         | Summary                         |
 | ---                                                                                                                                                                                          | ---                             |
-| [BaseControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/BaseControl.Designer.cs)           | <code>► INSERT-TEXT-HERE</code> |
-| [ConnectionDialog.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/ConnectionDialog.resx)               | <code>► INSERT-TEXT-HERE</code> |
-| [AssemblyInfo.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/AssemblyInfo.cs)                           | <code>► INSERT-TEXT-HERE</code> |
-| [CrmDataContext.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/CrmDataContext.cs)                       | <code>► INSERT-TEXT-HERE</code> |
-| [BaseControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/BaseControl.cs)                             | <code>► INSERT-TEXT-HERE</code> |
-| [LinqDemo.csproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/LinqDemo.csproj)                           | <code>► INSERT-TEXT-HERE</code> |
-| [ConnectionDialog.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/ConnectionDialog.Designer.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [MainForm.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MainForm.cs)                                   | <code>► INSERT-TEXT-HERE</code> |
-| [Program.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Program.cs)                                     | <code>► INSERT-TEXT-HERE</code> |
-| [MainForm.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MainForm.Designer.cs)                 | <code>► INSERT-TEXT-HERE</code> |
-| [MainForm.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MainForm.resx)                               | <code>► INSERT-TEXT-HERE</code> |
-| [ConnectionDialog.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/ConnectionDialog.cs)                   | <code>► INSERT-TEXT-HERE</code> |
+| [BaseControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/BaseControl.Designer.cs)           | <code> </code> |
+| [ConnectionDialog.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/ConnectionDialog.resx)               | <code> </code> |
+| [AssemblyInfo.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/AssemblyInfo.cs)                           | <code> </code> |
+| [CrmDataContext.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/CrmDataContext.cs)                       | <code> </code> |
+| [BaseControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/BaseControl.cs)                             | <code> </code> |
+| [LinqDemo.csproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/LinqDemo.csproj)                           | <code> </code> |
+| [ConnectionDialog.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/ConnectionDialog.Designer.cs) | <code> </code> |
+| [MainForm.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MainForm.cs)                                   | <code> </code> |
+| [Program.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Program.cs)                                     | <code> </code> |
+| [MainForm.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MainForm.Designer.cs)                 | <code> </code> |
+| [MainForm.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MainForm.resx)                               | <code> </code> |
+| [ConnectionDialog.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/ConnectionDialog.cs)                   | <code> </code> |
 
 </details>
 
@@ -357,9 +357,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                                               | Summary                         |
 | ---                                                                                                                                                                                                                | ---                             |
-| [SubmitChangesControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/SubmitChanges/SubmitChangesControl.Designer.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [SubmitChangesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/SubmitChanges/SubmitChangesControl.resx)               | <code>► INSERT-TEXT-HERE</code> |
-| [SubmitChangesControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/SubmitChanges/SubmitChangesControl.cs)                   | <code>► INSERT-TEXT-HERE</code> |
+| [SubmitChangesControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/SubmitChanges/SubmitChangesControl.Designer.cs) | <code> </code> |
+| [SubmitChangesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/SubmitChanges/SubmitChangesControl.resx)               | <code> </code> |
+| [SubmitChangesControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/SubmitChanges/SubmitChangesControl.cs)                   | <code> </code> |
 
 </details>
 
@@ -367,9 +367,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                             | Summary                         |
 | ---                                                                                                                                                                                              | ---                             |
-| [QueriesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Queries/QueriesControl.resx)               | <code>► INSERT-TEXT-HERE</code> |
-| [QueriesControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Queries/QueriesControl.Designer.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [QueriesControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Queries/QueriesControl.cs)                   | <code>► INSERT-TEXT-HERE</code> |
+| [QueriesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Queries/QueriesControl.resx)               | <code> </code> |
+| [QueriesControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Queries/QueriesControl.Designer.cs) | <code> </code> |
+| [QueriesControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/Queries/QueriesControl.cs)                   | <code> </code> |
 
 </details>
 
@@ -377,9 +377,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                                            | Summary                         |
 | ---                                                                                                                                                                                                             | ---                             |
-| [MasterDetailControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MasterDetail/MasterDetailControl.Designer.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [MasterDetailControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MasterDetail/MasterDetailControl.resx)               | <code>► INSERT-TEXT-HERE</code> |
-| [MasterDetailControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MasterDetail/MasterDetailControl.cs)                   | <code>► INSERT-TEXT-HERE</code> |
+| [MasterDetailControl.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MasterDetail/MasterDetailControl.Designer.cs) | <code> </code> |
+| [MasterDetailControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MasterDetail/MasterDetailControl.resx)               | <code> </code> |
+| [MasterDetailControl.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/CS/MasterDetail/MasterDetailControl.cs)                   | <code> </code> |
 
 </details>
 
@@ -387,19 +387,19 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                         | Summary                         |
 | ---                                                                                                                                                                                          | ---                             |
-| [ConnectionDialog.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/ConnectionDialog.resx)               | <code>► INSERT-TEXT-HERE</code> |
-| [Application.myapp](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Application.myapp)                       | <code>► INSERT-TEXT-HERE</code> |
-| [MainForm.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MainForm.Designer.vb)                 | <code>► INSERT-TEXT-HERE</code> |
-| [BaseControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/BaseControl.vb)                             | <code>► INSERT-TEXT-HERE</code> |
-| [MainForm.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MainForm.vb)                                   | <code>► INSERT-TEXT-HERE</code> |
-| [ConnectionDialog.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/ConnectionDialog.vb)                   | <code>► INSERT-TEXT-HERE</code> |
-| [BaseControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/BaseControl.Designer.vb)           | <code>► INSERT-TEXT-HERE</code> |
-| [MainForm.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MainForm.resx)                               | <code>► INSERT-TEXT-HERE</code> |
-| [AssemblyInfo.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/AssemblyInfo.vb)                           | <code>► INSERT-TEXT-HERE</code> |
-| [LinqDemo.vbproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/LinqDemo.vbproj)                           | <code>► INSERT-TEXT-HERE</code> |
-| [CrmDataContext.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/CrmDataContext.vb)                       | <code>► INSERT-TEXT-HERE</code> |
-| [ConnectionDialog.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/ConnectionDialog.Designer.vb) | <code>► INSERT-TEXT-HERE</code> |
-| [Application.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Application.Designer.vb)           | <code>► INSERT-TEXT-HERE</code> |
+| [ConnectionDialog.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/ConnectionDialog.resx)               | <code> </code> |
+| [Application.myapp](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Application.myapp)                       | <code> </code> |
+| [MainForm.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MainForm.Designer.vb)                 | <code> </code> |
+| [BaseControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/BaseControl.vb)                             | <code> </code> |
+| [MainForm.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MainForm.vb)                                   | <code> </code> |
+| [ConnectionDialog.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/ConnectionDialog.vb)                   | <code> </code> |
+| [BaseControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/BaseControl.Designer.vb)           | <code> </code> |
+| [MainForm.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MainForm.resx)                               | <code> </code> |
+| [AssemblyInfo.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/AssemblyInfo.vb)                           | <code> </code> |
+| [LinqDemo.vbproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/LinqDemo.vbproj)                           | <code> </code> |
+| [CrmDataContext.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/CrmDataContext.vb)                       | <code> </code> |
+| [ConnectionDialog.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/ConnectionDialog.Designer.vb) | <code> </code> |
+| [Application.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Application.Designer.vb)           | <code> </code> |
 
 </details>
 
@@ -407,9 +407,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                                               | Summary                         |
 | ---                                                                                                                                                                                                                | ---                             |
-| [SubmitChangesControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/SubmitChanges/SubmitChangesControl.Designer.vb) | <code>► INSERT-TEXT-HERE</code> |
-| [SubmitChangesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/SubmitChanges/SubmitChangesControl.resx)               | <code>► INSERT-TEXT-HERE</code> |
-| [SubmitChangesControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/SubmitChanges/SubmitChangesControl.vb)                   | <code>► INSERT-TEXT-HERE</code> |
+| [SubmitChangesControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/SubmitChanges/SubmitChangesControl.Designer.vb) | <code> </code> |
+| [SubmitChangesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/SubmitChanges/SubmitChangesControl.resx)               | <code> </code> |
+| [SubmitChangesControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/SubmitChanges/SubmitChangesControl.vb)                   | <code> </code> |
 
 </details>
 
@@ -417,9 +417,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                             | Summary                         |
 | ---                                                                                                                                                                                              | ---                             |
-| [QueriesControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Queries/QueriesControl.Designer.vb) | <code>► INSERT-TEXT-HERE</code> |
-| [QueriesControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Queries/QueriesControl.vb)                   | <code>► INSERT-TEXT-HERE</code> |
-| [QueriesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Queries/QueriesControl.resx)               | <code>► INSERT-TEXT-HERE</code> |
+| [QueriesControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Queries/QueriesControl.Designer.vb) | <code> </code> |
+| [QueriesControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Queries/QueriesControl.vb)                   | <code> </code> |
+| [QueriesControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/Queries/QueriesControl.resx)               | <code> </code> |
 
 </details>
 
@@ -427,9 +427,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                                            | Summary                         |
 | ---                                                                                                                                                                                                             | ---                             |
-| [MasterDetailControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MasterDetail/MasterDetailControl.Designer.vb) | <code>► INSERT-TEXT-HERE</code> |
-| [MasterDetailControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MasterDetail/MasterDetailControl.vb)                   | <code>► INSERT-TEXT-HERE</code> |
-| [MasterDetailControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MasterDetail/MasterDetailControl.resx)               | <code>► INSERT-TEXT-HERE</code> |
+| [MasterDetailControl.Designer.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MasterDetail/MasterDetailControl.Designer.vb) | <code> </code> |
+| [MasterDetailControl.vb](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MasterDetail/MasterDetailControl.vb)                   | <code> </code> |
+| [MasterDetailControl.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Samples/LinqConnect/VB/MasterDetail/MasterDetailControl.resx)               | <code> </code> |
 
 </details>
 
@@ -437,15 +437,15 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                              | Summary                         |
 | ---                                                                                                                                               | ---                             |
-| [LinqConnect.HxC](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnect.HxC)   | <code>► INSERT-TEXT-HERE</code> |
-| [LinqConnectK.HxK](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnectK.HxK) | <code>► INSERT-TEXT-HERE</code> |
-| [LinqConnectF.HxK](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnectF.HxK) | <code>► INSERT-TEXT-HERE</code> |
-| [product1.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/product1.html)       | <code>► INSERT-TEXT-HERE</code> |
-| [LinqConnectN.HxK](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnectN.HxK) | <code>► INSERT-TEXT-HERE</code> |
-| [LinqConnect.HxA](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnect.HxA)   | <code>► INSERT-TEXT-HERE</code> |
-| [book2.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/book2.html)             | <code>► INSERT-TEXT-HERE</code> |
-| [book1.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/book1.html)             | <code>► INSERT-TEXT-HERE</code> |
-| [LinqConnect.HxT](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnect.HxT)   | <code>► INSERT-TEXT-HERE</code> |
+| [LinqConnect.HxC](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnect.HxC)   | <code> </code> |
+| [LinqConnectK.HxK](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnectK.HxK) | <code> </code> |
+| [LinqConnectF.HxK](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnectF.HxK) | <code> </code> |
+| [product1.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/product1.html)       | <code> </code> |
+| [LinqConnectN.HxK](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnectN.HxK) | <code> </code> |
+| [LinqConnect.HxA](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnect.HxA)   | <code> </code> |
+| [book2.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/book2.html)             | <code> </code> |
+| [book1.html](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/book1.html)             | <code> </code> |
+| [LinqConnect.HxT](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/Linq/Doc/LinqConnect.HxT)   | <code> </code> |
 
 </details>
 
@@ -453,7 +453,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                  | Summary                         |
 | ---                                                                                                                                   | ---                             |
-| [sqlite3.def](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/SQLite/sqlite3.def) | <code>► INSERT-TEXT-HERE</code> |
+| [sqlite3.def](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/External References/Devart/dotConnect/SQLite/sqlite3.def) | <code> </code> |
 
 </details>
 
@@ -461,10 +461,10 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                           | Summary                         |
 | ---                                                                                                            | ---                             |
-| [Source Code](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/Source%20Code)           | <code>► INSERT-TEXT-HERE</code> |
-| [labman.ruleset](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/labman.ruleset)     | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.sln](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ARAD_CAPFEED.sln) | <code>► INSERT-TEXT-HERE</code> |
-| [NuGet.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/NuGet.config)         | <code>► INSERT-TEXT-HERE</code> |
+| [Source Code](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/Source%20Code)           | <code> </code> |
+| [labman.ruleset](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/labman.ruleset)     | <code> </code> |
+| [ARAD_CAPFEED.sln](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ARAD_CAPFEED.sln) | <code> </code> |
+| [NuGet.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/NuGet.config)         | <code> </code> |
 
 </details>
 
@@ -472,18 +472,18 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                           | Summary                         |
 | ---                                                                                                                                                                            | ---                             |
-| [Copyright Notices.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Copyright Notices.txt)                                   | <code>► INSERT-TEXT-HERE</code> |
-| [App.xaml.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/App.xaml.cs)                                                       | <code>► INSERT-TEXT-HERE</code> |
-| [ApplicationTemplate](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/ApplicationTemplate)                                       | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.csproj.user](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/ARAD_CAPFEED.csproj.user)                             | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.csproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Labman.ApplicationTemplate.csproj)           | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.csproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/ARAD_CAPFEED.csproj)                                       | <code>► INSERT-TEXT-HERE</code> |
-| [App.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/App.xaml)                                                             | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.csproj.user](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Labman.ApplicationTemplate.csproj.user) | <code>► INSERT-TEXT-HERE</code> |
-| [packages.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/packages.config)                                               | <code>► INSERT-TEXT-HERE</code> |
-| [stylecop.json](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/stylecop.json)                                                   | <code>► INSERT-TEXT-HERE</code> |
-| [app.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/app.config)                                                         | <code>► INSERT-TEXT-HERE</code> |
-| [OpenTK.dll.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/OpenTK.dll.config)                                           | <code>► INSERT-TEXT-HERE</code> |
+| [Copyright Notices.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Copyright Notices.txt)                                   | <code> </code> |
+| [App.xaml.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/App.xaml.cs)                                                       | <code> </code> |
+| [ApplicationTemplate](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/ApplicationTemplate)                                       | <code> </code> |
+| [ARAD_CAPFEED.csproj.user](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/ARAD_CAPFEED.csproj.user)                             | <code> </code> |
+| [Labman.ApplicationTemplate.csproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Labman.ApplicationTemplate.csproj)           | <code> </code> |
+| [ARAD_CAPFEED.csproj](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/ARAD_CAPFEED.csproj)                                       | <code> </code> |
+| [App.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/App.xaml)                                                             | <code> </code> |
+| [Labman.ApplicationTemplate.csproj.user](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Labman.ApplicationTemplate.csproj.user) | <code> </code> |
+| [packages.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/packages.config)                                               | <code> </code> |
+| [stylecop.json](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/stylecop.json)                                                   | <code> </code> |
+| [app.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/app.config)                                                         | <code> </code> |
+| [OpenTK.dll.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/OpenTK.dll.config)                                           | <code> </code> |
 
 </details>
 
@@ -491,8 +491,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                | Summary                         |
 | ---                                                                                                                                                 | ---                             |
-| [ParametersAutoGen.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Database/ParametersAutoGen.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [ParametersAutoGen.tt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Database/ParametersAutoGen.tt) | <code>► INSERT-TEXT-HERE</code> |
+| [ParametersAutoGen.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Database/ParametersAutoGen.cs) | <code> </code> |
+| [ParametersAutoGen.tt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Database/ParametersAutoGen.tt) | <code> </code> |
 
 </details>
 
@@ -500,12 +500,12 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                            | Summary                         |
 | ---                                                                                                                                                                             | ---                             |
-| [EntranceGateNotClosingException.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/EntranceGateNotClosingException.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [RobotHardwareAutoGen.tt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/RobotHardwareAutoGen.tt)                       | <code>► INSERT-TEXT-HERE</code> |
-| [Conveyor.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/Conveyor.cs)                                               | <code>► INSERT-TEXT-HERE</code> |
-| [CapLifter.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/CapLifter.cs)                                             | <code>► INSERT-TEXT-HERE</code> |
-| [RobotHardwareAutoGen.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/RobotHardwareAutoGen.cs)                       | <code>► INSERT-TEXT-HERE</code> |
-| [CapClassifier.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/CapClassifier.cs)                                     | <code>► INSERT-TEXT-HERE</code> |
+| [EntranceGateNotClosingException.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/EntranceGateNotClosingException.cs) | <code> </code> |
+| [RobotHardwareAutoGen.tt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/RobotHardwareAutoGen.tt)                       | <code> </code> |
+| [Conveyor.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/Conveyor.cs)                                               | <code> </code> |
+| [CapLifter.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/CapLifter.cs)                                             | <code> </code> |
+| [RobotHardwareAutoGen.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/RobotHardwareAutoGen.cs)                       | <code> </code> |
+| [CapClassifier.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Hardware/CapClassifier.cs)                                     | <code> </code> |
 
 </details>
 
@@ -513,7 +513,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                 | Summary                         |
 | ---                                                                                                                                  | ---                             |
-| [TestCycles.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Actions/TestCycles.cs) | <code>► INSERT-TEXT-HERE</code> |
+| [TestCycles.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Actions/TestCycles.cs) | <code> </code> |
 
 </details>
 
@@ -521,8 +521,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                         | Summary                         |
 | ---                                                                                                                                                          | ---                             |
-| [CapFeedingProcess.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Processes/CapFeedingProcess.cs)         | <code>► INSERT-TEXT-HERE</code> |
-| [CapMarshallingProcess.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Processes/CapMarshallingProcess.cs) | <code>► INSERT-TEXT-HERE</code> |
+| [CapFeedingProcess.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Processes/CapFeedingProcess.cs)         | <code> </code> |
+| [CapMarshallingProcess.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Processes/CapMarshallingProcess.cs) | <code> </code> |
 
 </details>
 
@@ -530,7 +530,7 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                              | Summary                         |
 | ---                                                                                                                                                                               | ---                             |
-| [CapFeederDataChangedMessage.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Messaging/Messages/CapFeederDataChangedMessage.cs) | <code>► INSERT-TEXT-HERE</code> |
+| [CapFeederDataChangedMessage.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Messaging/Messages/CapFeederDataChangedMessage.cs) | <code> </code> |
 
 </details>
 
@@ -538,11 +538,11 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                    | Summary                         |
 | ---                                                                                                                                                     | ---                             |
-| [Resources.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Resources.resx)               | <code>► INSERT-TEXT-HERE</code> |
-| [AssemblyInfo.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/AssemblyInfo.cs)             | <code>► INSERT-TEXT-HERE</code> |
-| [Settings.settings](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Settings.settings)         | <code>► INSERT-TEXT-HERE</code> |
-| [Resources.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Resources.Designer.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [Settings.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Settings.Designer.cs)   | <code>► INSERT-TEXT-HERE</code> |
+| [Resources.resx](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Resources.resx)               | <code> </code> |
+| [AssemblyInfo.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/AssemblyInfo.cs)             | <code> </code> |
+| [Settings.settings](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Settings.settings)         | <code> </code> |
+| [Resources.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Resources.Designer.cs) | <code> </code> |
+| [Settings.Designer.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/Properties/Settings.Designer.cs)   | <code> </code> |
 
 </details>
 
@@ -550,27 +550,27 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                                                     | Summary                         |
 | ---                                                                                                                                                                                                                      | ---                             |
-| [Labman.ApplicationTemplate_MarkupCompile.lref.r2103](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref.r2103)       | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_Content.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_Content.g.i.cs)                           | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.csproj.CoreCompileInputs.cache.mine](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CoreCompileInputs.cache.mine)             | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2106](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2106)           | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.csproj.CopyComplete](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate.csproj.CopyComplete)                 | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_MarkupCompile.cache.r2106](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.cache.r2106)     | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_MarkupCompile.i.lref](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.i.lref)               | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.csproj.FileListAbsolute.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.FileListAbsolute.txt)                             | <code>► INSERT-TEXT-HERE</code> |
-| [App.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/App.g.i.cs)                                                                                         | <code>► INSERT-TEXT-HERE</code> |
-| [GeneratedInternalTypeHelper.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/GeneratedInternalTypeHelper.g.i.cs)                                         | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_MarkupCompile.lref.r2106](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref.r2106)       | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_Content.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_Content.g.cs)                               | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.csproj.CopyComplete](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CopyComplete)                                             | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.csproj.FileListAbsolute.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate.csproj.FileListAbsolute.txt) | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_MarkupCompile.cache.r2103](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.cache.r2103)     | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_MarkupCompile.lref.mine](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref.mine)         | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_MarkupCompile.lref](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref)                   | <code>► INSERT-TEXT-HERE</code> |
-| [ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2103](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2103)           | <code>► INSERT-TEXT-HERE</code> |
-| [GeneratedInternalTypeHelper.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/GeneratedInternalTypeHelper.g.cs)                                             | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate_MarkupCompile.cache.mine](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.cache.mine)       | <code>► INSERT-TEXT-HERE</code> |
-| [App.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/App.g.cs)                                                                                             | <code>► INSERT-TEXT-HERE</code> |
+| [Labman.ApplicationTemplate_MarkupCompile.lref.r2103](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref.r2103)       | <code> </code> |
+| [Labman.ApplicationTemplate_Content.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_Content.g.i.cs)                           | <code> </code> |
+| [ARAD_CAPFEED.csproj.CoreCompileInputs.cache.mine](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CoreCompileInputs.cache.mine)             | <code> </code> |
+| [ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2106](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2106)           | <code> </code> |
+| [Labman.ApplicationTemplate.csproj.CopyComplete](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate.csproj.CopyComplete)                 | <code> </code> |
+| [Labman.ApplicationTemplate_MarkupCompile.cache.r2106](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.cache.r2106)     | <code> </code> |
+| [Labman.ApplicationTemplate_MarkupCompile.i.lref](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.i.lref)               | <code> </code> |
+| [ARAD_CAPFEED.csproj.FileListAbsolute.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.FileListAbsolute.txt)                             | <code> </code> |
+| [App.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/App.g.i.cs)                                                                                         | <code> </code> |
+| [GeneratedInternalTypeHelper.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/GeneratedInternalTypeHelper.g.i.cs)                                         | <code> </code> |
+| [Labman.ApplicationTemplate_MarkupCompile.lref.r2106](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref.r2106)       | <code> </code> |
+| [Labman.ApplicationTemplate_Content.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_Content.g.cs)                               | <code> </code> |
+| [ARAD_CAPFEED.csproj.CopyComplete](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CopyComplete)                                             | <code> </code> |
+| [Labman.ApplicationTemplate.csproj.FileListAbsolute.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate.csproj.FileListAbsolute.txt) | <code> </code> |
+| [Labman.ApplicationTemplate_MarkupCompile.cache.r2103](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.cache.r2103)     | <code> </code> |
+| [Labman.ApplicationTemplate_MarkupCompile.lref.mine](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref.mine)         | <code> </code> |
+| [Labman.ApplicationTemplate_MarkupCompile.lref](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.lref)                   | <code> </code> |
+| [ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2103](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/ARAD_CAPFEED.csproj.CoreCompileInputs.cache.r2103)           | <code> </code> |
+| [GeneratedInternalTypeHelper.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/GeneratedInternalTypeHelper.g.cs)                                             | <code> </code> |
+| [Labman.ApplicationTemplate_MarkupCompile.cache.mine](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/Labman.ApplicationTemplate_MarkupCompile.cache.mine)       | <code> </code> |
+| [App.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/App.g.cs)                                                                                             | <code> </code> |
 
 </details>
 
@@ -578,8 +578,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                         | Summary                         |
 | ---                                                                                                                                                          | ---                             |
-| [MainWindow.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/MainWindow.g.cs)     | <code>► INSERT-TEXT-HERE</code> |
-| [MainWindow.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/MainWindow.g.i.cs) | <code>► INSERT-TEXT-HERE</code> |
+| [MainWindow.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/MainWindow.g.cs)     | <code> </code> |
+| [MainWindow.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/MainWindow.g.i.cs) | <code> </code> |
 
 </details>
 
@@ -587,10 +587,10 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                              | Summary                         |
 | ---                                                                                                                                                                                               | ---                             |
-| [CapFeederUserControl.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/CapFeederUserControl.g.i.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [Process1UserControl.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/Process1UserControl.g.cs)       | <code>► INSERT-TEXT-HERE</code> |
-| [Process1UserControl.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/Process1UserControl.g.i.cs)   | <code>► INSERT-TEXT-HERE</code> |
-| [Process3UserControl.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/Process3UserControl.g.i.cs)   | <code>► INSERT-TEXT-HERE</code> |
+| [CapFeederUserControl.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/CapFeederUserControl.g.i.cs) | <code> </code> |
+| [Process1UserControl.g.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/Process1UserControl.g.cs)       | <code> </code> |
+| [Process1UserControl.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/Process1UserControl.g.i.cs)   | <code> </code> |
+| [Process3UserControl.g.i.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/obj/Debug/UserInterface/UserControlViews/Process3UserControl.g.i.cs)   | <code> </code> |
 
 </details>
 
@@ -598,12 +598,12 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                                                   | Summary                         |
 | ---                                                                                                                                                                                                                    | ---                             |
-| [Copyright Notices.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Copyright Notices.txt)                                                                       | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.vshost.exe.manifest](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.vshost.exe.manifest)                     | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.exe.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.exe.config)                                       | <code>► INSERT-TEXT-HERE</code> |
-| [bin](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/bin)                                                                                                           | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.vshost.exe.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.vshost.exe.config)                         | <code>► INSERT-TEXT-HERE</code> |
-| [Labman.ApplicationTemplate.exe.lastcodeanalysissucceeded](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.exe.lastcodeanalysissucceeded) | <code>► INSERT-TEXT-HERE</code> |
+| [Copyright Notices.txt](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Copyright Notices.txt)                                                                       | <code> </code> |
+| [Labman.ApplicationTemplate.vshost.exe.manifest](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.vshost.exe.manifest)                     | <code> </code> |
+| [Labman.ApplicationTemplate.exe.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.exe.config)                                       | <code> </code> |
+| [bin](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/bin)                                                                                                           | <code> </code> |
+| [Labman.ApplicationTemplate.vshost.exe.config](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.vshost.exe.config)                         | <code> </code> |
+| [Labman.ApplicationTemplate.exe.lastcodeanalysissucceeded](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/bin/Labman.ApplicationTemplate.exe.lastcodeanalysissucceeded) | <code> </code> |
 
 </details>
 
@@ -611,9 +611,9 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                             | Summary                         |
 | ---                                                                                                                                                              | ---                             |
-| [MainWindow.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/MainWindow.xaml)                   | <code>► INSERT-TEXT-HERE</code> |
-| [MainWindow.xaml.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/MainWindow.xaml.cs)             | <code>► INSERT-TEXT-HERE</code> |
-| [PreRunChecksHelpers.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/PreRunChecksHelpers.xaml) | <code>► INSERT-TEXT-HERE</code> |
+| [MainWindow.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/MainWindow.xaml)                   | <code> </code> |
+| [MainWindow.xaml.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/MainWindow.xaml.cs)             | <code> </code> |
+| [PreRunChecksHelpers.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/PreRunChecksHelpers.xaml) | <code> </code> |
 
 </details>
 
@@ -621,8 +621,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                      | Summary                         |
 | ---                                                                                                                                                                                       | ---                             |
-| [Process1UserControlViewModel.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/ViewModels/Process1UserControlViewModel.cs) | <code>► INSERT-TEXT-HERE</code> |
-| [MainWindowViewModel.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/ViewModels/MainWindowViewModel.cs)                   | <code>► INSERT-TEXT-HERE</code> |
+| [Process1UserControlViewModel.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/ViewModels/Process1UserControlViewModel.cs) | <code> </code> |
+| [MainWindowViewModel.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/ViewModels/MainWindowViewModel.cs)                   | <code> </code> |
 
 </details>
 
@@ -630,8 +630,8 @@ Further explanation can be found in [Processes](#processes)
 
 | File                                                                                                                                                                                    | Summary                         |
 | ---                                                                                                                                                                                     | ---                             |
-| [Process1UserControl.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/UserControlViews/Process1UserControl.xaml)       | <code>► INSERT-TEXT-HERE</code> |
-| [Process1UserControl.xaml.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/UserControlViews/Process1UserControl.xaml.cs) | <code>► INSERT-TEXT-HERE</code> |
+| [Process1UserControl.xaml](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/UserControlViews/Process1UserControl.xaml)       | <code> </code> |
+| [Process1UserControl.xaml.cs](https://github.com/Alexpascual28/arad_capfeed.git/blob/master/Source%20Code/ApplicationTemplate/UserInterface/UserControlViews/Process1UserControl.xaml.cs) | <code> </code> |
 
 </details>
 
